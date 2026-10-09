@@ -1,0 +1,302 @@
+# SPDX-License-Identifier: LicenseRef-Boardwright-Source-Available
+# Copyright (c) Ryan Hicks
+
+name: Boardwright Publish Release
+run-name: Publish ${{ github.ref_name }} release package
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+env:
+  PYTHONPATH: ${{ github.workspace }}/src
+  KIBOT_CONFIG: boardwright_resources/kibot/yaml/kibot_main.yaml
+  KIBOT_LOG: kibot_release.log
+  KICAD_VERSION: "9"
+  RELEASE_DIR: boardwright-release
+  RELEASE_KIND: release
+  RELEASE_VARIANT: RELEASED
+
+jobs:
+  release:
+    name: Publish ${{ github.ref_name }}
+    runs-on: ubuntu-latest
+    if: github.ref_type == 'tag'
+    steps:
+      - name: Checkout tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+
+      - name: Record job start time
+        shell: bash
+        run: echo "BOARDWRIGHT_JOB_START_EPOCH=$(date +%s)" >> "$GITHUB_ENV"
+
+      - name: Ensure 3D cache directory
+        run: mkdir -p ~/cache_3d
+
+      - name: Cache 3D models
+        uses: actions/cache@v4
+        with:
+          path: ~/cache_3d
+          key: ${{ runner.os }}-kicad-${{ env.KICAD_VERSION }}-3d
+          restore-keys: |
+            ${{ runner.os }}-kicad-${{ env.KICAD_VERSION }}-3d-
+
+      - name: Install bundled KiCad/PDF fonts
+        shell: bash
+        run: |
+          mkdir -p ~/.local/share/fonts
+          cp boardwright_resources/kibot/resources/fonts/*.ttf ~/.local/share/fonts/
+          fc-cache -f ~/.local/share/fonts || true
+
+      - name: Generate revision table variables
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        shell: bash
+        run: python -m boardwright revision-history
+      - name: Load release metadata
+        shell: bash
+        run: |
+          if [[ -f .boardwright/release.env ]]; then
+            sed -n 's/^\(RELEASE_KIND\|RELEASE_VARIANT\|RELEASE_INCLUDE_SOURCE_ARCHIVE\)=/export \1=/p' .boardwright/release.env > release_metadata.sh
+            source release_metadata.sh
+            echo "RELEASE_KIND=${RELEASE_KIND:-release}" >> "$GITHUB_ENV"
+            echo "RELEASE_VARIANT=${RELEASE_VARIANT:-RELEASED}" >> "$GITHUB_ENV"
+            echo "RELEASE_INCLUDE_SOURCE_ARCHIVE=${RELEASE_INCLUDE_SOURCE_ARCHIVE:-false}" >> "$GITHUB_ENV"
+          fi
+
+      - name: Choose KiBot variant and output set
+        shell: bash
+        run: |
+          variant="${RELEASE_VARIANT:-RELEASED}"
+
+          case "$variant" in
+            DRAFT)
+              additional_args="--skip-pre draw_fancy_stackup,erc,drc --log $KIBOT_LOG draft_group md_readme"
+              ;;
+            PRELIMINARY)
+              additional_args="--skip-pre erc,drc --log $KIBOT_LOG all_group_k9"
+              ;;
+            CHECKED|RELEASED)
+              additional_args="--log $KIBOT_LOG all_group_k9"
+              ;;
+            *)
+              echo "Unsupported release variant: $variant" >&2
+              exit 1
+              ;;
+          esac
+
+          echo "KIBOT_VARIANT=$variant" >> "$GITHUB_ENV"
+          echo "KIBOT_ADDITIONAL_ARGS=$additional_args" >> "$GITHUB_ENV"
+
+          {
+            echo "## Boardwright Publish Release"
+            echo
+            echo "- Tag: \`${GITHUB_REF_NAME}\`"
+            echo "- Variant: \`${variant}\`"
+            echo "- Release kind: \`${RELEASE_KIND:-release}\`"
+            echo "- Package artifact: \`boardwright-release-${GITHUB_REF_NAME}\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Prepare Boardwright PDF table placeholders
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        shell: bash
+        run: python boardwright_resources/kibot/resources/scripts/prepare_pcb_tables.py .
+
+      - name: Generate KiBot PDF table CSV sources
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        uses: INTI-CMNB/KiBot@v2_dk9
+        with:
+          additional_args: --skip-pre draw_fancy_stackup,erc,drc --log kibot_release_tables.log table_sources
+          variant: ${{ env.KIBOT_VARIANT }}
+          config: ${{ env.KIBOT_CONFIG }}
+          cache3D: YES
+
+      - name: Prune empty conditional PDF pages
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        shell: bash
+        run: python boardwright_resources/kibot/resources/scripts/prune_pdf_pages.py .
+
+      - name: Normalize project ownership before combined PDF prep
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        shell: bash
+        run: sudo chown -R "$USER:$USER" . 2>/dev/null || true
+
+      - name: Prepare native combined PDF contents
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        shell: bash
+        run: python boardwright_resources/kibot/resources/scripts/prepare_combined_pdf_native.py .
+
+      - name: Generate release output package
+        uses: INTI-CMNB/KiBot@v2_dk9
+        with:
+          additional_args: ${{ env.KIBOT_ADDITIONAL_ARGS }}
+          variant: ${{ env.KIBOT_VARIANT }}
+          config: ${{ env.KIBOT_CONFIG }}
+          cache3D: YES
+
+      - name: Regenerate fabrication PDF metadata
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        uses: INTI-CMNB/KiBot@v2_dk9
+        with:
+          additional_args: --skip-pre draw_fancy_stackup,erc,drc --log kibot_release_fabrication_document.log pdf_fabrication zip_compress_fab
+          variant: ${{ env.KIBOT_VARIANT }}
+          config: boardwright_resources/kibot/yaml/kibot_document_fabrication.generated.yaml
+          cache3D: YES
+
+      - name: Regenerate assembly PDF metadata
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        uses: INTI-CMNB/KiBot@v2_dk9
+        with:
+          additional_args: --skip-pre draw_fancy_stackup,erc,drc --log kibot_release_assembly_document.log pdf_assembly
+          variant: ${{ env.KIBOT_VARIANT }}
+          config: boardwright_resources/kibot/yaml/kibot_document_assembly.generated.yaml
+          cache3D: YES
+
+      - name: Normalize generated output ownership
+        shell: bash
+        run: sudo chown -R "$USER:$USER" Schematic Manufacturing assets HTML KiRI Testing Reports README.md 2>/dev/null || true
+      - name: Install optional PDF combiner dependency
+        shell: bash
+        run: python -m pip install "pypdf>=4.0"
+
+      - name: Create optional combined review PDF
+        shell: bash
+        run: python boardwright_resources/kibot/resources/scripts/combine_review_pdf.py .
+
+      - name: Clean generated outputs
+        shell: bash
+        run: python boardwright_resources/kibot/resources/scripts/clean_generated_outputs.py .
+
+      - name: Check generated README
+        shell: bash
+        run: |
+          if [[ ! -s README.md ]]; then
+            echo "README.md was not generated by KiBot." >&2
+            exit 1
+          fi
+
+      - name: Build curated source archive
+        if: env.RELEASE_INCLUDE_SOURCE_ARCHIVE == 'true'
+        shell: bash
+        run: |
+          python -c "import sys; from pathlib import Path; sys.path.insert(0, 'src'); from boardwright.source_package import build_source_package; result = build_source_package(Path('.').resolve(), Path('boardwright-${{ github.ref_name }}-source.zip'), force=True); print(f'wrote {result.path} ({result.file_count} file(s))')"
+
+      - name: Generate GitHub release markdown
+        shell: bash
+        run: |
+          tag="${GITHUB_REF_NAME}"
+          repo="${GITHUB_REPOSITORY}"
+          release_url="https://github.com/${repo}/releases/download/${tag}"
+
+          top_image=""
+          bottom_image=""
+          if [[ -d assets/renders ]]; then
+            top_image="$(find assets/renders -maxdepth 1 -type f \( -iname '*angled_top*.png' -o -iname '*top*.png' \) | sort | head -n 1 || true)"
+            bottom_image="$(find assets/renders -maxdepth 1 -type f \( -iname '*angled_bottom*.png' -o -iname '*bottom*.png' \) | sort | head -n 1 || true)"
+          fi
+
+          {
+            echo "Generated \`${RELEASE_VARIANT}\` package for \`${repo}\`."
+            echo
+            if [[ -n "$top_image" || -n "$bottom_image" ]]; then
+              echo "## Board Images"
+              echo
+              echo '<p align="center">'
+              if [[ -n "$top_image" ]]; then
+                echo "  <img alt=\"Top board render\" src=\"${release_url}/$(basename "$top_image")\" width=\"45%\">"
+              fi
+              if [[ -n "$bottom_image" ]]; then
+                if [[ -n "$top_image" ]]; then
+                  echo '&nbsp; &nbsp; &nbsp; &nbsp;'
+                fi
+                echo "  <img alt=\"Bottom board render\" src=\"${release_url}/$(basename "$bottom_image")\" width=\"45%\">"
+              fi
+              echo '</p>'
+              echo
+            fi
+            echo "## Changes"
+            echo
+            awk -v tag="$tag" '
+              $0 == "## [" tag "]" || $0 ~ "^## \\[" tag "\\] - " { capture=1; next }
+              capture && /^## \[/ { exit }
+              capture { print }
+            ' CHANGELOG.md
+            echo
+            echo "## Assets"
+            echo
+            echo "- Full release package: \`boardwright-${tag}-release.zip\`"
+            if [[ -f "boardwright-${tag}-source.zip" ]]; then
+              echo "- Curated source package: \`boardwright-${tag}-source.zip\`"
+            fi
+            echo "- Generated README: included in the release package and generated from \`boardwright_resources/kibot/resources/templates/readme.txt\`"
+          } > RELEASE_NOTES.md
+
+          if [[ -n "$top_image" ]]; then
+            cp "$top_image" "$(basename "$top_image")"
+          fi
+          if [[ -n "$bottom_image" ]]; then
+            cp "$bottom_image" "$(basename "$bottom_image")"
+          fi
+
+      - name: Collect release assets
+        shell: bash
+        run: |
+          rm -rf "$RELEASE_DIR"
+          mkdir -p "$RELEASE_DIR"
+
+          for path in Schematic Manufacturing assets HTML KiRI Testing Reports README.md NOTICE.md THIRD_PARTY_NOTICES.md LICENSE boardwright-${{ github.ref_name }}-source.zip; do
+            if [[ -e "$path" ]]; then
+              cp -a "$path" "$RELEASE_DIR/"
+            fi
+          done
+
+          find "$RELEASE_DIR" -type f -print | sort > "$RELEASE_DIR/MANIFEST.txt"
+          zip -r "boardwright-${{ github.ref_name }}-release.zip" "$RELEASE_DIR"
+
+      - name: Upload release package artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: boardwright-release-${{ github.ref_name }}
+          path: boardwright-${{ github.ref_name }}-release.zip
+
+      - name: Upload KiBot logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: boardwright-release-logs
+          path: |
+            kibot_release*.log
+
+      - name: Summarize job timing
+        if: always()
+        shell: bash
+        run: |
+          end_epoch="$(date +%s)"
+          start_epoch="${BOARDWRIGHT_JOB_START_EPOCH:-$end_epoch}"
+          elapsed="$((end_epoch - start_epoch))"
+          {
+            echo "## CI Timing"
+            echo
+            echo "- Job elapsed: ${elapsed}s"
+            echo "- Cache note: 3D assets are cached with actions/cache@v4."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: RELEASE_NOTES.md
+          files: |
+            boardwright-${{ github.ref_name }}-release.zip
+            README.md
+            *.png
+          draft: ${{ env.RELEASE_KIND == 'draft' }}
+          prerelease: ${{ env.RELEASE_KIND == 'prerelease' }}
+          generate_release_notes: false

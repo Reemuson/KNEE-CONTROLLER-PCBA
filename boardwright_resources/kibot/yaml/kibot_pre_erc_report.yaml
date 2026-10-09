@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT
+# Original template material copyright Nguyen Vincent.
+# Modified for Boardwright by Ryan Hicks.
+
+# KiBot preflight for generating ERC reports
+# https://kibot.readthedocs.io/en/latest/configuration/preflights/erc.html
+
+kibot:
+  version: 1
+
+preflight:
+  erc:
+    category: '@DIR@'
+    dir: '@DIR@'
+    format: 'HTML, RPT'
+    output: 'report_%f-%i%I%v.%x'
+
+...
+definitions:
+  CATEGORY: Schematic
+  DIR: Reports

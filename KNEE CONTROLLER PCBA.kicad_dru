@@ -1,0 +1,154 @@
+(version 1)
+
+# JLCPCB 2-Layer Custom DRC for KiCad
+#
+# Target process:
+#   JLCPCB rigid FR-4
+#   2-layer
+#   1 oz copper
+#
+# These rules intentionally use practical production values rather than
+# JLCPCB's absolute minimum process capabilities.
+
+# ----------------------------------- Trace width / spacing -------------------------------
+
+(rule "JLCPCB Minimum Trace Width"
+	(constraint track_width (min 0.15mm))
+	(layer outer)
+	(condition "A.Type == 'Track'"))
+
+(rule "JLCPCB General Copper Clearance"
+	(constraint clearance (min 0.15mm))
+	(layer outer))
+
+# ----------------------------------- Drill / hole size ----------------------------------
+
+# JLCPCB can manufacture smaller drills, but 0.30 mm is a comfortable
+# standard via drill for ordinary 2-layer boards.
+
+(rule "JLCPCB Via Size"
+	(constraint hole_size (min 0.30mm))
+	(constraint via_diameter (min 0.60mm))
+	(condition "A.Type == 'Via'"))
+
+# Normal drilled holes. Holes >= 6.3 mm are routed rather than drilled
+# by JLCPCB, so flag them for manual review.
+
+(rule "JLCPCB Mechanical Hole Size"
+	(constraint hole_size (min 0.80mm) (max 6.30mm))
+	(condition "A.Pad_Type == 'NPTH, mechanical' && A.Hole_Size_X == A.Hole_Size_Y"))
+
+(rule "JLCPCB PTH Hole Size"
+	(constraint hole_size (min 0.30mm) (max 6.30mm))
+	(condition "A.isPlated() && A.Type == 'Pad' && A.Hole_Size_X == A.Hole_Size_Y"))
+
+# Recommended JLCPCB PTH annular ring for ordinary 2-layer manufacture.
+
+(rule "JLCPCB PTH Annular Ring"
+	(constraint annular_width (min 0.25mm))
+	(condition "A.Type == 'Pad' && A.isPlated()"))
+
+# Castellated holes:
+# JLCPCB requests >= 0.60 mm hole size for their normal castellated process.
+
+(rule "JLCPCB Castellated Hole Size"
+	(constraint hole_size (min 0.60mm))
+	(condition "A.Type == 'Pad' && A.Fabrication_Property == 'Castellated pad'"))
+
+# Routed plated slots.
+
+(rule "JLCPCB Minimum Plated Slot Width"
+	(constraint hole_size (min 0.50mm))
+	(condition "A.Type == 'Pad' && A.isPlated() && A.Hole_Size_X != A.Hole_Size_Y"))
+
+# Conservative value for normal mechanical NPTH slots.
+
+(rule "JLCPCB Minimum Non-Plated Slot Width"
+	(constraint hole_size (min 0.80mm))
+	(condition "A.Type == 'Pad' && !A.isPlated() && A.Hole_Size_X != A.Hole_Size_Y"))
+
+# ----------------------------------- Hole clearances ------------------------------------
+
+# Via hole edge to copper.
+# JLCPCB capability: 0.20 mm.
+
+(rule "JLCPCB Via Hole to Copper"
+	(constraint hole_clearance (min 0.20mm))
+	(condition "A.Type == 'Via'"))
+
+# JLCPCB quotes 0.28 mm minimum PTH-hole-to-track and recommends
+# approximately 0.35 mm. Use the recommended value here.
+
+(rule "JLCPCB PTH Hole to Track"
+	(constraint hole_clearance (min 0.35mm))
+	(condition "A.Type == 'Pad' && A.isPlated() && B.Type == 'Track'"))
+
+# NPTH to copper.
+# 0.20 mm is supported by JLCPCB; use 0.25 mm as a useful mechanical margin.
+
+(rule "JLCPCB NPTH to Copper"
+	(constraint hole_clearance (min 0.25mm))
+	(condition "A.Pad_Type == 'NPTH, mechanical'"))
+
+# ----------------------------------- Hole-to-hole spacing -------------------------------
+
+# These are deliberately conservative values. JLCPCB drilling capability
+# can accommodate tighter geometry, but there is little reason to push it
+# on this board.
+
+(rule "JLCPCB Hole to Hole Different Nets"
+	(constraint hole_to_hole (min 0.50mm))
+	(condition "A.Net != B.Net"))
+
+(rule "JLCPCB Hole to Hole Same Net"
+	(constraint hole_to_hole (min 0.30mm))
+	(condition "A.Net == B.Net"))
+
+# ----------------------------------- Specific copper spacing -----------------------------
+
+# JLCPCB permits tighter pad-to-track clearances, but 0.15 mm matches the
+# selected general copper rule.
+
+(rule "JLCPCB Pad to Track Clearance"
+	(constraint clearance (min 0.15mm))
+	(condition "A.Type == 'Pad' && B.Type == 'Track'"))
+
+(rule "JLCPCB Pad to Pad Clearance"
+	(constraint clearance (min 0.15mm))
+	(condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Net != B.Net"))
+
+# ----------------------------------- Board edge -----------------------------------------
+
+# JLCPCB routed-board minimum copper-to-edge is 0.20 mm.
+# 0.25 mm provides a small routing tolerance margin.
+
+(rule "JLCPCB Copper to Routed Board Edge"
+	(constraint edge_clearance (min 0.25mm)))
+
+# ----------------------------------- Silkscreen -----------------------------------------
+
+# These are practical values rather than absolute printer resolution limits.
+# 0.80 mm high / 0.15 mm stroke produces readable reference designators.
+
+(rule "JLCPCB Minimum Silkscreen Text"
+	(constraint text_thickness (min 0.15mm))
+	(constraint text_height (min 0.80mm))
+	(layer "?.Silkscreen"))
+
+(rule "JLCPCB Copper Pad to Silkscreen"
+	(constraint silk_clearance (min 0.15mm))
+	(layer outer)
+	(condition "A.Type == 'Pad' && (B.Type == 'Text' || B.Type == 'Graphic')"))
+
+# ----------------------------------- Courtyard exclusions -------------------------------
+
+# Test points and fiducials frequently have intentionally overlapping
+# courtyard geometry. Do not treat this as a placement violation.
+
+(rule "Test Point Courtyard Exclusion"
+	(constraint courtyard_clearance (min -1mm))
+	(condition "A.Reference == 'TP*'"))
+
+(rule "Fiducial Courtyard Exclusion"
+	(constraint courtyard_clearance (min -1mm))
+	(condition "A.Reference == 'FM*'"))

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP WFK0612R0100FE66
+D Metal Foil Current Sense Resistors, 4-Terminal Low Value (Down to 0.001 )
+K
+F https://www.vishay.com/docs/30429/wfk.pdf
+$ENDCMP
+#
+#End Doc Library

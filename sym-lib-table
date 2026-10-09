@@ -1,0 +1,9 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "BTT_TMC5160T-Pro")(type "KiCad")(uri "${KIPRJMOD}/Library/BTT_TMC5160T-Pro.kicad_sym")(options "")(descr ""))
+  (lib (name "AP7362-33SP-13")(type "KiCad")(uri "${KIPRJMOD}/Library/AP7362-33SP-13/AP7362-33SP-13.kicad_sym")(options "")(descr ""))
+  (lib (name "TLV4041R5DBVR")(type "KiCad")(uri "${KIPRJMOD}/Library/TLV4041R5DBVR.kicad_sym")(options "")(descr ""))
+  (lib (name "TLV6700QDDCRQ1")(type "KiCad")(uri "${KIPRJMOD}/Library/TLV6700QDDCRQ1.kicad_sym")(options "")(descr ""))
+  (lib (name "Jumpers")(type "KiCad")(uri "${KIPRJMOD}/Library/Jumpers.kicad_sym")(options "")(descr ""))
+  (lib (name "ul_MCU18P10Y-TP")(type "KiCad")(uri "${KIPRJMOD}/Library/ul_MCU18P10Y-TP/KiCADv6/2026-02-05_11-18-21.kicad_sym")(options "")(descr ""))
+)

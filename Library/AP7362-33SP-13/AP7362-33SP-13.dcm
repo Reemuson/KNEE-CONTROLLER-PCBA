@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AP7362-33SP-13
+D LDO Voltage Regulators LDO CMOS HiCurr SO-8 1.5A LowQ Adj 190mV
+K
+F https://www.diodes.com//assets/Datasheets/AP7362.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,240 @@
+# KiBot preflight for setting Text Variables
+# https://kibot.readthedocs.io/en/latest/configuration/preflights/set_text_variables.html
+
+kibot:
+  version: 1
+
+preflight:
+  update_xml: true
+  set_text_variables:
+
+    # Git related information
+    - variable: 'RELEASE_VERSION'
+      command: 'if [ -f .boardwright/release.env ]; then . .boardwright/release.env; fi; if [ -n "$RELEASE_VERSION" ]; then echo "$RELEASE_VERSION"; elif [ -n "@RELEASE_VERSION@" ]; then echo "@RELEASE_VERSION@"; else git describe --tags --exact-match 2>/dev/null || git describe --tags --abbrev=0 2>/dev/null || echo ""; fi'
+    - variable: 'RELEASE_DATE'
+      command: 'if [ -f .boardwright/release.env ]; then . .boardwright/release.env; fi; if [ -n "$RELEASE_DATE" ]; then echo "$RELEASE_DATE"; elif [ -n "@RELEASE_DATE@" ]; then echo "@RELEASE_DATE@"; else git log -1 --format="%ad" --date="format:%d-%b-%Y"; fi'
+    - variable: 'RELEASE_DATE_NUM'
+      command: 'git log -1 --format="%ad" --date=short'
+    - variable: 'GIT_HASH_SCH'
+      command: 'git log --no-merges -1 --format="%h" -- "$KIBOT_SCH_NAME"'
+    - variable: 'GIT_HASH_PCB'
+      command: 'git log --no-merges -1 --format="%h" -- "$KIBOT_PCB_NAME"'
+    - variable: 'GIT_URL'
+      text: '@GIT_URL@'
+
+    # Metadata
+    - variable: 'PCBA_NAME'
+      text: '@PCBA_NAME@'
+    - variable: 'PCB_NAME'
+      text: '@PCB_NAME@'
+    - variable: 'COMPANY'
+      text: '@COMPANY@'
+    - variable: 'DESIGNER'
+      text: '@DESIGNER@'
+    - variable: 'PROJECT_NUMBER'
+      text: '@PROJECT_NUMBER@'
+    - variable: 'BOARD_REVISION'
+      text: '@BOARD_REVISION@'
+    - variable: 'DOCUMENT_TYPE'
+      text: '@DOCUMENT_TYPE@'
+    - variable: 'DRAWING_TITLE'
+      text: '@DRAWING_TITLE@'
+    - variable: 'DRAWING_NUMBER'
+      text: '@DRAWING_NUMBER@'
+    - variable: 'DRAWING_REVISION'
+      text: '@DRAWING_REVISION@'
+    - variable: 'DRAWN_BY'
+      text: '@DRAWN_BY@'
+    - variable: 'DRAWN_DATE'
+      text: '@DRAWN_DATE@'
+    - variable: 'VARIANT'
+      text: '%V'
+    - variable: 'SHEET_LEGAL_NOTICE'
+      text: '@SHEET_LEGAL_NOTICE@'
+    - variable: 'TEMPLATE_LOGO'
+      text: '@TEMPLATE_LOGO@'
+
+    # Revision table
+    - variable: 'REVTABLE_1_REV'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_1_REV'
+    - variable: 'REVTABLE_1_DATE'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_1_DATE'
+    - variable: 'REVTABLE_1_DESC'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_1_DESC'
+    - variable: 'REVTABLE_1_DRAWN'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_1_DRAWN'
+    - variable: 'REVTABLE_2_REV'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_2_REV'
+    - variable: 'REVTABLE_2_DATE'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_2_DATE'
+    - variable: 'REVTABLE_2_DESC'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_2_DESC'
+    - variable: 'REVTABLE_2_DRAWN'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_2_DRAWN'
+    - variable: 'REVTABLE_3_REV'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_3_REV'
+    - variable: 'REVTABLE_3_DATE'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_3_DATE'
+    - variable: 'REVTABLE_3_DESC'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_3_DESC'
+    - variable: 'REVTABLE_3_DRAWN'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_3_DRAWN'
+    - variable: 'REVTABLE_4_REV'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_4_REV'
+    - variable: 'REVTABLE_4_DATE'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_4_DATE'
+    - variable: 'REVTABLE_4_DESC'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_4_DESC'
+    - variable: 'REVTABLE_4_DRAWN'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_4_DRAWN'
+    - variable: 'REVTABLE_5_REV'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_5_REV'
+    - variable: 'REVTABLE_5_DATE'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_5_DATE'
+    - variable: 'REVTABLE_5_DESC'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_5_DESC'
+    - variable: 'REVTABLE_5_DRAWN'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_5_DRAWN'
+    - variable: 'REVTABLE_6_REV'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_6_REV'
+    - variable: 'REVTABLE_6_DATE'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_6_DATE'
+    - variable: 'REVTABLE_6_DESC'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_6_DESC'
+    - variable: 'REVTABLE_6_DRAWN'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_6_DRAWN'
+    - variable: 'REVTABLE_NOTE'
+      command: '@GET_REVTABLE_CMD@ REVTABLE_NOTE'
+
+    # Fabrication notes
+    - variable: 'FABRICATION_NOTES'
+      expand_in_command: true
+      command: '[ -s "@FABRICATION_DIR@/%f-fabrication_notes%v.txt" ] && cat "@FABRICATION_DIR@/%f-fabrication_notes%v.txt" || echo ""'
+    - variable: 'FABRICATION_SUMMARY'
+      expand_in_command: true
+      command: '[ -s "@FABRICATION_DIR@/%f-fabrication_summary.txt" ] && cat "@FABRICATION_DIR@/%f-fabrication_summary.txt" || echo "FABRICATION SNAPSHOT unavailable."'
+    - variable: 'COMPONENT_COUNT_SUMMARY'
+      expand_in_command: true
+      command: '[ -s "@ASSEMBLY_DIR@/%f-component_summary.txt" ] && cat "@ASSEMBLY_DIR@/%f-component_summary.txt" || echo "COMPONENT SNAPSHOT unavailable."'
+    - variable: 'README_BADGES'
+      expand_in_command: true
+      command: '[ -s ".boardwright/readme_badges.txt" ] && cat ".boardwright/readme_badges.txt" || echo ""'
+
+
+    # Fabrication notes
+    - variable: 'ASSEMBLY_NOTES'
+      expand_in_command: true
+      command: '[ -s "@ASSEMBLY_DIR@/%f-assembly_notes%v.txt" ] && cat "@ASSEMBLY_DIR@/%f-assembly_notes%v.txt" || cat "@REPORT_TEMPLATE_DIR@/assembly_notes.txt"'
+
+    # Page titles for automatic ToC
+    - variable: 'COMBINED_SHEET_TOTAL'
+      command: 'python3 @SCRIPTS_DIR@/get_sheet_title.py -f "${KIBOT_SCH_NAME}" --dots-number 32 --total -p 1'
+    - variable: '@SHEET_NAME_VAR@1'
+      command: '@GET_SHEET_CMD@ 1'
+    - variable: '@SHEET_NAME_VAR@2'
+      command: '@GET_SHEET_CMD@ 2'
+    - variable: '@SHEET_NAME_VAR@3'
+      command: '@GET_SHEET_CMD@ 3'
+    - variable: '@SHEET_NAME_VAR@4'
+      command: '@GET_SHEET_CMD@ 4'
+    - variable: '@SHEET_NAME_VAR@5'
+      command: '@GET_SHEET_CMD@ 5'
+    - variable: '@SHEET_NAME_VAR@6'
+      command: '@GET_SHEET_CMD@ 6'
+    - variable: '@SHEET_NAME_VAR@7'
+      command: '@GET_SHEET_CMD@ 7'
+    - variable: '@SHEET_NAME_VAR@8'
+      command: '@GET_SHEET_CMD@ 8'
+    - variable: '@SHEET_NAME_VAR@9'
+      command: '@GET_SHEET_CMD@ 9'
+    - variable: '@SHEET_NAME_VAR@10'
+      command: '@GET_SHEET_CMD@ 10'
+    - variable: '@SHEET_NAME_VAR@11'
+      command: '@GET_SHEET_CMD@ 11'
+    - variable: '@SHEET_NAME_VAR@12'
+      command: '@GET_SHEET_CMD@ 12'
+    - variable: '@SHEET_NAME_VAR@13'
+      command: '@GET_SHEET_CMD@ 13'
+    - variable: '@SHEET_NAME_VAR@14'
+      command: '@GET_SHEET_CMD@ 14'
+    - variable: '@SHEET_NAME_VAR@15'
+      command: '@GET_SHEET_CMD@ 15'
+    - variable: '@SHEET_NAME_VAR@16'
+      command: '@GET_SHEET_CMD@ 16'
+    - variable: '@SHEET_NAME_VAR@17'
+      command: '@GET_SHEET_CMD@ 17'
+    - variable: '@SHEET_NAME_VAR@18'
+      command: '@GET_SHEET_CMD@ 18'
+    - variable: '@SHEET_NAME_VAR@19'
+      command: '@GET_SHEET_CMD@ 19'
+    - variable: '@SHEET_NAME_VAR@20'
+      command: '@GET_SHEET_CMD@ 20'
+    - variable: '@SHEET_NAME_VAR@21'
+      command: '@GET_SHEET_CMD@ 21'
+    - variable: '@SHEET_NAME_VAR@22'
+      command: '@GET_SHEET_CMD@ 22'
+    - variable: '@SHEET_NAME_VAR@23'
+      command: '@GET_SHEET_CMD@ 23'
+    - variable: '@SHEET_NAME_VAR@24'
+      command: '@GET_SHEET_CMD@ 24'
+    - variable: '@SHEET_NAME_VAR@25'
+      command: '@GET_SHEET_CMD@ 25'
+    - variable: '@SHEET_NAME_VAR@26'
+      command: '@GET_SHEET_CMD@ 26'
+    - variable: '@SHEET_NAME_VAR@27'
+      command: '@GET_SHEET_CMD@ 27'
+    - variable: '@SHEET_NAME_VAR@28'
+      command: '@GET_SHEET_CMD@ 28'
+    - variable: '@SHEET_NAME_VAR@29'
+      command: '@GET_SHEET_CMD@ 29'
+    - variable: '@SHEET_NAME_VAR@30'
+      command: '@GET_SHEET_CMD@ 30'
+    - variable: '@SHEET_NAME_VAR@31'
+      command: '@GET_SHEET_CMD@ 31'
+    - variable: '@SHEET_NAME_VAR@32'
+      command: '@GET_SHEET_CMD@ 32'
+    - variable: '@SHEET_NAME_VAR@33'
+      command: '@GET_SHEET_CMD@ 33'
+    - variable: '@SHEET_NAME_VAR@34'
+      command: '@GET_SHEET_CMD@ 34'
+    - variable: '@SHEET_NAME_VAR@35'
+      command: '@GET_SHEET_CMD@ 35'
+    - variable: '@SHEET_NAME_VAR@36'
+      command: '@GET_SHEET_CMD@ 36'
+    - variable: '@SHEET_NAME_VAR@37'
+      command: '@GET_SHEET_CMD@ 37'
+    - variable: '@SHEET_NAME_VAR@38'
+      command: '@GET_SHEET_CMD@ 38'
+    - variable: '@SHEET_NAME_VAR@39'
+      command: '@GET_SHEET_CMD@ 39'
+    - variable: '@SHEET_NAME_VAR@40'
+      command: '@GET_SHEET_CMD@ 40'
+
+...
+definitions:
+  PCBA_NAME: ""
+  PCB_NAME: ""
+  COMPANY: ""
+  DESIGNER: ""
+  PROJECT_NUMBER: ""
+  BOARD_REVISION: A
+  DOCUMENT_TYPE: SCHEMATIC
+  DRAWING_TITLE: Schematic
+  DRAWING_NUMBER: ""
+  DRAWING_REVISION: A
+  RELEASE_VERSION: ""
+  RELEASE_DATE: ""
+  DRAWN_BY: ""
+  DRAWN_DATE: ""
+  SHEET_LEGAL_NOTICE: ""
+  TEMPLATE_LOGO: ""
+  RELEASE_DATE: ""
+  RELEASE_DATE_NUM: ""
+  GIT_URL: ""
+  SHEET_NAME_VAR: SHEET_NAME_
+  SCRIPTS_DIR: boardwright_resources/kibot/resources/scripts
+  REPORT_TEMPLATE_DIR: boardwright_resources/kibot/resources/templates
+  GET_SHEET_CMD: python3 @SCRIPTS_DIR@/get_sheet_title.py -f "${KIBOT_SCH_NAME}" --dots-number 32 -p
+  GET_REVTABLE_CMD: python3 @SCRIPTS_DIR@/get_revision_history_var.py
+  FABRICATION_DIR: Manufacturing/Fabrication
+  ASSEMBLY_DIR: Manufacturing/Assembly

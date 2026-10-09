@@ -1,0 +1,199 @@
+(footprint "SW_SPST_PTS526xxxSMTR"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Tactile switch, 6x6 mm, H4.3 mm, gullwing terminals, https://www.ckswitches.com/media/1471/pts645.pdf")
+	(tags "SPST Button Switch CK C&K")
+	(property "Reference" "REF**"
+		(at 0 -4.05 0)
+		(layer "F.SilkS")
+		(uuid "8f7fc4c8-3ead-4e7b-903e-333013476282")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SW_SPST_PTS526xxxSMTR"
+		(at 0 4.15 0)
+		(layer "F.Fab")
+		(uuid "be484de9-4fca-4ddd-a433-94aa82073565")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c5ef85df-95d5-4f8c-8695-92a2787c2257")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "acb5c85a-602c-4a48-9f56-34b7b5180b51")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.7 -1)
+		(end -2.7 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "e92e6b9d-6865-4697-879f-cf4e09f35c8d")
+	)
+	(fp_line
+		(start -2.5 2.7)
+		(end 2.5 2.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3d70ea33-f61b-448d-9620-34ec6c9509b4")
+	)
+	(fp_line
+		(start 2.5 -2.7)
+		(end -2.5 -2.7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6e28d6de-46d9-4862-a343-996b1d797201")
+	)
+	(fp_line
+		(start 2.7 1)
+		(end 2.7 -1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "1f8e4065-89fd-47c5-a960-4c279b19eabc")
+	)
+	(fp_line
+		(start -3.75 -3)
+		(end -3.75 3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c53824af-d214-4d37-8ccb-a8cf987009cf")
+	)
+	(fp_line
+		(start -3.75 -3)
+		(end 3.75 -3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f4cb9859-6ff9-4792-a31f-4c98e21d6cfe")
+	)
+	(fp_line
+		(start -3.75 3)
+		(end 3.75 3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1a5b924b-c553-4738-8792-e30d88a047f6")
+	)
+	(fp_line
+		(start 3.75 3)
+		(end 3.75 -3)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c8331a13-919b-42c4-8f0e-c3556198737d")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "96973797-5b0d-407a-a7e8-172ca7ca7af1")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -4.05 0)
+		(layer "F.Fab")
+		(uuid "04321898-29de-4f55-9c57-0a6329277bfb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -3 -1.85)
+		(size 1 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(uuid "0bb3eb0c-2f17-4cc2-b62f-7b8d23f68d9d")
+	)
+	(pad "1" smd roundrect
+		(at 3 -1.85)
+		(size 1 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(uuid "2b993251-80f5-41bd-9281-36b84f34eeea")
+	)
+	(pad "2" smd roundrect
+		(at -3 1.85)
+		(size 1 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(uuid "dcdaff0c-df8f-4650-9f6a-f86f0b2b62d1")
+	)
+	(pad "2" smd roundrect
+		(at 3 1.85)
+		(size 1 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(uuid "83a808bc-a345-4a2e-aa8b-71278a53c229")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/Library/PTS526SxxxSMTR2.pretty/PTS526SK15SMTR2LFS.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

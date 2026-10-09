@@ -1,0 +1,23 @@
+boardwright:
+  tooling_license: LicenseRef-Boardwright-Source-Available
+  inherited_notice_file: LICENSES/Nguyen-MIT.txt
+  third_party_notice_file: THIRD_PARTY_NOTICES.md
+downstream_project_defaults:
+  hardware_design_license: CERN-OHL-W-2.0
+  copyright_holder: ''
+  notice_file: NOTICE.md
+  third_party_notice_file: THIRD_PARTY_NOTICES.md
+  allow_project_owner_override: true
+  branding_reserved: true
+  compatibility:
+    enabled: false
+    wording: ''
+    trademark_owner: ''
+  safety_notice: This is a hardware/electronics project. Anyone building, modifying,
+    testing, selling, or using the design is responsible for verifying isolation,
+    creepage and clearance, electrical safety, regulatory compliance, manufacturability,
+    and fitness for purpose.
+  profile: public-hardware
+generated_outputs:
+  output_exception_enabled: true
+  copied_template_material_notice_required: true

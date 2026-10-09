@@ -1,0 +1,98 @@
+project:
+  name: KNEE CONTROLLER
+  board_revision: A
+  company: RYAN HICKS
+  designer: R. HICKS
+  git_url: https://github.com/Reemuson/KNEE-CONTROLLER-PCBA.git
+  product_family: BOARDWRIGHT
+  product_generation: TEMPLATE
+  pcba_name: '4840.703'
+  pcb_name: '4840.704'
+variants:
+  dev_default: DRAFT
+  preview_default: PRELIMINARY
+  main_default: CHECKED
+  release_default: RELEASED
+outputs:
+  commit_generated_outputs_to_main: false
+  use_preview_branch: true
+  preview_engine: github-actions
+  preview_workflow: dev-preview.yaml
+  main_workflow: main-outputs.yaml
+  prepare_release_workflow: prepare-release.yaml
+  release_workflow: release.yaml
+  release_include_source_archive: false
+  combined_review_pdf: false
+assets:
+  logo: assets/logos/logo-wordmark-colour.png
+  product_image: ''
+template:
+  sheet_image: assets/logos/logo-block-black.png
+sheet:
+  legal_notice: THIS DESIGN AND/OR DRAWING IS THE PROPERTY OF ${COMPANY}\nAND SHALL
+    NOT BE REPRODUCED WITHOUT AUTHORISATION.
+manufacturing:
+  rohs_pb_free: ''
+  tented_vias: true
+  impedance_enabled: false
+  conformal_coating: false
+  silkscreen_enabled: true
+  manufacturing_standard: ''
+  core_material: FR-4
+  flammability_rating: ''
+  tg_rating: ''
+  halogen_free: ''
+  fabrication_notes: 'FAB NOTES
+
+    1
+
+    2
+
+    3'
+  assembly_notes: 'ASSEMBLY NOTES
+
+    1
+
+    2
+
+    3'
+  testpoint_policy: 'TESTPOINT NOTES
+
+    1
+
+    2
+
+    3'
+  impedance_notes: 'IMPEDANCE NOTES
+
+    1
+
+    2
+
+    3'
+  impedance_table: []
+release:
+  version: ''
+  date: ''
+documents:
+  schematic:
+    title: Schematic
+    type: SCHEMATIC
+    number_source: pcba_name
+    revision: A
+    revision_scheme: lettered
+    drawn_by: R. HICKS
+    drawn_date: '2026-09-27'
+    include_full_revision_history: true
+  assembly:
+    title: Assembly Drawing
+    type: ASSEMBLY
+    number_source: pcba_name
+    revision: A
+    revision_scheme: lettered
+  fabrication:
+    title: PCB Fabrication Drawing
+    type: FABRICATION
+    number_source: pcb_name
+    revision: A
+    revision_scheme: lettered

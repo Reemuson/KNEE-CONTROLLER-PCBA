@@ -1,0 +1,60 @@
+Boardwright Source Available License
+
+Copyright (c) Ryan Hicks.
+
+This repository contains Boardwright, a KiCad/KiBot template, workflow tool,
+and supporting documentation. Boardwright includes both Boardwright-specific
+work and inherited template material. The license position is:
+
+1. Boardwright-specific work is licensed under the Apache License, Version 2.0,
+   as modified by the Commons Clause License Condition v1.0, and by the
+   Boardwright Hardware Output Exception below.
+
+2. Inherited Nguyen/KDT template material remains under the preserved MIT
+   License text in LICENSES/Nguyen-MIT.txt.
+
+3. Third-party material remains under its own license and notice terms as
+   recorded in THIRD_PARTY_NOTICES.md and LICENSES/.
+
+4. Boardwright, Ryan Hicks, project names, logos, marks, trade dress, and
+   branding are not licensed by this file except where expressly stated.
+
+Definitions for the Apache License and Commons Clause combination:
+
+Software: Boardwright
+License: Apache License, Version 2.0
+Licensor: Ryan Hicks
+
+The Apache License, Version 2.0 text is included in:
+
+    LICENSES/Apache-2.0.txt
+
+The Commons Clause License Condition v1.0 text is included in:
+
+    LICENSES/Commons-Clause.txt
+
+The Commons Clause modifies the Apache License grant so that the license does
+not grant the right to Sell the Software, as "Sell" is defined in that
+condition. This restriction applies to Boardwright itself and Boardwright-
+derived tooling/template distributions. It is not intended to restrict normal
+use of Boardwright to create hardware projects.
+
+Boardwright Hardware Output Exception
+-------------------------------------
+
+Using Boardwright to create, edit, build, preview, manufacture, document, or
+release a hardware project does not impose the Boardwright license on the
+user's hardware design, project files, manufacturing outputs, release
+artifacts, or project-specific documentation, except for Boardwright template
+material copied into those outputs.
+
+Downstream hardware projects may be licensed by their owners under licenses of
+their choice, subject to any third-party material they include and any copied
+Boardwright template material or notices that must be preserved.
+
+No Legal Advice
+---------------
+
+This license file documents the intended repository policy. It is not legal
+advice. Review with a qualified lawyer before relying on it for public,
+commercial, or institutional use.

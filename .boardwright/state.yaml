@@ -1,0 +1,471 @@
+schema_version: 1
+template_version: 0.1.0
+origin: boardwright
+managed_files:
+  .github/workflows/dev-preview.yaml:
+    sha256: e172a27eeb2917243aa750820ac4c598a96809cd4c250016b2084a89f14425d0
+    strategy: merge
+    base: .boardwright/managed-base/e172a27eeb2917243aa750820ac4c598a96809cd4c250016b2084a89f14425d0
+  .github/workflows/main-outputs.yaml:
+    sha256: 7404e91d43c1ba432b546b3282aeff2cdd7cc54bd60b9a9436509569ddc0f7c4
+    strategy: merge
+    base: .boardwright/managed-base/7404e91d43c1ba432b546b3282aeff2cdd7cc54bd60b9a9436509569ddc0f7c4
+  .github/workflows/prepare-release.yaml:
+    sha256: a999b202f75b951bff93fe17fb759cae50e7ee18bb05abc37ee0f6fe73350ef2
+    strategy: merge
+    base: .boardwright/managed-base/a999b202f75b951bff93fe17fb759cae50e7ee18bb05abc37ee0f6fe73350ef2
+  .github/workflows/release.yaml:
+    sha256: d2f78579b322b3038abbf9bc8821da06df305ccd6a3a645161ef532f5c7796b3
+    strategy: merge
+    base: .boardwright/managed-base/d2f78579b322b3038abbf9bc8821da06df305ccd6a3a645161ef532f5c7796b3
+  LICENSES/Nguyen-MIT.txt:
+    sha256: d685f34f38885b5b1c233c8ad20370cdcc14db2a59d6c41446b35c94e658b1f7
+    strategy: merge
+    base: .boardwright/managed-base/d685f34f38885b5b1c233c8ad20370cdcc14db2a59d6c41446b35c94e658b1f7
+  THIRD_PARTY_NOTICES.md:
+    sha256: fc3913bc564abbd95f89aa02c1df75e34909203d78e67cd5cd922099cb7a69cd
+    strategy: merge
+    base: .boardwright/managed-base/fc3913bc564abbd95f89aa02c1df75e34909203d78e67cd5cd922099cb7a69cd
+  Templates/Boardwright_Template.kicad_wks:
+    sha256: 0289d22fd3bd69f87a1adb4cd8cf0fa5db4ea3b3ac4401e1b739b401c69615c3
+    strategy: merge
+    base: .boardwright/managed-base/0289d22fd3bd69f87a1adb4cd8cf0fa5db4ea3b3ac4401e1b739b401c69615c3
+  Templates/Boardwright_Template_AS1100.kicad_wks:
+    sha256: 69e09b4001a75eee3d849f22cc3a8d5da17a3ca19718a65a0692e0d84aff84ba
+    strategy: merge
+    base: .boardwright/managed-base/69e09b4001a75eee3d849f22cc3a8d5da17a3ca19718a65a0692e0d84aff84ba
+  Templates/Boardwright_Template_GIT.kicad_wks:
+    sha256: 16be08e320bebaa55b0ecf216d1e6105fa8cdea726f798e6dc2e5f19ce327384
+    strategy: merge
+    base: .boardwright/managed-base/16be08e320bebaa55b0ecf216d1e6105fa8cdea726f798e6dc2e5f19ce327384
+  Templates/Boardwright_Template_PCB_A3.kicad_wks:
+    sha256: 95372551d9068293faa33b1d0b10536fd3aba9902e8a51625d4ea3c2838b7c35
+    strategy: merge
+    base: .boardwright/managed-base/95372551d9068293faa33b1d0b10536fd3aba9902e8a51625d4ea3c2838b7c35
+  Templates/Boardwright_Template_PCB_A4.kicad_wks:
+    sha256: dc2182b847da6ef9f4cec981285b2371811c459e57a6a40f08a24c86ca3186fb
+    strategy: merge
+    base: .boardwright/managed-base/dc2182b847da6ef9f4cec981285b2371811c459e57a6a40f08a24c86ca3186fb
+  Templates/Boardwright_Template_PCB_A5.kicad_wks:
+    sha256: cdb34a4a76400b73a16d0f4f5e575aadd583ef72378cf0a759294530dabe5f19
+    strategy: merge
+    base: .boardwright/managed-base/cdb34a4a76400b73a16d0f4f5e575aadd583ef72378cf0a759294530dabe5f19
+  Templates/Boardwright_Template_PCB_GIT_A3.kicad_wks:
+    sha256: 3e1d1c2f48f571708615b8150a55083785e083b68c94c732ad1fc682b3251a70
+    strategy: merge
+    base: .boardwright/managed-base/3e1d1c2f48f571708615b8150a55083785e083b68c94c732ad1fc682b3251a70
+  Templates/Boardwright_Template_PCB_GIT_A4.kicad_wks:
+    sha256: 8a80be76009b3e370e61397c48b74ddc1475c659227576d82181b726ce92cad0
+    strategy: merge
+    base: .boardwright/managed-base/8a80be76009b3e370e61397c48b74ddc1475c659227576d82181b726ce92cad0
+  Templates/Boardwright_Template_PCB_GIT_A5.kicad_wks:
+    sha256: 3d0088607c2bb430fa757991eb97607f82fab2f5920ab5c64ea023ddbbf54943
+    strategy: merge
+    base: .boardwright/managed-base/3d0088607c2bb430fa757991eb97607f82fab2f5920ab5c64ea023ddbbf54943
+  boardwright_resources/__init__.py:
+    sha256: 7475041bbdcaf657344b40127966656b95acf5515bdff9e4f2cebddf8d37f83c
+    strategy: merge
+    base: .boardwright/managed-base/7475041bbdcaf657344b40127966656b95acf5515bdff9e4f2cebddf8d37f83c
+  boardwright_resources/kibot/__init__.py:
+    sha256: 7475041bbdcaf657344b40127966656b95acf5515bdff9e4f2cebddf8d37f83c
+    strategy: merge
+    base: .boardwright/managed-base/7475041bbdcaf657344b40127966656b95acf5515bdff9e4f2cebddf8d37f83c
+  boardwright_resources/kibot/resources/__init__.py:
+    sha256: 7475041bbdcaf657344b40127966656b95acf5515bdff9e4f2cebddf8d37f83c
+    strategy: merge
+    base: .boardwright/managed-base/7475041bbdcaf657344b40127966656b95acf5515bdff9e4f2cebddf8d37f83c
+  boardwright_resources/kibot/resources/colors/Altium_Theme.json:
+    sha256: e61f15add9b302c594029a107eaac571693de19d4462a9ec58ee5f8f93d33bf1
+    strategy: merge
+    base: .boardwright/managed-base/e61f15add9b302c594029a107eaac571693de19d4462a9ec58ee5f8f93d33bf1
+  boardwright_resources/kibot/resources/colors/KiCad_Theme.json:
+    sha256: 3e4d432dadbd0fa5d0396650464f43c3ee95dac0a225dc251cb54d21ae0410f6
+    strategy: merge
+    base: .boardwright/managed-base/3e4d432dadbd0fa5d0396650464f43c3ee95dac0a225dc251cb54d21ae0410f6
+  boardwright_resources/kibot/resources/fonts/Arimo-Bold.ttf:
+    sha256: ec96ac9fdd94766f66f6140c1375bf011577558f88d43f76b3b59307d2a6bca3
+    strategy: binary
+  boardwright_resources/kibot/resources/fonts/Arimo-BoldItalic.ttf:
+    sha256: b42b19c10bf5d526f00068303a643282c3df55a79c6fa2eea80b4a078a4a705a
+    strategy: binary
+  boardwright_resources/kibot/resources/fonts/Arimo-Italic.ttf:
+    sha256: 6bd2c6a6fa87f4566cf0a92c5834884597acbd7be9719e550837865ac4167a42
+    strategy: binary
+  boardwright_resources/kibot/resources/fonts/Arimo-Regular.ttf:
+    sha256: 88cc899855d30f9c779b73c3319d0e077b098f927187aafce11ca029add707a6
+    strategy: binary
+  boardwright_resources/kibot/resources/fonts/Tinos-Bold.ttf:
+    sha256: 576a19b5dc026cafe6ae8fde4c849588dae6475cf5d912cebdf2827388c43ad9
+    strategy: binary
+  boardwright_resources/kibot/resources/fonts/Tinos-BoldItalic.ttf:
+    sha256: 10c90ef7896d758923c06a1485d7824cdb457466da0bf7d42f81c5228931281b
+    strategy: binary
+  boardwright_resources/kibot/resources/fonts/Tinos-Italic.ttf:
+    sha256: 4a52de5bcf70e37bd71949f8a85302b75795a1943aedffbbee4f2db7744e1c81
+    strategy: binary
+  boardwright_resources/kibot/resources/fonts/Tinos-Regular.ttf:
+    sha256: 924ef269e73da94c1803ff68877f5d998dd16605c5ffad82ee181034f8a1fffe
+    strategy: binary
+  boardwright_resources/kibot/resources/scripts/__init__.py:
+    sha256: 7475041bbdcaf657344b40127966656b95acf5515bdff9e4f2cebddf8d37f83c
+    strategy: merge
+    base: .boardwright/managed-base/7475041bbdcaf657344b40127966656b95acf5515bdff9e4f2cebddf8d37f83c
+  boardwright_resources/kibot/resources/scripts/clean_generated_outputs.py:
+    sha256: c7b2de61513c88421f23028f48e5c98261ef7a70fce15c12bef24ef1bfc20000
+    strategy: merge
+    base: .boardwright/managed-base/c7b2de61513c88421f23028f48e5c98261ef7a70fce15c12bef24ef1bfc20000
+  boardwright_resources/kibot/resources/scripts/combine_review_pdf.py:
+    sha256: d4cbe37fc6f56771cd289a52ddb77643accb8e715c0f0ea7c5cdb249fba93b7a
+    strategy: merge
+    base: .boardwright/managed-base/d4cbe37fc6f56771cd289a52ddb77643accb8e715c0f0ea7c5cdb249fba93b7a
+  boardwright_resources/kibot/resources/scripts/docker_kibot_linux.sh:
+    sha256: 1d626ffecc693d61b65e752fa40b83c3ec636b3c94538d5d8be70238262b69a9
+    strategy: merge
+    base: .boardwright/managed-base/1d626ffecc693d61b65e752fa40b83c3ec636b3c94538d5d8be70238262b69a9
+  boardwright_resources/kibot/resources/scripts/docker_kibot_windows.bat:
+    sha256: 25e7a71da9d43504b8293c68b820d38372585eec26f6b3d488c0f4a326bc7c45
+    strategy: binary
+  boardwright_resources/kibot/resources/scripts/get_changelog.py:
+    sha256: 2b86d3b2b93aa1c0740ada7fe4e1d81efec6eed6e674817df400b29b06482e1e
+    strategy: merge
+    base: .boardwright/managed-base/2b86d3b2b93aa1c0740ada7fe4e1d81efec6eed6e674817df400b29b06482e1e
+  boardwright_resources/kibot/resources/scripts/get_changelog_version.py:
+    sha256: 3ada0b3cf595bce2f28554d631e1854b2d079ba21c2c84717fc8fa9699550223
+    strategy: merge
+    base: .boardwright/managed-base/3ada0b3cf595bce2f28554d631e1854b2d079ba21c2c84717fc8fa9699550223
+  boardwright_resources/kibot/resources/scripts/get_revision_history_var.py:
+    sha256: ec049712f8669b86721f525d4df7fad894bb7d7fa67ae89581052b74e11dfcc4
+    strategy: merge
+    base: .boardwright/managed-base/ec049712f8669b86721f525d4df7fad894bb7d7fa67ae89581052b74e11dfcc4
+  boardwright_resources/kibot/resources/scripts/get_sheet_title.py:
+    sha256: 432987d693a7dcde925901c8f2c6004ad7fd442df2660d30a4fb206a2cc658f5
+    strategy: merge
+    base: .boardwright/managed-base/432987d693a7dcde925901c8f2c6004ad7fd442df2660d30a4fb206a2cc658f5
+  boardwright_resources/kibot/resources/scripts/prepare_combined_pdf_native.py:
+    sha256: fc29c319838c60d6f40364651ddf0a2b2f9940b2c6c635bee7f88bb4d4c0a456
+    strategy: merge
+    base: .boardwright/managed-base/fc29c319838c60d6f40364651ddf0a2b2f9940b2c6c635bee7f88bb4d4c0a456
+  boardwright_resources/kibot/resources/scripts/prepare_pcb_tables.py:
+    sha256: 15c05a2127d64900cc76148e87e4d0cd00ca15b5060d582e42f4960fbfac5378
+    strategy: merge
+    base: .boardwright/managed-base/15c05a2127d64900cc76148e87e4d0cd00ca15b5060d582e42f4960fbfac5378
+  boardwright_resources/kibot/resources/scripts/prune_pdf_pages.py:
+    sha256: 5e984706682dacaad2d5f5c61e2980a6cca708e304d98b9e565b3a2272f753bc
+    strategy: merge
+    base: .boardwright/managed-base/5e984706682dacaad2d5f5c61e2980a6cca708e304d98b9e565b3a2272f753bc
+  boardwright_resources/kibot/resources/templates/assembly_notes.txt:
+    sha256: 33398bbe74ba25b5934b0eae6e5e90e4b614967202248d9f5f8cc25d9f579fa9
+    strategy: merge
+    base: .boardwright/managed-base/33398bbe74ba25b5934b0eae6e5e90e4b614967202248d9f5f8cc25d9f579fa9
+  boardwright_resources/kibot/resources/templates/fabrication_notes.txt:
+    sha256: e3e0f227c264a4406b4c62ae5cb7f8b2eba2cc11557e5cfda6b277a4b7fa1c6a
+    strategy: merge
+    base: .boardwright/managed-base/e3e0f227c264a4406b4c62ae5cb7f8b2eba2cc11557e5cfda6b277a4b7fa1c6a
+  boardwright_resources/kibot/resources/templates/impedance_table.txt:
+    sha256: 37139bce1363461e5b08d655fa0d8af45c84cb63dc1404250f3ac0cbe9688d64
+    strategy: merge
+    base: .boardwright/managed-base/37139bce1363461e5b08d655fa0d8af45c84cb63dc1404250f3ac0cbe9688d64
+  boardwright_resources/kibot/resources/templates/readme.txt:
+    sha256: 053e49b91d1959d5a1e8b747df635fbc3e16964408c6cda0120046cc84b3fbbe
+    strategy: merge
+    base: .boardwright/managed-base/053e49b91d1959d5a1e8b747df635fbc3e16964408c6cda0120046cc84b3fbbe
+  boardwright_resources/kibot/yaml/.gitignore:
+    sha256: e9ac9c49d8f5cb8477af998240cf0c725e2f3a8a62cda51e5d8cc3dde27eddd1
+    strategy: merge
+    base: .boardwright/managed-base/e9ac9c49d8f5cb8477af998240cf0c725e2f3a8a62cda51e5d8cc3dde27eddd1
+  boardwright_resources/kibot/yaml/kibot_filt_exclude_testpoints.yaml:
+    sha256: d41a9d0d297c1f2e91e8deff401d3b4662d3daeb7307a6d4034cf8da32229a21
+    strategy: merge
+    base: .boardwright/managed-base/d41a9d0d297c1f2e91e8deff401d3b4662d3daeb7307a6d4034cf8da32229a21
+  boardwright_resources/kibot/yaml/kibot_filt_field_rename.yaml:
+    sha256: 8fac47c630f40ba1df546f3d727ba21e2496d0f87678578100df6fdfb85b0dfd
+    strategy: merge
+    base: .boardwright/managed-base/8fac47c630f40ba1df546f3d727ba21e2496d0f87678578100df6fdfb85b0dfd
+  boardwright_resources/kibot/yaml/kibot_filt_testpoints.yaml:
+    sha256: 2a362510ddee48f0f01225987e37d5a66c4c58f3361651f44ef252ed48b64fb1
+    strategy: merge
+    base: .boardwright/managed-base/2a362510ddee48f0f01225987e37d5a66c4c58f3361651f44ef252ed48b64fb1
+  boardwright_resources/kibot/yaml/kibot_globals.yaml:
+    sha256: 665f752360c83271cbc49044379a003f2eb77084540838b21eeff72a117fda48
+    strategy: merge
+    base: .boardwright/managed-base/665f752360c83271cbc49044379a003f2eb77084540838b21eeff72a117fda48
+  boardwright_resources/kibot/yaml/kibot_main.yaml:
+    sha256: c74c11b954efdb686c5c835fbfe42eac5fb1ccfa6782dde3367a132d250ce6b0
+    strategy: merge
+    base: .boardwright/managed-base/c74c11b954efdb686c5c835fbfe42eac5fb1ccfa6782dde3367a132d250ce6b0
+  boardwright_resources/kibot/yaml/kibot_out_blender.yaml:
+    sha256: 9efef614c0c35676dc311233daaf2775ca9349c9e26507abbc5a5bbf6a83314d
+    strategy: merge
+    base: .boardwright/managed-base/9efef614c0c35676dc311233daaf2775ca9349c9e26507abbc5a5bbf6a83314d
+  boardwright_resources/kibot/yaml/kibot_out_compress_fab.yaml:
+    sha256: e49dba84ae72f6147660896ee06668008e18127831387595ddade8df954a175b
+    strategy: merge
+    base: .boardwright/managed-base/e49dba84ae72f6147660896ee06668008e18127831387595ddade8df954a175b
+  boardwright_resources/kibot/yaml/kibot_out_csv_bom.yaml:
+    sha256: 3216ec312fe0a55a856298d6d75db487520ab24ae0198360ed0528884837e050
+    strategy: merge
+    base: .boardwright/managed-base/3216ec312fe0a55a856298d6d75db487520ab24ae0198360ed0528884837e050
+  boardwright_resources/kibot/yaml/kibot_out_csv_drill_table.yaml:
+    sha256: 5ed6d66188a83018a54832e33b5c63745b435347cdc0127837207c3347ca1d5d
+    strategy: merge
+    base: .boardwright/managed-base/5ed6d66188a83018a54832e33b5c63745b435347cdc0127837207c3347ca1d5d
+  boardwright_resources/kibot/yaml/kibot_out_csv_pos.yaml:
+    sha256: 01cda14940aeaf76be7b4652076cdc41d46e62ff27d145c4370f6a485702ea8a
+    strategy: merge
+    base: .boardwright/managed-base/01cda14940aeaf76be7b4652076cdc41d46e62ff27d145c4370f6a485702ea8a
+  boardwright_resources/kibot/yaml/kibot_out_csv_report.yaml:
+    sha256: 7f6d7fda4f9040bbb3583d7aa7b12b86d2699d4af3267f507c76bba56255fe6f
+    strategy: merge
+    base: .boardwright/managed-base/7f6d7fda4f9040bbb3583d7aa7b12b86d2699d4af3267f507c76bba56255fe6f
+  boardwright_resources/kibot/yaml/kibot_out_csv_testpoints.yaml:
+    sha256: f3fe1b43aee92cb28c3b46bc07f102e5c717f79a12e1d7e8273c172f97cf2a9a
+    strategy: merge
+    base: .boardwright/managed-base/f3fe1b43aee92cb28c3b46bc07f102e5c717f79a12e1d7e8273c172f97cf2a9a
+  boardwright_resources/kibot/yaml/kibot_out_csv_testpoints_simple.yaml:
+    sha256: a2c9915c0cbbb96ab71747a0f2666b1d7bbe41c07073c2c59b1d6a6cd8331df8
+    strategy: merge
+    base: .boardwright/managed-base/a2c9915c0cbbb96ab71747a0f2666b1d7bbe41c07073c2c59b1d6a6cd8331df8
+  boardwright_resources/kibot/yaml/kibot_out_excellon_drill.yaml:
+    sha256: eb28ceb7191219fac905554435cb1c43025d00d708145937c78dd6deef79b9d1
+    strategy: merge
+    base: .boardwright/managed-base/eb28ceb7191219fac905554435cb1c43025d00d708145937c78dd6deef79b9d1
+  boardwright_resources/kibot/yaml/kibot_out_gerber.yaml:
+    sha256: 7aa286afd4448845f28d62c68f8d4ac877604d5f672c597d2ba9373e05a96df0
+    strategy: merge
+    base: .boardwright/managed-base/7aa286afd4448845f28d62c68f8d4ac877604d5f672c597d2ba9373e05a96df0
+  boardwright_resources/kibot/yaml/kibot_out_html_bom.yaml:
+    sha256: 5353b7bc341245f2f67b3391316e06efe17c1ac96639d5b41d73a39d4df35e50
+    strategy: merge
+    base: .boardwright/managed-base/5353b7bc341245f2f67b3391316e06efe17c1ac96639d5b41d73a39d4df35e50
+  boardwright_resources/kibot/yaml/kibot_out_html_ibom.yaml:
+    sha256: d98bd48d59fad53287cc520cc8594072e5fc464763e199076eaa88ab9d12e7af
+    strategy: merge
+    base: .boardwright/managed-base/d98bd48d59fad53287cc520cc8594072e5fc464763e199076eaa88ab9d12e7af
+  boardwright_resources/kibot/yaml/kibot_out_html_kicanvas.yaml:
+    sha256: 03cbfdf77b2f4192318148a5f9664b39bc09429d8c9c394e82360c9449ec6da9
+    strategy: merge
+    base: .boardwright/managed-base/03cbfdf77b2f4192318148a5f9664b39bc09429d8c9c394e82360c9449ec6da9
+  boardwright_resources/kibot/yaml/kibot_out_html_kiri.yaml:
+    sha256: cd13818e81d163b1eca5bdee1630bf116f32688f8f445ef7322afb777464f395
+    strategy: merge
+    base: .boardwright/managed-base/cd13818e81d163b1eca5bdee1630bf116f32688f8f445ef7322afb777464f395
+  boardwright_resources/kibot/yaml/kibot_out_md_report.yaml:
+    sha256: 41ff3b8962696b1b9c6767ed5935c8da35519ba8416b4f1ba60e96049c600527
+    strategy: merge
+    base: .boardwright/managed-base/41ff3b8962696b1b9c6767ed5935c8da35519ba8416b4f1ba60e96049c600527
+  boardwright_resources/kibot/yaml/kibot_out_navigate_results.yaml:
+    sha256: 2503e5d719ea121fb87ace7476cd7aea84d6247efe5346432080d780e772e4bc
+    strategy: merge
+    base: .boardwright/managed-base/2503e5d719ea121fb87ace7476cd7aea84d6247efe5346432080d780e772e4bc
+  boardwright_resources/kibot/yaml/kibot_out_netlist.yaml:
+    sha256: 06f577e7ca46beba517a1c6ee98a0209af695ae13d4112f3f1f2c473e505a077
+    strategy: merge
+    base: .boardwright/managed-base/06f577e7ca46beba517a1c6ee98a0209af695ae13d4112f3f1f2c473e505a077
+  boardwright_resources/kibot/yaml/kibot_out_odb.yaml:
+    sha256: b8424217be06ced11a250bbb1b103ccbb308509cfe1717f028e3ae612dc0c89f
+    strategy: merge
+    base: .boardwright/managed-base/b8424217be06ced11a250bbb1b103ccbb308509cfe1717f028e3ae612dc0c89f
+  boardwright_resources/kibot/yaml/kibot_out_pdf_assembly.yaml:
+    sha256: 87af2d84fdafed81e7d8b28d53baf8d049eecc5340156714c7fdec705e1798e1
+    strategy: merge
+    base: .boardwright/managed-base/87af2d84fdafed81e7d8b28d53baf8d049eecc5340156714c7fdec705e1798e1
+  boardwright_resources/kibot/yaml/kibot_out_pdf_fabrication.yaml:
+    sha256: c816e1d88731279c534b3cec344872cdc2f919d044f1a00b910e4f2095a834c7
+    strategy: merge
+    base: .boardwright/managed-base/c816e1d88731279c534b3cec344872cdc2f919d044f1a00b910e4f2095a834c7
+  boardwright_resources/kibot/yaml/kibot_out_pdf_schematic.yaml:
+    sha256: d22c2edb79b665ef385a79c14c1048c0c380ea1058d02137b875b6f8c736fb2c
+    strategy: merge
+    base: .boardwright/managed-base/d22c2edb79b665ef385a79c14c1048c0c380ea1058d02137b875b6f8c736fb2c
+  boardwright_resources/kibot/yaml/kibot_out_png_3d_viewer.yaml:
+    sha256: cbf08c453374945efa4fe0ddb9ebc4bfb70b66a64f74ebb49d5e576b7a2770ec
+    strategy: merge
+    base: .boardwright/managed-base/cbf08c453374945efa4fe0ddb9ebc4bfb70b66a64f74ebb49d5e576b7a2770ec
+  boardwright_resources/kibot/yaml/kibot_out_sch_variant.yaml:
+    sha256: 7318c8ced4218337a89e9d20e15d96328cd34725ad27545d789f0a654afbc602
+    strategy: merge
+    base: .boardwright/managed-base/7318c8ced4218337a89e9d20e15d96328cd34725ad27545d789f0a654afbc602
+  boardwright_resources/kibot/yaml/kibot_out_step.yaml:
+    sha256: 690d6873a7d8252413bc4dd8396142949154ed00c466d6572484ed6252538c23
+    strategy: merge
+    base: .boardwright/managed-base/690d6873a7d8252413bc4dd8396142949154ed00c466d6572484ed6252538c23
+  boardwright_resources/kibot/yaml/kibot_out_txt_report.yaml:
+    sha256: 57c67f8152a2f548e9d419e40c2c02b60b8e306d1559b92dd779f6bf520ce25c
+    strategy: merge
+    base: .boardwright/managed-base/57c67f8152a2f548e9d419e40c2c02b60b8e306d1559b92dd779f6bf520ce25c
+  boardwright_resources/kibot/yaml/kibot_out_xlsx_bom.yaml:
+    sha256: de5c0985f7c7d9cb90b994ca96a611b73384e6575871fabee932d398147369a7
+    strategy: merge
+    base: .boardwright/managed-base/de5c0985f7c7d9cb90b994ca96a611b73384e6575871fabee932d398147369a7
+  boardwright_resources/kibot/yaml/kibot_pre_draw_stackup.yaml:
+    sha256: 9bd17ee1c9278f66e50fa1eb91a7697061838685f27d8e355fdadea3308606b4
+    strategy: merge
+    base: .boardwright/managed-base/9bd17ee1c9278f66e50fa1eb91a7697061838685f27d8e355fdadea3308606b4
+  boardwright_resources/kibot/yaml/kibot_pre_drc_report.yaml:
+    sha256: 4afa398213ae7c3c836b1a7eed83e75d32ca3e35750a0b6ee1a0681e4198cfa3
+    strategy: merge
+    base: .boardwright/managed-base/4afa398213ae7c3c836b1a7eed83e75d32ca3e35750a0b6ee1a0681e4198cfa3
+  boardwright_resources/kibot/yaml/kibot_pre_erc_report.yaml:
+    sha256: 6fb6256997af5b99fe9aeab7f1b39851e109f3b58a1710be0c96e5552708d480
+    strategy: merge
+    base: .boardwright/managed-base/6fb6256997af5b99fe9aeab7f1b39851e109f3b58a1710be0c96e5552708d480
+  boardwright_resources/kibot/yaml/kibot_pre_include_table.yaml:
+    sha256: de1feed0a5b329e7f87fbf1449a5ab5eb62d71c6b979d3b362ff03609a8d6971
+    strategy: merge
+    base: .boardwright/managed-base/de1feed0a5b329e7f87fbf1449a5ab5eb62d71c6b979d3b362ff03609a8d6971
+  boardwright_resources/kibot/yaml/kibot_pre_set_text_variables.yaml:
+    sha256: 4338f1d73c32fac3a90c626135bb87a712350f68e32adf2f795b2e9fbc4d6b44
+    strategy: merge
+    base: .boardwright/managed-base/4338f1d73c32fac3a90c626135bb87a712350f68e32adf2f795b2e9fbc4d6b44
+  boardwright_resources/kibot/yaml/kicost_config_local_template.yaml:
+    sha256: d09e78f613bc43b31e3bd26e010bb84b2b1526050fc0566c00239331217180b4
+    strategy: merge
+    base: .boardwright/managed-base/d09e78f613bc43b31e3bd26e010bb84b2b1526050fc0566c00239331217180b4
+  pyproject.toml:
+    sha256: c83de63c4d6d6cede795fe0c5da7ce6353501f8c77f4656431e8d3fa23aa1e04
+    strategy: merge
+    base: .boardwright/managed-base/c83de63c4d6d6cede795fe0c5da7ce6353501f8c77f4656431e8d3fa23aa1e04
+  scripts/install_boardwright.ps1:
+    sha256: 2529ba12c598c4a34b6c57d771c6b7ab2e14b26d73508f08c71536ab9b14d9a2
+    strategy: merge
+    base: .boardwright/managed-base/2529ba12c598c4a34b6c57d771c6b7ab2e14b26d73508f08c71536ab9b14d9a2
+  scripts/kibot_launch.sh:
+    sha256: 4eb29bd894da8b236575ab1c3e01ec660b63d924d9e81ead84340731489d7ce2
+    strategy: merge
+    base: .boardwright/managed-base/4eb29bd894da8b236575ab1c3e01ec660b63d924d9e81ead84340731489d7ce2
+  src/boardwright/__init__.py:
+    sha256: 6390b0b1ee285eeb2fdfa4b3ab7007befec20ee084c874bff91875bbffd31ee4
+    strategy: merge
+    base: .boardwright/managed-base/6390b0b1ee285eeb2fdfa4b3ab7007befec20ee084c874bff91875bbffd31ee4
+  src/boardwright/__main__.py:
+    sha256: 1b681919bb2118466f4310df0638304ba572667175f29bf25083fa34cfd94590
+    strategy: merge
+    base: .boardwright/managed-base/1b681919bb2118466f4310df0638304ba572667175f29bf25083fa34cfd94590
+  src/boardwright/accepted.py:
+    sha256: f89dedde41ed4f939f847b3cf0c9052f37c185b5fd31f323cd62150dc1fef14e
+    strategy: merge
+    base: .boardwright/managed-base/f89dedde41ed4f939f847b3cf0c9052f37c185b5fd31f323cd62150dc1fef14e
+  src/boardwright/actions.py:
+    sha256: f2e1b9479fd501806486c525e26670e6cce3b491d29c14597738b2e183068916
+    strategy: merge
+    base: .boardwright/managed-base/f2e1b9479fd501806486c525e26670e6cce3b491d29c14597738b2e183068916
+  src/boardwright/changelog.py:
+    sha256: a0ddd9c010048245f6e4c62c87005fc6a1df47c8bfaebe6b917299384d034f81
+    strategy: merge
+    base: .boardwright/managed-base/a0ddd9c010048245f6e4c62c87005fc6a1df47c8bfaebe6b917299384d034f81
+  src/boardwright/cli.py:
+    sha256: 2948f9b80e13f4f4396615b67e4a58ed67a7a9080d38e324b9f06cbd935d1163
+    strategy: merge
+    base: .boardwright/managed-base/2948f9b80e13f4f4396615b67e4a58ed67a7a9080d38e324b9f06cbd935d1163
+  src/boardwright/combined_pdf.py:
+    sha256: 1a40c67020fe63bdf7d9c4f04430327132301b992642d915790fa1dc9f5e8daa
+    strategy: merge
+    base: .boardwright/managed-base/1a40c67020fe63bdf7d9c4f04430327132301b992642d915790fa1dc9f5e8daa
+  src/boardwright/commit_messages.py:
+    sha256: 792eb80a4dec749744fef6e42318dd925bba45e8ccbc1e54d9ce2021ab1f94ea
+    strategy: merge
+    base: .boardwright/managed-base/792eb80a4dec749744fef6e42318dd925bba45e8ccbc1e54d9ce2021ab1f94ea
+  src/boardwright/config.py:
+    sha256: 2ee8ae748740704ec4d22f7dcd9233f15a48490292b5666152f3b9f16dc6b964
+    strategy: merge
+    base: .boardwright/managed-base/2ee8ae748740704ec4d22f7dcd9233f15a48490292b5666152f3b9f16dc6b964
+  src/boardwright/doctor.py:
+    sha256: cd02cb8f0fbcb170c2b4706cc22f84f504a13c8f9a90f5c2dc5347039c4a41f8
+    strategy: merge
+    base: .boardwright/managed-base/cd02cb8f0fbcb170c2b4706cc22f84f504a13c8f9a90f5c2dc5347039c4a41f8
+  src/boardwright/errors.py:
+    sha256: 1a8a9407d3fd9bbed0e44ac186c4eb418f8622d1f039d80826a87d659be29c92
+    strategy: merge
+    base: .boardwright/managed-base/1a8a9407d3fd9bbed0e44ac186c4eb418f8622d1f039d80826a87d659be29c92
+  src/boardwright/generated_outputs.py:
+    sha256: 4baf5abf9af060f5e71d6f89afba3d9ce6ce1cf279923e320796a43241135e7a
+    strategy: merge
+    base: .boardwright/managed-base/4baf5abf9af060f5e71d6f89afba3d9ce6ce1cf279923e320796a43241135e7a
+  src/boardwright/git_ops.py:
+    sha256: a8569157959bcdc02279787e9d96e1acc0e15474477baeadafa4e863e7076a7a
+    strategy: merge
+    base: .boardwright/managed-base/a8569157959bcdc02279787e9d96e1acc0e15474477baeadafa4e863e7076a7a
+  src/boardwright/kibot_pdf_pages.py:
+    sha256: 58e9aaf2b13776ce06d9f4ae5d29e15428fdcc2aa57c2650ac6438554b436bf7
+    strategy: merge
+    base: .boardwright/managed-base/58e9aaf2b13776ce06d9f4ae5d29e15428fdcc2aa57c2650ac6438554b436bf7
+  src/boardwright/kicad_tables.py:
+    sha256: 71ece1c11d6b025bd6760b38675d655f8cb5a565abd36c335cc7db50b6208cac
+    strategy: merge
+    base: .boardwright/managed-base/71ece1c11d6b025bd6760b38675d655f8cb5a565abd36c335cc7db50b6208cac
+  src/boardwright/kicad_variables.py:
+    sha256: cd2c1dbb00ec238b345ae9fb8e84ba729f1d26c72b1ef53ded1201acbdaf5cda
+    strategy: merge
+    base: .boardwright/managed-base/cd2c1dbb00ec238b345ae9fb8e84ba729f1d26c72b1ef53ded1201acbdaf5cda
+  src/boardwright/legal.py:
+    sha256: 394eb4a8b9aa7c9553e71f861ea1dfae9bc18059ead8866eda49f22dfad7cdf4
+    strategy: merge
+    base: .boardwright/managed-base/394eb4a8b9aa7c9553e71f861ea1dfae9bc18059ead8866eda49f22dfad7cdf4
+  src/boardwright/managed_project.py:
+    sha256: 7940a0d6a81bc4fee6bdc0c301718ca7e013193f07f84da6c60787762d18d42f
+    strategy: merge
+    base: .boardwright/managed-base/7940a0d6a81bc4fee6bdc0c301718ca7e013193f07f84da6c60787762d18d42f
+  src/boardwright/migration.py:
+    sha256: 250b4ca28fd21ad39854f3b33efc5db7174c5de1d02be209b8645ae73f53feb5
+    strategy: merge
+    base: .boardwright/managed-base/250b4ca28fd21ad39854f3b33efc5db7174c5de1d02be209b8645ae73f53feb5
+  src/boardwright/preview.py:
+    sha256: df30d1f599d0e035ef3c0749ff3c367724c83e44568ba11cbcbfdf82d6ceb1c8
+    strategy: merge
+    base: .boardwright/managed-base/df30d1f599d0e035ef3c0749ff3c367724c83e44568ba11cbcbfdf82d6ceb1c8
+  src/boardwright/project_setup.py:
+    sha256: 363bd6cf8251f1d052b2bb37d5a771a0dd5e7eca25bde698bff231f0ebdba345
+    strategy: merge
+    base: .boardwright/managed-base/363bd6cf8251f1d052b2bb37d5a771a0dd5e7eca25bde698bff231f0ebdba345
+  src/boardwright/release.py:
+    sha256: 419a57a7880bda8729ceec7910f22a505b2ce8da30d366a2571d8b9ccd0002c6
+    strategy: merge
+    base: .boardwright/managed-base/419a57a7880bda8729ceec7910f22a505b2ce8da30d366a2571d8b9ccd0002c6
+  src/boardwright/revision_history.py:
+    sha256: 4ebdf2090eb0e719b72c7dd8718e1e50d1663dfc5b212aec13230ae8180bc103
+    strategy: merge
+    base: .boardwright/managed-base/4ebdf2090eb0e719b72c7dd8718e1e50d1663dfc5b212aec13230ae8180bc103
+  src/boardwright/schematic_generation.py:
+    sha256: c7b806b0c789c5d05f37257500caf5429a0c5a468f4168de6fb7820f6578fb0f
+    strategy: merge
+    base: .boardwright/managed-base/c7b806b0c789c5d05f37257500caf5429a0c5a468f4168de6fb7820f6578fb0f
+  src/boardwright/sheet_titles.py:
+    sha256: 544bd73578ea06beb3c34dc5113b60674c525d31e2a71622fea6f11f8dd58b1f
+    strategy: merge
+    base: .boardwright/managed-base/544bd73578ea06beb3c34dc5113b60674c525d31e2a71622fea6f11f8dd58b1f
+  src/boardwright/source_package.py:
+    sha256: d59fbceeeaed8a4a042d25855eb670ab9fa2c32386571a61b6c2a8abb66d3163
+    strategy: merge
+    base: .boardwright/managed-base/d59fbceeeaed8a4a042d25855eb670ab9fa2c32386571a61b6c2a8abb66d3163
+  src/boardwright/status.py:
+    sha256: c83d640a5bea80348df96764226c77d7508332e0bdcc6b6d2101cc1d91cfa447
+    strategy: merge
+    base: .boardwright/managed-base/c83d640a5bea80348df96764226c77d7508332e0bdcc6b6d2101cc1d91cfa447
+  src/boardwright/testbench.py:
+    sha256: 1184602628a5adf917dd172eb26d72f1d8d985483c4e6b458869c30d18d9bbe7
+    strategy: merge
+    base: .boardwright/managed-base/1184602628a5adf917dd172eb26d72f1d8d985483c4e6b458869c30d18d9bbe7
+  src/boardwright/tui.py:
+    sha256: 93ae5b2c262724ffb09da4f9e7ed339dc2099654725bab18d699082ad9f68fbc
+    strategy: merge
+    base: .boardwright/managed-base/93ae5b2c262724ffb09da4f9e7ed339dc2099654725bab18d699082ad9f68fbc
+  src/boardwright/validation.py:
+    sha256: 2ea99aed30a2dba85fb0ac335128a05be690e4503e7f527fb086b828e78ef393
+    strategy: merge
+    base: .boardwright/managed-base/2ea99aed30a2dba85fb0ac335128a05be690e4503e7f527fb086b828e78ef393
+  src/boardwright/variants.py:
+    sha256: bf200bf9c2c57f22e6a709085e188f3e1fd5c891bda5b426188e715063a58957
+    strategy: merge
+    base: .boardwright/managed-base/bf200bf9c2c57f22e6a709085e188f3e1fd5c891bda5b426188e715063a58957
+  src/boardwright/workflow_state.py:
+    sha256: d05eee9d9aca5cbbc46dc443cbf7f433ec0fbc7ad457a1c8fae64b38f3413886
+    strategy: merge
+    base: .boardwright/managed-base/d05eee9d9aca5cbbc46dc443cbf7f433ec0fbc7ad457a1c8fae64b38f3413886
+  src/boardwright/workflows.py:
+    sha256: ab34e75f249b9b68869c99869661d451082fdf4641b2a72015f424b8cad920d4
+    strategy: merge
+    base: .boardwright/managed-base/ab34e75f249b9b68869c99869661d451082fdf4641b2a72015f424b8cad920d4
+  src/boardwright/worksheet_logo.py:
+    sha256: 93301457174ae8645bd910549e670e2aa050752362383bd9814393b6986cd75f
+    strategy: merge
+    base: .boardwright/managed-base/93301457174ae8645bd910549e670e2aa050752362383bd9814393b6986cd75f

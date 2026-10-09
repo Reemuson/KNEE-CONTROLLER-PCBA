@@ -1,0 +1,261 @@
+# SPDX-License-Identifier: LicenseRef-Boardwright-Source-Available
+# Copyright (c) Ryan Hicks
+
+name: Boardwright Dev Preview
+run-name: Preview ${{ inputs.variant || 'DRAFT' }} from ${{ inputs.source_label || github.ref_name }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      variant:
+        description: KiBot variant to generate
+        required: false
+        default: DRAFT
+        type: choice
+        options:
+          - DRAFT
+          - PRELIMINARY
+          - CHECKED
+      source_label:
+        description: Short source label for the run title, such as dev@abc123
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+  actions: read
+
+env:
+  PYTHONPATH: ${{ github.workspace }}/src
+  KIBOT_CONFIG: boardwright_resources/kibot/yaml/kibot_main.yaml
+  KIBOT_LOG: kibot_preview.log
+  KICAD_VERSION: "9"
+  PREVIEW_DIR: boardwright-preview
+
+jobs:
+  build-preview-artifacts:
+    name: Preview ${{ inputs.variant || 'DRAFT' }} outputs
+    runs-on: ubuntu-latest
+    if: github.ref_type == 'branch'
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Record job start time
+        shell: bash
+        run: echo "BOARDWRIGHT_JOB_START_EPOCH=$(date +%s)" >> "$GITHUB_ENV"
+
+      - name: Choose KiBot variant and output set
+        shell: bash
+        run: |
+          variant="${{ github.event.inputs.variant }}"
+          if [[ -z "$variant" ]]; then
+            variant="DRAFT"
+          fi
+
+          case "$variant" in
+            DRAFT)
+              additional_args="--skip-pre draw_fancy_stackup,erc,drc --log $KIBOT_LOG draft_group"
+              ;;
+            PRELIMINARY)
+              additional_args="--skip-pre erc,drc --log $KIBOT_LOG all_group_k9"
+              ;;
+            CHECKED)
+              additional_args="--log $KIBOT_LOG all_group_k9"
+              ;;
+            *)
+              echo "Unsupported variant: $variant" >&2
+              exit 1
+              ;;
+          esac
+
+          echo "KIBOT_VARIANT=$variant" >> "$GITHUB_ENV"
+          echo "KIBOT_ADDITIONAL_ARGS=$additional_args" >> "$GITHUB_ENV"
+
+      - name: Summarize preview request
+        shell: bash
+        run: |
+          short_sha="$(git rev-parse --short=12 HEAD)"
+          commit_url="https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
+          source_label="${{ inputs.source_label }}"
+          if [[ -z "$source_label" ]]; then
+            source_label="${GITHUB_REF_NAME}@${short_sha}"
+          fi
+
+          {
+            echo "## Boardwright Preview"
+            echo
+            echo "- Variant: \`${KIBOT_VARIANT}\`"
+            echo "- Source: [\`${source_label}\`](${commit_url})"
+            echo "- Artifact: \`boardwright-preview-${KIBOT_VARIANT}\`"
+            echo "- Preview branch: \`preview\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Ensure 3D cache directory
+        run: mkdir -p ~/cache_3d
+
+      - name: Cache 3D models
+        uses: actions/cache@v4
+        with:
+          path: ~/cache_3d
+          key: ${{ runner.os }}-kicad-${{ env.KICAD_VERSION }}-3d
+          restore-keys: |
+            ${{ runner.os }}-kicad-${{ env.KICAD_VERSION }}-3d-
+
+      - name: Install bundled KiCad/PDF fonts
+        shell: bash
+        run: |
+          mkdir -p ~/.local/share/fonts
+          cp boardwright_resources/kibot/resources/fonts/*.ttf ~/.local/share/fonts/
+          fc-cache -f ~/.local/share/fonts || true
+
+      - name: Generate revision table variables
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        shell: bash
+        run: python -m boardwright revision-history
+      - name: Generate draft README
+        if: env.KIBOT_VARIANT == 'DRAFT'
+        uses: INTI-CMNB/KiBot@v2_dk9
+        with:
+          skip: draw_fancy_stackup,set_text_variables,erc,drc
+          variant: ${{ env.KIBOT_VARIANT }}
+          config: ${{ env.KIBOT_CONFIG }}
+          additional_args: --log kibot_preview_readme.log md_readme
+
+      - name: Prepare Boardwright PDF table placeholders
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        shell: bash
+        run: python boardwright_resources/kibot/resources/scripts/prepare_pcb_tables.py .
+
+      - name: Generate KiBot PDF table CSV sources
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        uses: INTI-CMNB/KiBot@v2_dk9
+        with:
+          additional_args: --skip-pre draw_fancy_stackup,erc,drc --log kibot_preview_tables.log table_sources
+          variant: ${{ env.KIBOT_VARIANT }}
+          config: ${{ env.KIBOT_CONFIG }}
+          cache3D: YES
+
+      - name: Prune empty conditional PDF pages
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        shell: bash
+        run: python boardwright_resources/kibot/resources/scripts/prune_pdf_pages.py .
+
+      - name: Normalize project ownership before combined PDF prep
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        shell: bash
+        run: sudo chown -R "$USER:$USER" . 2>/dev/null || true
+
+      - name: Prepare native combined PDF contents
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        shell: bash
+        run: python boardwright_resources/kibot/resources/scripts/prepare_combined_pdf_native.py .
+
+      - name: Generate reviewable preview artifact package
+        uses: INTI-CMNB/KiBot@v2_dk9
+        with:
+          additional_args: ${{ env.KIBOT_ADDITIONAL_ARGS }}
+          variant: ${{ env.KIBOT_VARIANT }}
+          config: ${{ env.KIBOT_CONFIG }}
+          cache3D: YES
+
+      - name: Regenerate fabrication PDF metadata
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        uses: INTI-CMNB/KiBot@v2_dk9
+        with:
+          additional_args: --skip-pre draw_fancy_stackup,erc,drc --log kibot_preview_fabrication_document.log pdf_fabrication zip_compress_fab
+          variant: ${{ env.KIBOT_VARIANT }}
+          config: boardwright_resources/kibot/yaml/kibot_document_fabrication.generated.yaml
+          cache3D: YES
+
+      - name: Regenerate assembly PDF metadata
+        if: env.KIBOT_VARIANT != 'DRAFT'
+        uses: INTI-CMNB/KiBot@v2_dk9
+        with:
+          additional_args: --skip-pre draw_fancy_stackup,erc,drc --log kibot_preview_assembly_document.log pdf_assembly
+          variant: ${{ env.KIBOT_VARIANT }}
+          config: boardwright_resources/kibot/yaml/kibot_document_assembly.generated.yaml
+          cache3D: YES
+
+      - name: Normalize generated output ownership
+        shell: bash
+        run: sudo chown -R "$USER:$USER" Schematic Manufacturing assets HTML KiRI Testing Reports README.md 2>/dev/null || true
+      - name: Install optional PDF combiner dependency
+        shell: bash
+        run: python -m pip install "pypdf>=4.0"
+
+      - name: Create optional combined review PDF
+        shell: bash
+        run: python boardwright_resources/kibot/resources/scripts/combine_review_pdf.py .
+
+      - name: Clean generated outputs
+        shell: bash
+        run: python boardwright_resources/kibot/resources/scripts/clean_generated_outputs.py .
+
+      - name: Package preview artifact
+        shell: bash
+        run: |
+          rm -rf "$PREVIEW_DIR"
+          mkdir -p "$PREVIEW_DIR"
+
+          for path in Schematic Manufacturing assets HTML KiRI Testing Reports README.md; do
+            if [[ -e "$path" ]]; then
+              cp -a "$path" "$PREVIEW_DIR/"
+            fi
+          done
+
+          cat > "$PREVIEW_DIR/README.md" <<EOF
+          # Boardwright Preview Outputs
+
+          Generated from \`${{ github.sha }}\` on branch \`${{ github.ref_name }}\`.
+
+          Variant: \`${{ env.KIBOT_VARIANT }}\`
+
+          This branch is disposable and generated by GitHub Actions. Do not edit
+          files here by hand.
+          EOF
+
+          find "$PREVIEW_DIR" -type f -print | sort > "$PREVIEW_DIR/MANIFEST.txt"
+          echo "Preview artifact contents:"
+          cat "$PREVIEW_DIR/MANIFEST.txt"
+
+      - name: Upload reviewable preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: boardwright-preview-${{ env.KIBOT_VARIANT }}
+          path: ${{ env.PREVIEW_DIR }}
+
+      - name: Upload KiBot logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: boardwright-preview-logs
+          path: |
+            kibot_preview*.log
+
+      - name: Publish preview branch
+        if: github.ref_name == 'dev'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: preview
+          folder: ${{ env.PREVIEW_DIR }}
+          clean: true
+          single-commit: true
+          commit-message: "chore(outputs): update preview outputs"
+
+      - name: Summarize job timing
+        if: always()
+        shell: bash
+        run: |
+          end_epoch="$(date +%s)"
+          start_epoch="${BOARDWRIGHT_JOB_START_EPOCH:-$end_epoch}"
+          elapsed="$((end_epoch - start_epoch))"
+          {
+            echo "## CI Timing"
+            echo
+            echo "- Job elapsed: ${elapsed}s"
+            echo "- Cache note: 3D assets are cached with actions/cache@v4."
+          } >> "$GITHUB_STEP_SUMMARY"

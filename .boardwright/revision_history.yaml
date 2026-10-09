@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: LicenseRef-Boardwright-Source-Available
+# Copyright (c) Ryan Hicks
+
+revision_history:
+  slots: 4
+  preflight_slots: 12
+  source: CHANGELOG.md
+  blank_unused_slots: true
+  include_unreleased_in_preview: true
