@@ -44771,7 +44771,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0415_1x04_P3.00mm_Vertical"
+		(property "Footprint" "Connector_Molex_Addendum:Molex_Micro-Fit_3.0_43650-0415_1x04_P3.00mm_Vertical"
 			(at 745.49 99.06 0)
 			(effects
 				(font
@@ -44862,6 +44862,60 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 745.49 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "V_max" ""
+			(at 745.49 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 745.49 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P_max" ""
+			(at 745.49 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 745.49 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 745.49 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
 			(at 745.49 99.06 0)
 			(effects
 				(font
@@ -50667,7 +50721,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
+		(property "Footprint" "Connector_Molex_Addendum:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
 			(at 73.66 68.58 0)
 			(effects
 				(font
@@ -50758,6 +50812,60 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 73.66 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "V_max" ""
+			(at 73.66 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 73.66 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P_max" ""
+			(at 73.66 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 73.66 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 73.66 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
 			(at 73.66 68.58 0)
 			(effects
 				(font
@@ -56273,7 +56381,7 @@
 				)
 			)
 		)
-		(property "Value" "UTT18P10L-TN3-R"
+		(property "Value" "CRTD700P10L"
 			(at 130.81 64.77 90)
 			(effects
 				(font
@@ -56290,7 +56398,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C84900.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C841381.pdf"
 			(at 130.81 71.12 0)
 			(effects
 				(font
@@ -56299,7 +56407,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "MOSFET P-CH 100V 18A TO-252"
+		(property "Description" "MOSFET P-CH 100V-26A TO-252"
 			(at 130.81 71.12 0)
 			(effects
 				(font
@@ -56308,7 +56416,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "UTC"
+		(property "Manufacturer" "CRMICRO"
 			(at 130.81 71.12 90)
 			(effects
 				(font
@@ -56317,7 +56425,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "UTT18P10L-TN3-R"
+		(property "MPN" "CRTD700P10L"
 			(at 130.81 71.12 90)
 			(effects
 				(font
@@ -56326,7 +56434,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC_PN" "C84900"
+		(property "LCSC_PN" "C841381"
 			(at 130.81 71.12 90)
 			(effects
 				(font
@@ -56335,7 +56443,7 @@
 				(hide yes)
 			)
 		)
-		(property "SPN" "C84900"
+		(property "SPN" "C841381"
 			(at 130.81 71.12 90)
 			(effects
 				(font
@@ -56382,6 +56490,60 @@
 		)
 		(property "Voltage_Rating" "100V"
 			(at 130.81 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "V_max" ""
+			(at 130.81 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 130.81 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P_max" ""
+			(at 130.81 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 130.81 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 130.81 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 130.81 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)

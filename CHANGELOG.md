@@ -9,3 +9,7 @@
 - Preliminary layout
 - Board ID added
 - Dimensions added
+
+### Changed
+
+- Library fixes
