@@ -9809,6 +9809,105 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Ryan-Dynamics:BOARD_IDENTIFICATION_MARKER"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "ID?"
+				(at 0 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BOARD_IDENTIFICATION_MARKER"
+				(at 0 4.826 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "PCB identification (non-electrical)"
+				(at 0 -2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "id marker fabrication"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "BOARD_IDENTIFICATION_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BOARD_IDENTIFICATION_MARKER_0_1"
+				(rectangle
+					(start -11.43 1.27)
+					(end 11.43 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 255 255 194 1)
+					)
+				)
+			)
+			(symbol "BOARD_IDENTIFICATION_MARKER_1_1"
+				(text "IDENTIFICATION MARKER"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Ryan-Dynamics:BOARD_STACKUP_MARKER"
 			(pin_numbers
 				(hide yes)
@@ -25045,7 +25144,7 @@
 	)
 	(symbol
 		(lib_id "Ryan-Dynamics:BOARD_STACKUP_MARKER")
-		(at 325.12 406.4 0)
+		(at 314.96 406.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -25054,7 +25153,7 @@
 		(fields_autoplaced yes)
 		(uuid "0ba8947d-9882-41c9-b287-a1bcd7c00991")
 		(property "Reference" "ID1"
-			(at 325.12 402.59 0)
+			(at 314.96 402.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25062,7 +25161,7 @@
 			)
 		)
 		(property "Value" "BOARD_STACKUP_MARKER"
-			(at 325.12 401.574 0)
+			(at 314.96 401.574 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25071,7 +25170,7 @@
 			)
 		)
 		(property "Footprint" "RD-Symbols-Silkscreen:STACKUP_ID_2L"
-			(at 325.12 406.4 0)
+			(at 314.96 406.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25080,7 +25179,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 325.12 406.4 0)
+			(at 314.96 406.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25089,7 +25188,7 @@
 			)
 		)
 		(property "Description" "PCB stackup layer identification marker (non-electrical)"
-			(at 325.12 409.194 0)
+			(at 314.96 409.194 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25098,7 +25197,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 325.12 406.4 0)
+			(at 314.96 406.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25107,7 +25206,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 325.12 406.4 0)
+			(at 314.96 406.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25116,7 +25215,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 325.12 406.4 0)
+			(at 314.96 406.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25125,7 +25224,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 325.12 406.4 0)
+			(at 314.96 406.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26766,7 +26865,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "AUX_ADC_CONN"
+		(property "Value" "ADC_CONN"
 			(at 726.44 427.9899 0)
 			(effects
 				(font
@@ -59107,6 +59206,168 @@
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
 					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Ryan-Dynamics:BOARD_IDENTIFICATION_MARKER")
+		(at 339.09 406.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6006f37-2417-4613-a70e-bf82f29d18ff")
+		(property "Reference" "ID2"
+			(at 339.09 402.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BOARD_IDENTIFICATION_MARKER"
+			(at 339.09 401.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "RD-Symbols-Silkscreen:BOARD_IDENTIFICATION"
+			(at 339.09 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PCB identification (non-electrical)"
+			(at 339.09 409.194 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 339.09 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 339.09 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 339.09 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 339.09 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC_PN" ""
+			(at 339.09 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "V_max" ""
+			(at 339.09 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 339.09 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P_max" ""
+			(at 339.09 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 339.09 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 339.09 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 339.09 406.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e"
+					(reference "ID2")
 					(unit 1)
 				)
 			)
