@@ -1,0 +1,9 @@
+Testpoint Ref.,Net,Net Class,X,Y,Side,Pad Type,Value,Footprint
+TP1,VIN_RAW,+VIN,5.5100,13.9700,top,,VIN_RAW,TestPoint_Pad_D1.0mm
+TP2,VIN_PROT,+VIN,19.6850,20.3200,top,,VIN_PROT,TestPoint_Pad_D1.0mm
+TP3,+VM,+VM,20.9550,48.2600,top,,+VM,TestPoint_Pad_D1.0mm
+TP4,+5V,+5V,41.9100,24.7650,top,,+5V,TestPoint_Pad_D1.0mm
+TP5,+3V3,+3V3,35.5600,55.2450,top,,+3V3,TestPoint_Pad_D1.0mm
+TP6,+VUSB,+5V,41.9100,29.8450,top,,+VUSB,TestPoint_Pad_D1.0mm
+TP7,GND,GND,17.7800,13.9700,top,,GND,TestPoint_Pad_1.0x1.0mm
+TP8,GND,GND,41.9100,34.9250,top,,GND,TestPoint_Pad_1.0x1.0mm

@@ -1,0 +1,354 @@
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_KiCanvas.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_KiRI.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_Manufacturing.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_Manufacturing_Assembly.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_Manufacturing_CombinedSources.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_Manufacturing_Fabrication.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_Manufacturing_Fabrication_Drill Tables.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_Manufacturing_Fabrication_Gerbers.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_Reports.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_Schematic.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_Testing.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_Testing_Testpoints.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_assets.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_assets_3d.html
+boardwright-preview/HTML/KNEE CONTROLLER PCBA-navigate_assets_renders.html
+boardwright-preview/HTML/favicon.ico
+boardwright-preview/HTML/images/back_64.png
+boardwright-preview/HTML/images/cat_pdf_assembly_KNEE CONTROLLER PCBA-assembly.png
+boardwright-preview/HTML/images/cat_pdf_combined_native_002_KNEE CONTROLLER PCBA-combined-002-assembly-overview.png
+boardwright-preview/HTML/images/cat_pdf_combined_native_003_KNEE CONTROLLER PCBA-combined-003-top-assembly.png
+boardwright-preview/HTML/images/cat_pdf_combined_native_004_KNEE CONTROLLER PCBA-combined-004-bottom-assembly.png
+boardwright-preview/HTML/images/cat_pdf_combined_native_005_KNEE CONTROLLER PCBA-combined-005-top-fabrication.png
+boardwright-preview/HTML/images/cat_pdf_combined_native_006_KNEE CONTROLLER PCBA-combined-006-bottom-fabrication.png
+boardwright-preview/HTML/images/cat_pdf_combined_native_007_KNEE CONTROLLER PCBA-combined-007-l1-l2-drill-map.png
+boardwright-preview/HTML/images/cat_pdf_combined_native_008_KNEE CONTROLLER PCBA-combined-008-top-testpoints.png
+boardwright-preview/HTML/images/cat_pdf_combined_native_009_KNEE CONTROLLER PCBA-combined-009-l1-copper.png
+boardwright-preview/HTML/images/cat_pdf_combined_native_010_KNEE CONTROLLER PCBA-combined-010-l2-copper.png
+boardwright-preview/HTML/images/cat_pdf_drill_map_KNEE CONTROLLER PCBA-NPTH_drill_map.png
+boardwright-preview/HTML/images/cat_pdf_drill_map_KNEE CONTROLLER PCBA-PTH_drill_map.png
+boardwright-preview/HTML/images/cat_pdf_fabrication_KNEE CONTROLLER PCBA-fabrication.png
+boardwright-preview/HTML/images/cat_pdf_schematic_KNEE CONTROLLER PCBA-schematic.png
+boardwright-preview/HTML/images/cat_png_3d_viewer_angled_bottom_KNEE CONTROLLER PCBA-angled_bottom.png
+boardwright-preview/HTML/images/cat_png_3d_viewer_angled_top_KNEE CONTROLLER PCBA-angled_top.png
+boardwright-preview/HTML/images/cat_png_3d_viewer_bottom_KNEE CONTROLLER PCBA-bottom.png
+boardwright-preview/HTML/images/cat_png_3d_viewer_top_KNEE CONTROLLER PCBA-top.png
+boardwright-preview/HTML/images/drc.svg_64.png
+boardwright-preview/HTML/images/erc.svg_64.png
+boardwright-preview/HTML/images/file_csv_64.png
+boardwright-preview/HTML/images/file_drl_64.png
+boardwright-preview/HTML/images/file_gbr_64.png
+boardwright-preview/HTML/images/file_html_64.png
+boardwright-preview/HTML/images/file_pdf_64.png
+boardwright-preview/HTML/images/file_png_64.png
+boardwright-preview/HTML/images/file_stp_64.png
+boardwright-preview/HTML/images/file_txt_64.png
+boardwright-preview/HTML/images/file_xlsx_64.png
+boardwright-preview/HTML/images/file_zip_64.png
+boardwright-preview/HTML/images/home_64.png
+boardwright-preview/HTML/images/ibom_64.png
+boardwright-preview/HTML/images/icon.svg_64.png
+boardwright-preview/HTML/images/kicanvas.svg_64.png
+boardwright-preview/HTML/images/logo.png
+boardwright-preview/HTML/markdown-it.min.js
+boardwright-preview/HTML/styles.css
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-00.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-01.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-02.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-03.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-05.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-07.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-09.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-11.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-13.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-15.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-17.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-19.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-21.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-23.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-25.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-27.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-29.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-31.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-33.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-35.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-39.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-41.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-43.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-45.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-47.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-49.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-51.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-53.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/.layer-55.svg.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-00.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-01.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-02.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-03.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-05.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-07.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-09.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-11.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-13.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-15.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-17.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-19.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-21.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-23.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-25.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-27.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-29.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-31.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-33.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-35.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-39.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-41.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-43.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-45.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-47.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-49.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-51.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-53.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb/layer-55.svg
+boardwright-preview/KiRI/46e43d8/_KIRI_/pcb_layers
+boardwright-preview/KiRI/46e43d8/_KIRI_/sch/.options.json
+boardwright-preview/KiRI/46e43d8/_KIRI_/sch_sheets
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-00.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-01.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-02.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-03.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-05.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-07.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-09.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-11.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-13.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-15.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-17.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-19.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-21.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-23.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-25.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-27.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-29.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-31.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-33.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-35.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-39.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-41.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-43.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-45.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-47.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-49.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-51.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-53.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/.layer-55.svg.json
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-00.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-01.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-02.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-03.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-05.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-07.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-09.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-11.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-13.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-15.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-17.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-19.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-21.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-23.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-25.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-27.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-29.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-31.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-33.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-35.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-39.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-41.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-43.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-45.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-47.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-49.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-51.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-53.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb/layer-55.svg
+boardwright-preview/KiRI/4a47873/_KIRI_/pcb_layers
+boardwright-preview/KiRI/4a47873/_KIRI_/sch/.options.json
+boardwright-preview/KiRI/4a47873/_KIRI_/sch_sheets
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-00.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-01.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-02.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-03.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-05.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-07.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-09.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-11.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-13.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-15.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-17.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-19.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-21.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-23.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-25.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-27.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-29.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-31.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-33.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-35.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-39.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-41.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-43.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-45.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-47.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-49.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-51.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-53.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/.layer-55.svg.json
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-00.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-01.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-02.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-03.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-05.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-07.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-09.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-11.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-13.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-15.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-17.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-19.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-21.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-23.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-25.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-27.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-29.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-31.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-33.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-35.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-39.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-41.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-43.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-45.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-47.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-49.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-51.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-53.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb/layer-55.svg
+boardwright-preview/KiRI/_local_/_KIRI_/pcb_layers
+boardwright-preview/KiRI/_local_/_KIRI_/sch/.options.json
+boardwright-preview/KiRI/_local_/_KIRI_/sch_sheets
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-00.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-01.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-02.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-03.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-05.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-07.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-09.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-11.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-13.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-15.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-17.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-19.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-21.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-23.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-25.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-27.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-29.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-31.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-33.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-35.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-39.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-41.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-43.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-45.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-47.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-49.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-51.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-53.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/.layer-55.svg.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-00.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-01.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-02.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-03.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-05.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-07.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-09.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-11.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-13.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-15.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-17.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-19.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-21.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-23.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-25.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-27.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-29.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-31.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-33.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-35.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-39.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-41.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-43.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-45.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-47.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-49.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-51.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-53.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb/layer-55.svg
+boardwright-preview/KiRI/ae35a4c/_KIRI_/pcb_layers
+boardwright-preview/KiRI/ae35a4c/_KIRI_/sch/.options.json
+boardwright-preview/KiRI/ae35a4c/_KIRI_/sch_sheets
+boardwright-preview/KiRI/blank.svg
+boardwright-preview/KiRI/commits
+boardwright-preview/KiRI/index.html
+boardwright-preview/KiRI/kiri-server
+boardwright-preview/KiRI/project
+boardwright-preview/MANIFEST.txt
+boardwright-preview/Manufacturing/Assembly/KNEE CONTROLLER PCBA-CPL.csv
+boardwright-preview/Manufacturing/Assembly/KNEE CONTROLLER PCBA-assembly.pdf
+boardwright-preview/Manufacturing/Assembly/KNEE CONTROLLER PCBA-assembly_notes.txt
+boardwright-preview/Manufacturing/Assembly/KNEE CONTROLLER PCBA-bom.csv
+boardwright-preview/Manufacturing/Assembly/KNEE CONTROLLER PCBA-bom.html
+boardwright-preview/Manufacturing/Assembly/KNEE CONTROLLER PCBA-component_summary.txt
+boardwright-preview/Manufacturing/Assembly/KNEE CONTROLLER PCBA-components_count.csv
+boardwright-preview/Manufacturing/Assembly/KNEE CONTROLLER PCBA-ibom.html
+boardwright-preview/Manufacturing/Fabrication/Drill Tables/KNEE CONTROLLER PCBA-(L1-L2)_NPTH_drill_table.csv
+boardwright-preview/Manufacturing/Fabrication/Drill Tables/KNEE CONTROLLER PCBA-(L1-L2)_drill_table.csv
+boardwright-preview/Manufacturing/Fabrication/Gerbers/KNEE CONTROLLER PCBA-B_Mask.gbr
+boardwright-preview/Manufacturing/Fabrication/Gerbers/KNEE CONTROLLER PCBA-B_Paste.gbr
+boardwright-preview/Manufacturing/Fabrication/Gerbers/KNEE CONTROLLER PCBA-B_Silkscreen.gbr
+boardwright-preview/Manufacturing/Fabrication/Gerbers/KNEE CONTROLLER PCBA-Edge_Cuts.gbr
+boardwright-preview/Manufacturing/Fabrication/Gerbers/KNEE CONTROLLER PCBA-F_Mask.gbr
+boardwright-preview/Manufacturing/Fabrication/Gerbers/KNEE CONTROLLER PCBA-F_Paste.gbr
+boardwright-preview/Manufacturing/Fabrication/Gerbers/KNEE CONTROLLER PCBA-F_Silkscreen.gbr
+boardwright-preview/Manufacturing/Fabrication/Gerbers/KNEE CONTROLLER PCBA-L1 (Sig, PWR).gbr
+boardwright-preview/Manufacturing/Fabrication/Gerbers/KNEE CONTROLLER PCBA-L2 (Sig, GND).gbr
+boardwright-preview/Manufacturing/Fabrication/Gerbers/KNEE CONTROLLER PCBA-NPTH_drill.drl
+boardwright-preview/Manufacturing/Fabrication/Gerbers/KNEE CONTROLLER PCBA-NPTH_drill_map.pdf
+boardwright-preview/Manufacturing/Fabrication/Gerbers/KNEE CONTROLLER PCBA-PTH_drill.drl
+boardwright-preview/Manufacturing/Fabrication/Gerbers/KNEE CONTROLLER PCBA-PTH_drill_map.pdf
+boardwright-preview/Manufacturing/Fabrication/KNEE CONTROLLER PCBA-GERBERS.zip
+boardwright-preview/Manufacturing/Fabrication/KNEE CONTROLLER PCBA-fabrication.pdf
+boardwright-preview/Manufacturing/Fabrication/KNEE CONTROLLER PCBA-fabrication_notes.txt
+boardwright-preview/Manufacturing/Fabrication/KNEE CONTROLLER PCBA-fabrication_summary.txt
+boardwright-preview/Manufacturing/Fabrication/KNEE CONTROLLER PCBA-odb.zip
+boardwright-preview/Manufacturing/boardwright-combined.pdf
+boardwright-preview/README.md
+boardwright-preview/Schematic/KNEE CONTROLLER PCBA-schematic.pdf
+boardwright-preview/Testing/Testpoints/KNEE CONTROLLER PCBA-testpoints-top.csv
+boardwright-preview/Testing/Testpoints/KNEE CONTROLLER PCBA-testpoints.csv
+boardwright-preview/assets/3d/.gitkeep
+boardwright-preview/assets/3d/KNEE CONTROLLER PCBA.step
+boardwright-preview/assets/logos/logo-block-black.png
+boardwright-preview/assets/logos/logo-block-colour.png
+boardwright-preview/assets/logos/logo-block-white.png
+boardwright-preview/assets/logos/logo-mark-black.png
+boardwright-preview/assets/logos/logo-mark-colour.png
+boardwright-preview/assets/logos/logo-mark-white.png
+boardwright-preview/assets/logos/logo-wordmark-black.png
+boardwright-preview/assets/logos/logo-wordmark-colour.png
+boardwright-preview/assets/logos/logo-wordmark-white.png
+boardwright-preview/assets/renders/.gitkeep
+boardwright-preview/assets/renders/KNEE CONTROLLER PCBA-angled_bottom.png
+boardwright-preview/assets/renders/KNEE CONTROLLER PCBA-angled_top.png
+boardwright-preview/assets/renders/KNEE CONTROLLER PCBA-bottom.png
+boardwright-preview/assets/renders/KNEE CONTROLLER PCBA-top.png
