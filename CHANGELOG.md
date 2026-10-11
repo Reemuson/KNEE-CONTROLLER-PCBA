@@ -15,3 +15,4 @@
 - Library fixes
 - BOM changes
 - Silkscreening
+- L2 silkscreen additions
