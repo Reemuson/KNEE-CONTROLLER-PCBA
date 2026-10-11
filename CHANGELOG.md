@@ -9,6 +9,7 @@
 - Preliminary layout
 - Board ID added
 - Dimensions added
+- Addition of further testpoints
 
 ### Changed
 
