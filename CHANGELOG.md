@@ -13,3 +13,5 @@
 ### Changed
 
 - Library fixes
+- BOM changes
+- Silkscreening

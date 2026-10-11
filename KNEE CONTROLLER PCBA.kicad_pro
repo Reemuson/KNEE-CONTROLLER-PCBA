@@ -84,22 +84,6 @@
           ""
         ],
         [
-          "annular_width|237730000|139085000|f486dcc0-83ca-479f-ad20-d3c357b81c90|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "annular_width|237730000|147725000|f486dcc0-83ca-479f-ad20-d3c357b81c90|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "annular_width|241910000|139085000|f486dcc0-83ca-479f-ad20-d3c357b81c90|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "annular_width|241910000|147725000|f486dcc0-83ca-479f-ad20-d3c357b81c90|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
           "courtyards_overlap|196909998|123935924|123841a3-2629-460a-91bd-8df70fb56318|2253f936-28df-4778-a6ee-25592546f92c",
           ""
         ],
@@ -1089,6 +1073,257 @@
             "group_by": false,
             "label": "Qty",
             "name": "${QUANTITY}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Value",
+            "name": "Value",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Footprint",
+            "name": "Footprint",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Description",
+            "name": "Description",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Manufacturer",
+            "name": "Manufacturer",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "MPN",
+            "name": "MPN",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Supplier",
+            "name": "Supplier",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "SPN",
+            "name": "SPN",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Voltage_Rating",
+            "name": "Voltage_Rating",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Tolerance",
+            "name": "Tolerance",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Power_Rating",
+            "name": "Power_Rating",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Colour",
+            "name": "Colour",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Config",
+            "name": "Config",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Dielectric",
+            "name": "Dielectric",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Lifetime",
+            "name": "Lifetime",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Notes",
+            "name": "Notes",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "DNP",
+            "name": "${DNP}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Exclude from BOM",
+            "name": "${EXCLUDE_FROM_BOM}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Exclude from Board",
+            "name": "${EXCLUDE_FROM_BOARD}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Datasheet",
+            "name": "Datasheet",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Frequency",
+            "name": "Frequency",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "I_h",
+            "name": "I_h",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Z",
+            "name": "Z",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "I_t",
+            "name": "I_t",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "R_i",
+            "name": "R_i",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Vf",
+            "name": "Vf",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "V_z",
+            "name": "V_z",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "C_L",
+            "name": "C_L",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Cost",
+            "name": "Cost",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "I_sat",
+            "name": "I_sat",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "P_max",
+            "name": "P_max",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "I_peak",
+            "name": "I_peak",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "V_max",
+            "name": "V_max",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Exclude from Simulation",
+            "name": "${EXCLUDE_FROM_SIM}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "#",
+            "name": "${ITEM_NUMBER}",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Sim.Pins",
+            "name": "Sim.Pins",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "LCSC Part #",
+            "name": "LCSC PN",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Sim.Device",
+            "name": "Sim.Device",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Sim.Type",
+            "name": "Sim.Type",
+            "show": false
+          }
+        ],
+        "filter_string": "",
+        "group_symbols": true,
+        "include_excluded_from_bom": false,
+        "name": "DigiKey BOM",
+        "sort_asc": true,
+        "sort_field": "Voltage_Rating"
+      },
+      {
+        "exclude_dnp": false,
+        "fields_ordered": [
+          {
+            "group_by": false,
+            "label": "Reference",
+            "name": "Reference",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Qty",
+            "name": "${QUANTITY}",
             "show": true
           },
           {
@@ -1135,8 +1370,26 @@
           },
           {
             "group_by": false,
-            "label": "LCSC Part #",
-            "name": "LCSC_PN",
+            "label": "Manufacturer2",
+            "name": "Manufacturer2",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "MPN2",
+            "name": "MPN2",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Supplier2",
+            "name": "Supplier2",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "SPN2",
+            "name": "SPN2",
             "show": true
           },
           {
@@ -1300,14 +1553,32 @@
             "label": "#",
             "name": "${ITEM_NUMBER}",
             "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Sim.Device",
+            "name": "Sim.Device",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Sim.Type",
+            "name": "Sim.Type",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Sim.Pins",
+            "name": "Sim.Pins",
+            "show": false
           }
         ],
         "filter_string": "",
         "group_symbols": true,
         "include_excluded_from_bom": false,
         "name": "Engineering / Procurement BOM",
-        "sort_asc": false,
-        "sort_field": "Manufacturer"
+        "sort_asc": true,
+        "sort_field": "Reference"
       },
       {
         "exclude_dnp": false,
@@ -1368,12 +1639,6 @@
           },
           {
             "group_by": false,
-            "label": "LCSC Part #",
-            "name": "LCSC_PN",
-            "show": true
-          },
-          {
-            "group_by": false,
             "label": "Voltage_Rating",
             "name": "Voltage_Rating",
             "show": false
@@ -1533,6 +1798,30 @@
             "label": "#",
             "name": "${ITEM_NUMBER}",
             "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Sim.Pins",
+            "name": "Sim.Pins",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "LCSC Part #",
+            "name": "LCSC PN",
+            "show": true
+          },
+          {
+            "group_by": false,
+            "label": "Sim.Device",
+            "name": "Sim.Device",
+            "show": false
+          },
+          {
+            "group_by": false,
+            "label": "Sim.Type",
+            "name": "Sim.Type",
+            "show": false
           }
         ],
         "filter_string": "",
@@ -1540,7 +1829,7 @@
         "include_excluded_from_bom": false,
         "name": "JLCPCB BOM",
         "sort_asc": true,
-        "sort_field": "LCSC_PN"
+        "sort_field": "Voltage_Rating"
       }
     ],
     "bom_settings": {
@@ -1602,8 +1891,32 @@
         },
         {
           "group_by": false,
-          "label": "LCSC Part #",
-          "name": "LCSC_PN",
+          "label": "Manufacturer2",
+          "name": "Manufacturer2",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MPN2",
+          "name": "MPN2",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Supplier2",
+          "name": "Supplier2",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "SPN2",
+          "name": "SPN2",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
           "show": true
         },
         {
@@ -1628,25 +1941,25 @@
           "group_by": false,
           "label": "Colour",
           "name": "Colour",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Config",
           "name": "Config",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Dielectric",
           "name": "Dielectric",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Lifetime",
           "name": "Lifetime",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -1655,10 +1968,10 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -1671,12 +1984,6 @@
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
           "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
-          "show": true
         },
         {
           "group_by": false,
@@ -1822,12 +2129,12 @@
           "visible": false
         },
         {
-          "name": "LCSC_PN",
+          "name": "SPN2",
           "url": false,
           "visible": false
         },
         {
-          "name": "V_max",
+          "name": "Voltage_Rating",
           "url": false,
           "visible": false
         },
@@ -1837,7 +2144,7 @@
           "visible": false
         },
         {
-          "name": "P_max",
+          "name": "Power_Rating",
           "url": false,
           "visible": false
         },
@@ -1853,6 +2160,21 @@
         },
         {
           "name": "Dielectric",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "Supplier2",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "Manufacturer2",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "MPN2",
           "url": false,
           "visible": false
         }
