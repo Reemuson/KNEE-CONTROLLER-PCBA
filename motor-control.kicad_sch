@@ -4604,8 +4604,8 @@
 		(uuid 3f7f8276-b36a-4b64-9b1a-04420e8ed3e0)
 	)
 	(rectangle
-		(start 68.58 207.01)
-		(end 119.38 234.95)
+		(start 50.8 207.01)
+		(end 101.6 240.03)
 		(stroke
 			(width 0.25)
 			(type dash)
@@ -4811,7 +4811,7 @@
 	)
 	(text "MOUNTING"
 		(exclude_from_sim no)
-		(at 68.58 205.74 0)
+		(at 50.8 205.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5128,7 +5128,7 @@
 		(uuid "028d6442-6c71-4eb3-bb80-564d4f5b8933")
 	)
 	(junction
-		(at 99.06 228.6)
+		(at 81.28 228.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "107031a7-af05-473e-91e8-07faa519e2ea")
@@ -5182,10 +5182,16 @@
 		(uuid "636a5b42-818b-405f-8812-dfef111eba20")
 	)
 	(junction
-		(at 80.01 228.6)
+		(at 62.23 228.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6a674d65-7c05-4ddb-9880-7daeff98e931")
+	)
+	(junction
+		(at 71.12 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "762059b5-512e-4a47-b8af-79f5ed5f8f9d")
 	)
 	(junction
 		(at 345.44 137.16)
@@ -5224,7 +5230,7 @@
 		(uuid "93fd9809-5f64-4aec-bda5-cac25cd8e2a4")
 	)
 	(junction
-		(at 86.36 228.6)
+		(at 68.58 228.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a048a640-4e68-45f6-99bb-463452ee75f9")
@@ -5248,7 +5254,7 @@
 		(uuid "a82f9837-2223-4238-bd53-7b46a8dcd463")
 	)
 	(junction
-		(at 92.71 228.6)
+		(at 74.93 228.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ace9ec61-8182-4143-902d-6abeaf9a3edd")
@@ -5278,13 +5284,13 @@
 		(uuid "c829ec95-7073-4599-b962-2651d7bea7f7")
 	)
 	(junction
-		(at 111.76 228.6)
+		(at 93.98 228.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "da47b7d7-63f3-4898-a547-3375d7aa1401")
 	)
 	(junction
-		(at 105.41 228.6)
+		(at 87.63 228.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e26a9503-d66f-4fc8-a9d4-d461302eaa88")
@@ -5296,7 +5302,7 @@
 		(uuid "f0e631ec-c68b-4e9a-962e-b3fa0393cce4")
 	)
 	(junction
-		(at 76.2 228.6)
+		(at 58.42 228.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f4fe099a-3b4a-4d06-a6e3-ea29e86d0d0a")
@@ -5373,7 +5379,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 228.6) (xy 105.41 228.6)
+			(xy 81.28 228.6) (xy 87.63 228.6)
 		)
 		(stroke
 			(width 0)
@@ -5413,7 +5419,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 228.6) (xy 105.41 227.33)
+			(xy 87.63 228.6) (xy 87.63 227.33)
 		)
 		(stroke
 			(width 0)
@@ -5733,7 +5739,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 228.6) (xy 111.76 227.33)
+			(xy 93.98 228.6) (xy 93.98 227.33)
 		)
 		(stroke
 			(width 0)
@@ -5834,7 +5840,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 228.6) (xy 73.66 227.33)
+			(xy 55.88 228.6) (xy 55.88 227.33)
 		)
 		(stroke
 			(width 0)
@@ -5924,7 +5930,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 228.6) (xy 113.03 228.6)
+			(xy 93.98 228.6) (xy 95.25 228.6)
 		)
 		(stroke
 			(width 0)
@@ -5944,7 +5950,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 228.6) (xy 80.01 227.33)
+			(xy 62.23 228.6) (xy 62.23 227.33)
 		)
 		(stroke
 			(width 0)
@@ -5964,7 +5970,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 228.6) (xy 80.01 228.6)
+			(xy 58.42 228.6) (xy 62.23 228.6)
 		)
 		(stroke
 			(width 0)
@@ -5974,7 +5980,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 228.6) (xy 76.2 229.87)
+			(xy 58.42 228.6) (xy 58.42 229.87)
 		)
 		(stroke
 			(width 0)
@@ -6034,7 +6040,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 228.6) (xy 76.2 228.6)
+			(xy 55.88 228.6) (xy 58.42 228.6)
 		)
 		(stroke
 			(width 0)
@@ -6114,7 +6120,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 227.33) (xy 92.71 228.6)
+			(xy 74.93 227.33) (xy 74.93 228.6)
 		)
 		(stroke
 			(width 0)
@@ -6254,7 +6260,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 228.6) (xy 111.76 228.6)
+			(xy 87.63 228.6) (xy 93.98 228.6)
 		)
 		(stroke
 			(width 0)
@@ -6281,6 +6287,16 @@
 			(type default)
 		)
 		(uuid "82f6a6d8-abcb-41d4-825b-493eee6b3864")
+	)
+	(wire
+		(pts
+			(xy 71.12 228.6) (xy 74.93 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83a5dc2f-d186-43d8-8c59-4d61c665dfff")
 	)
 	(wire
 		(pts
@@ -6324,7 +6340,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 228.6) (xy 86.36 227.33)
+			(xy 68.58 228.6) (xy 68.58 227.33)
 		)
 		(stroke
 			(width 0)
@@ -6435,7 +6451,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 228.6) (xy 99.06 227.33)
+			(xy 81.28 228.6) (xy 81.28 227.33)
 		)
 		(stroke
 			(width 0)
@@ -6455,7 +6471,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 228.6) (xy 86.36 228.6)
+			(xy 62.23 228.6) (xy 68.58 228.6)
 		)
 		(stroke
 			(width 0)
@@ -6495,7 +6511,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 228.6) (xy 92.71 228.6)
+			(xy 68.58 228.6) (xy 71.12 228.6)
 		)
 		(stroke
 			(width 0)
@@ -6786,7 +6802,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 228.6) (xy 99.06 228.6)
+			(xy 74.93 228.6) (xy 81.28 228.6)
 		)
 		(stroke
 			(width 0)
@@ -6954,6 +6970,16 @@
 			(type default)
 		)
 		(uuid "e6fd6535-0110-4145-863f-80d75c9ee78a")
+	)
+	(wire
+		(pts
+			(xy 71.12 228.6) (xy 71.12 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e772dc9d-8a92-462d-95b3-911706a9095b")
 	)
 	(wire
 		(pts
@@ -8525,7 +8551,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 86.36 224.79 0)
+		(at 68.58 224.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -8534,7 +8560,7 @@
 		(fields_autoplaced yes)
 		(uuid "10cda48e-adc9-44ff-916e-5401391dcac9")
 		(property "Reference" "H2"
-			(at 85.0899 220.98 90)
+			(at 67.3099 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8543,7 +8569,7 @@
 			)
 		)
 		(property "Value" "MOUNT_M2.5"
-			(at 87.6299 220.98 90)
+			(at 69.8499 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8552,7 +8578,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO7380_Pad"
-			(at 86.36 224.79 0)
+			(at 68.58 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8561,7 +8587,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 224.79 0)
+			(at 68.58 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8570,7 +8596,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 86.36 224.79 0)
+			(at 68.58 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8579,7 +8605,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 86.36 224.79 90)
+			(at 68.58 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8588,7 +8614,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 86.36 224.79 90)
+			(at 68.58 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8597,7 +8623,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 86.36 224.79 90)
+			(at 68.58 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8606,7 +8632,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 86.36 224.79 90)
+			(at 68.58 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8615,7 +8641,7 @@
 			)
 		)
 		(property "P_max" ""
-			(at 86.36 224.79 90)
+			(at 68.58 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8624,7 +8650,7 @@
 			)
 		)
 		(property "V_max" ""
-			(at 86.36 224.79 90)
+			(at 68.58 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8845,7 +8871,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17bbaada-1622-4b5c-8618-6485538f3aa0")
-		(property "Reference" "TP14"
+		(property "Reference" "TP23"
 			(at 284.48 180.8479 0)
 			(effects
 				(font
@@ -9022,7 +9048,7 @@
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "TP14")
+					(reference "TP23")
 					(unit 1)
 				)
 			)
@@ -9030,7 +9056,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 99.06 224.79 0)
+		(at 81.28 224.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9039,7 +9065,7 @@
 		(fields_autoplaced yes)
 		(uuid "1ed94456-2293-48aa-872c-51f2180c6838")
 		(property "Reference" "H3"
-			(at 97.7899 220.98 90)
+			(at 80.0099 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9048,7 +9074,7 @@
 			)
 		)
 		(property "Value" "MOUNT_M2.5"
-			(at 100.3299 220.98 90)
+			(at 82.5499 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9057,7 +9083,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO7380_Pad"
-			(at 99.06 224.79 0)
+			(at 81.28 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9066,7 +9092,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 99.06 224.79 0)
+			(at 81.28 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9075,7 +9101,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 99.06 224.79 0)
+			(at 81.28 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9084,7 +9110,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 99.06 224.79 90)
+			(at 81.28 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9093,7 +9119,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 99.06 224.79 90)
+			(at 81.28 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9102,7 +9128,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 99.06 224.79 90)
+			(at 81.28 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9111,7 +9137,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 99.06 224.79 90)
+			(at 81.28 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9120,7 +9146,7 @@
 			)
 		)
 		(property "P_max" ""
-			(at 99.06 224.79 90)
+			(at 81.28 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9129,7 +9155,7 @@
 			)
 		)
 		(property "V_max" ""
-			(at 99.06 224.79 90)
+			(at 81.28 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9832,7 +9858,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 113.03 228.6 0)
+		(at 95.25 228.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9840,7 +9866,7 @@
 		(dnp no)
 		(uuid "26448c6a-81ae-4ea8-b514-751e7054f1e5")
 		(property "Reference" "#PWR0102"
-			(at 113.03 234.95 0)
+			(at 95.25 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9849,7 +9875,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 233.68 0)
+			(at 95.25 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9857,7 +9883,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 228.6 0)
+			(at 95.25 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9866,7 +9892,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 228.6 0)
+			(at 95.25 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9875,7 +9901,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 113.03 228.6 0)
+			(at 95.25 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10584,15 +10610,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 105.41 227.33 0)
+		(at 87.63 227.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "3e6458b1-f63c-4277-b37f-649bf2281545")
-		(property "Reference" "TP12"
-			(at 105.41 218.44 0)
+		(property "Reference" "TP21"
+			(at 87.63 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10600,7 +10626,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 105.41 220.98 0)
+			(at 87.63 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10608,7 +10634,7 @@
 			)
 		)
 		(property "Footprint" "RD-Testpoints:TestPoint_Pad_1.0x1.0mm"
-			(at 110.49 227.33 0)
+			(at 92.71 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10617,7 +10643,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 110.49 227.33 0)
+			(at 92.71 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10626,7 +10652,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 105.41 227.33 0)
+			(at 87.63 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10635,7 +10661,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 105.41 227.33 90)
+			(at 87.63 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10644,7 +10670,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 105.41 227.33 0)
+			(at 87.63 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10653,7 +10679,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 105.41 227.33 0)
+			(at 87.63 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10662,7 +10688,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 105.41 227.33 0)
+			(at 87.63 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10671,7 +10697,7 @@
 			)
 		)
 		(property "P_max" ""
-			(at 105.41 227.33 0)
+			(at 87.63 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10680,7 +10706,7 @@
 			)
 		)
 		(property "V_max" ""
-			(at 105.41 227.33 0)
+			(at 87.63 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10694,7 +10720,7 @@
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "TP12")
+					(reference "TP21")
 					(unit 1)
 				)
 			)
@@ -11884,7 +11910,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 111.76 224.79 0)
+		(at 93.98 224.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -11893,7 +11919,7 @@
 		(fields_autoplaced yes)
 		(uuid "55cf5afe-cd67-43bc-9858-2ad7353bab96")
 		(property "Reference" "H4"
-			(at 110.4899 220.98 90)
+			(at 92.7099 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11902,7 +11928,7 @@
 			)
 		)
 		(property "Value" "MOUNT_M2.5"
-			(at 113.0299 220.98 90)
+			(at 95.2499 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11911,7 +11937,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO7380_Pad"
-			(at 111.76 224.79 0)
+			(at 93.98 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11920,7 +11946,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 224.79 0)
+			(at 93.98 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11929,7 +11955,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 111.76 224.79 0)
+			(at 93.98 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11938,7 +11964,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 111.76 224.79 90)
+			(at 93.98 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11947,7 +11973,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 111.76 224.79 90)
+			(at 93.98 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11956,7 +11982,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 111.76 224.79 90)
+			(at 93.98 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11965,7 +11991,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 111.76 224.79 90)
+			(at 93.98 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11974,7 +12000,7 @@
 			)
 		)
 		(property "P_max" ""
-			(at 111.76 224.79 90)
+			(at 93.98 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11983,7 +12009,7 @@
 			)
 		)
 		(property "V_max" ""
-			(at 111.76 224.79 90)
+			(at 93.98 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13544,7 +13570,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 76.2 229.87 180)
+		(at 58.42 229.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13553,7 +13579,7 @@
 		(fields_autoplaced yes)
 		(uuid "71f0d960-50b7-4a4d-a3db-fcee894b713d")
 		(property "Reference" "#FLG011"
-			(at 76.2 231.775 0)
+			(at 58.42 231.775 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13562,7 +13588,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 76.2001 233.68 90)
+			(at 58.4201 233.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13572,7 +13598,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 229.87 0)
+			(at 58.42 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13581,7 +13607,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 76.2 229.87 0)
+			(at 58.42 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13590,7 +13616,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 76.2 229.87 0)
+			(at 58.42 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14846,6 +14872,124 @@
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
 					(reference "FID2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 71.12 229.87 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "853d7042-2d59-46ba-a6bf-656b51d436a6")
+		(property "Reference" "TP24"
+			(at 71.12 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 71.12 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RD-Testpoints:TestPoint_Pad_1.0x1.0mm"
+			(at 66.04 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Config" ""
+			(at 71.12 229.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P_max" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "V_max" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47ed39d1-2806-42f6-b406-23a8dfd3dfc6")
+		)
+		(instances
+			(project "KNEE CONTROLLER PCBA"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
+					(reference "TP24")
 					(unit 1)
 				)
 			)
@@ -16677,15 +16821,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 80.01 227.33 0)
+		(at 62.23 227.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b42db4eb-0dc5-40a6-95f1-9e8f1fb719d4")
-		(property "Reference" "TP10"
-			(at 80.01 218.44 0)
+		(property "Reference" "TP19"
+			(at 62.23 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16693,7 +16837,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 220.98 0)
+			(at 62.23 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16701,7 +16845,7 @@
 			)
 		)
 		(property "Footprint" "RD-Testpoints:TestPoint_Pad_1.0x1.0mm"
-			(at 85.09 227.33 0)
+			(at 67.31 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16710,7 +16854,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 85.09 227.33 0)
+			(at 67.31 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16719,7 +16863,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 80.01 227.33 0)
+			(at 62.23 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16728,7 +16872,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 80.01 227.33 90)
+			(at 62.23 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16737,7 +16881,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 80.01 227.33 0)
+			(at 62.23 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16746,7 +16890,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 80.01 227.33 0)
+			(at 62.23 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16755,7 +16899,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 80.01 227.33 0)
+			(at 62.23 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16764,7 +16908,7 @@
 			)
 		)
 		(property "P_max" ""
-			(at 80.01 227.33 0)
+			(at 62.23 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16773,7 +16917,7 @@
 			)
 		)
 		(property "V_max" ""
-			(at 80.01 227.33 0)
+			(at 62.23 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16787,7 +16931,7 @@
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "TP10")
+					(reference "TP19")
 					(unit 1)
 				)
 			)
@@ -17787,7 +17931,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 73.66 224.79 0)
+		(at 55.88 224.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -17796,7 +17940,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce91a7f2-bbce-4af7-ad08-7a90d463883e")
 		(property "Reference" "H1"
-			(at 72.3899 220.98 90)
+			(at 54.6099 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17805,7 +17949,7 @@
 			)
 		)
 		(property "Value" "MOUNT_M2.5"
-			(at 74.9299 220.98 90)
+			(at 57.1499 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17814,7 +17958,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO7380_Pad"
-			(at 73.66 224.79 0)
+			(at 55.88 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17823,7 +17967,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.66 224.79 0)
+			(at 55.88 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17832,7 +17976,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 73.66 224.79 0)
+			(at 55.88 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17841,7 +17985,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 73.66 224.79 90)
+			(at 55.88 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17850,7 +17994,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 73.66 224.79 90)
+			(at 55.88 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17859,7 +18003,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 73.66 224.79 90)
+			(at 55.88 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17868,7 +18012,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 73.66 224.79 90)
+			(at 55.88 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17877,7 +18021,7 @@
 			)
 		)
 		(property "P_max" ""
-			(at 73.66 224.79 90)
+			(at 55.88 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17886,7 +18030,7 @@
 			)
 		)
 		(property "V_max" ""
-			(at 73.66 224.79 90)
+			(at 55.88 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18509,7 +18653,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddf97fb9-f665-4d56-8a19-ab9d5a00d946")
-		(property "Reference" "TP13"
+		(property "Reference" "TP22"
 			(at 200.66 168.1479 0)
 			(effects
 				(font
@@ -18686,7 +18830,7 @@
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "TP13")
+					(reference "TP22")
 					(unit 1)
 				)
 			)
@@ -19183,15 +19327,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 92.71 227.33 0)
+		(at 74.93 227.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "f2a4fb60-f814-4521-b52f-a7e32617dcc6")
-		(property "Reference" "TP11"
-			(at 92.71 218.44 0)
+		(property "Reference" "TP20"
+			(at 74.93 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19199,7 +19343,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.71 220.98 0)
+			(at 74.93 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19207,7 +19351,7 @@
 			)
 		)
 		(property "Footprint" "RD-Testpoints:TestPoint_Pad_1.0x1.0mm"
-			(at 97.79 227.33 0)
+			(at 80.01 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19216,7 +19360,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 227.33 0)
+			(at 80.01 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19225,7 +19369,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 92.71 227.33 0)
+			(at 74.93 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19234,7 +19378,7 @@
 			)
 		)
 		(property "Config" ""
-			(at 92.71 227.33 90)
+			(at 74.93 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19243,7 +19387,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 92.71 227.33 0)
+			(at 74.93 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19252,7 +19396,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 92.71 227.33 0)
+			(at 74.93 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19261,7 +19405,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 92.71 227.33 0)
+			(at 74.93 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19270,7 +19414,7 @@
 			)
 		)
 		(property "P_max" ""
-			(at 92.71 227.33 0)
+			(at 74.93 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19279,7 +19423,7 @@
 			)
 		)
 		(property "V_max" ""
-			(at 92.71 227.33 0)
+			(at 74.93 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19293,7 +19437,7 @@
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "TP11")
+					(reference "TP20")
 					(unit 1)
 				)
 			)
