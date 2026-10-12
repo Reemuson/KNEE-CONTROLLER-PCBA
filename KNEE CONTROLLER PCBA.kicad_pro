@@ -353,27 +353,39 @@
   "erc": {
     "erc_exclusions": [
       [
-        "multiple_net_names|1828800|863600|a7b79776-a6d9-4c16-8646-cbdb492d5900|8c07677c-d95f-457e-bef1-b13e4c1e0f77|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e",
+        "multiple_net_names|1828800|863600|a7b79776-a6d9-4c16-8646-cbdb492d5900|8c07677c-d95f-457e-bef1-b13e4c1e0f77|||",
         ""
       ],
       [
-        "multiple_net_names|1930400|863600|0ef3f340-16bf-41db-99b9-f09c502e4e8f|65e7279d-747a-4dd2-9fe0-9bf8fa4de1d6|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e",
+        "multiple_net_names|1930400|863600|0ef3f340-16bf-41db-99b9-f09c502e4e8f|65e7279d-747a-4dd2-9fe0-9bf8fa4de1d6|||",
         ""
       ],
       [
-        "pin_to_pin|3251200|1587500|d29df635-0b77-48b1-b16d-742a29d1a566|e82e6f9a-f764-41f0-b269-4496be52ae44|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e",
+        "pin_to_pin|3187700|1206500|829b4c04-bba2-498a-86cb-09b2075be2c7|63c783dd-1e00-4025-951c-3fc0805d2932|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/ef241167-2e69-44fd-8a99-a2cfc759a99b|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/ef241167-2e69-44fd-8a99-a2cfc759a99b|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/ef241167-2e69-44fd-8a99-a2cfc759a99b",
         ""
       ],
       [
-        "pin_to_pin|3251200|1612900|e82e6f9a-f764-41f0-b269-4496be52ae44|2508d911-6a4b-4f7c-8041-8d9b38ca136c|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e",
+        "pin_to_pin|3187700|1231900|63c783dd-1e00-4025-951c-3fc0805d2932|5812d072-ef90-44c3-9864-cff528e69b97|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/ef241167-2e69-44fd-8a99-a2cfc759a99b|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/ef241167-2e69-44fd-8a99-a2cfc759a99b|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/ef241167-2e69-44fd-8a99-a2cfc759a99b",
         ""
       ],
       [
-        "pin_to_pin|4318000|3149600|2dd3e51f-62e2-40e9-9c71-58e6e413d4a6|a75490ac-ec16-47b5-bd4c-8c18ba104d30|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e",
+        "pin_to_pin|3251200|1587500|d29df635-0b77-48b1-b16d-742a29d1a566|e82e6f9a-f764-41f0-b269-4496be52ae44|||",
         ""
       ],
       [
-        "pin_to_pin|4318000|3835400|2dd3e51f-62e2-40e9-9c71-58e6e413d4a6|a75490ac-ec16-47b5-bd4c-8c18ba104d30|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/c5103ceb-5325-4a84-a025-9638a412984e",
+        "pin_to_pin|3251200|1612900|e82e6f9a-f764-41f0-b269-4496be52ae44|2508d911-6a4b-4f7c-8041-8d9b38ca136c|||",
+        ""
+      ],
+      [
+        "pin_to_pin|4318000|3149600|2dd3e51f-62e2-40e9-9c71-58e6e413d4a6|a75490ac-ec16-47b5-bd4c-8c18ba104d30|||",
+        ""
+      ],
+      [
+        "pin_to_pin|4318000|3835400|2dd3e51f-62e2-40e9-9c71-58e6e413d4a6|a75490ac-ec16-47b5-bd4c-8c18ba104d30|||",
+        ""
+      ],
+      [
+        "pin_to_pin|647700|1155700|d9bb14e6-7e9e-404c-9fe3-5edb1d6faa50|0de57930-f210-462c-89b5-94937c5705e1|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/2c3a5e25-f05f-4ade-a3c6-4ee1abb80907|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/2c3a5e25-f05f-4ade-a3c6-4ee1abb80907|/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/2c3a5e25-f05f-4ade-a3c6-4ee1abb80907",
         ""
       ]
     ],
@@ -947,104 +959,96 @@
         "pattern": "+3V3"
       },
       {
-        "netclass": "+3V3",
-        "pattern": "/PROJECT/VENC"
-      },
-      {
         "netclass": "MOTOR_A",
-        "pattern": "/PROJECT/A[12]"
+        "pattern": ".*/A[12]"
       },
       {
         "netclass": "MOTOR_B",
-        "pattern": "/PROJECT/B[12]"
+        "pattern": ".*/B[12]"
       },
       {
         "netclass": "SPI",
-        "pattern": "/PROJECT/DRV_(SCK|SDI|SDO|CSN)"
+        "pattern": ".*/DRV_(SCK|MOSI|MISO|CS|EN_N)"
       },
       {
         "netclass": "DRIVER_CTRL",
-        "pattern": "/PROJECT/DRV_(STEP|DIR|CLK|DIAG[01])"
-      },
-      {
-        "netclass": "DRIVER_CTRL",
-        "pattern": "/PROJECT/~{DRV_EN}"
+        "pattern": ".*/DRV_(STEP|DIR|CLK|DIAG[01])"
       },
       {
         "netclass": "ENCODER",
-        "pattern": "/PROJECT/ENC_.*"
+        "pattern": ".*/ENC_.*"
       },
       {
         "netclass": "I2C",
-        "pattern": "/PROJECT/I2C[12]_(SCL|SDA)"
+        "pattern": ".*/I2C[12]_(SCL|SDA)"
       },
       {
         "netclass": "UART",
-        "pattern": "/PROJECT/AUX_UART_(RX|TX)"
+        "pattern": ".*/AUX_UART_(RX|TX)"
       },
       {
         "netclass": "UART",
-        "pattern": "/PROJECT/DBG_UART_.*"
+        "pattern": ".*/DBG_UART_.*"
       },
       {
         "netclass": "DEBUG",
-        "pattern": "/PROJECT/DBG_(SWDIO|SWCLK|SWO).*"
+        "pattern": ".*/DBG_(SWDIO|SWCLK|SWO).*"
       },
       {
         "netclass": "DEBUG",
-        "pattern": "/PROJECT/~{DBG_RST.*}"
+        "pattern": ".*/DBG_RST_N"
       },
       {
         "netclass": "USB",
-        "pattern": "/PROJECT/USB_(CONN|MCU)[+-]"
+        "pattern": ".*/USB_(CONN|MCU)[+-]"
       },
       {
         "netclass": "USB",
-        "pattern": "/PROJECT/USB_A[+-]"
+        "pattern": ".*/USB_A[+-]"
       },
       {
         "netclass": "USB",
-        "pattern": "/PROJECT/CC[12]"
+        "pattern": ".*/CC[12]"
       },
       {
         "netclass": "CAN",
-        "pattern": "/PROJECT/CAN_(H|L|RX|TX|H_INT|L_INT)"
+        "pattern": ".*/CAN_(H|L|RX|TX|H_INT|L_INT)"
       },
       {
         "netclass": "ANALOGUE",
-        "pattern": "/PROJECT/(TEMP_NTC|TEMP_ADC|AUX_ADC)"
+        "pattern": ".*/(TEMP_NTC|TEMP_ADC|AUX_ADC)"
       },
       {
         "netclass": "GPIO",
-        "pattern": "/PROJECT/SW[1-4]_SIG"
+        "pattern": ".*/SW[1-4]_SIG"
       },
       {
         "netclass": "GPIO",
-        "pattern": "/PROJECT/~{BTN}"
+        "pattern": ".*/BTN_N"
       },
       {
         "netclass": "GPIO",
-        "pattern": "/PROJECT/LED_(GRN|RED)"
+        "pattern": ".*/LED_(YEL|RED)"
       },
       {
         "netclass": "GPIO",
-        "pattern": "/PROJECT/BOOT0"
+        "pattern": ".*/BOOT0"
       },
       {
         "netclass": "GPIO",
-        "pattern": "/PROJECT/SW[1-4]_SIG_MCU"
+        "pattern": ".*/SW[1-4]_SIG_MCU"
       },
       {
         "netclass": "GPIO",
-        "pattern": "/PROJECT/(BRAKE_CMD|BRAKE_ACTIVE)"
+        "pattern": ".*/(BRAKE_CMD|BRAKE_ACTIVE)"
       },
       {
         "netclass": "GPIO",
-        "pattern": "/PROJECT/CAN_S"
+        "pattern": ".*/CAN_S"
       },
       {
         "netclass": "+3V3",
-        "pattern": "/PROJECT/CONF_PULLUP"
+        "pattern": ".*/CONF_PULLUP"
       }
     ]
   },
@@ -2234,12 +2238,20 @@
       "Root"
     ],
     [
-      "c5103ceb-5325-4a84-a025-9638a412984e",
-      "PROJECT"
+      "e66a8b69-ba63-4755-9383-57edf473a15c",
+      "SYSTEM OVERVIEW"
     ],
     [
-      "6e125bd6-2f99-4e5d-b3ea-4899f4540739",
-      "REVISION HISTORY"
+      "ef241167-2e69-44fd-8a99-a2cfc759a99b",
+      "POWER MANAGEMENT"
+    ],
+    [
+      "2c3a5e25-f05f-4ade-a3c6-4ee1abb80907",
+      "MICROCONTROLLER"
+    ],
+    [
+      "22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed",
+      "MOTOR CONTROL AND IO"
     ]
   ],
   "text_variables": {
