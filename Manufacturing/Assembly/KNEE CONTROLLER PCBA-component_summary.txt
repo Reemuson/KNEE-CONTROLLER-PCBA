@@ -1,0 +1,4 @@
+COMPONENT SNAPSHOT
+- THT: 26 front, 0 back, 26 total
+- SMT: 178 front, 0 back, 178 total
+- Total: 204 front, 0 back, 204 total
