@@ -469,7 +469,7 @@
 		(name "")
 		(pos 35 22.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 2 2)
 		)
 		(justify center)
 	)
@@ -498,7 +498,7 @@
 	)
 	(tbtext "${REVTABLE_1_REV}"
 		(name "")
-		(pos 18.5 22.5 lbcorner)
+		(pos 17.5 22.5002 lbcorner)
 		(font
 			(size 2.5 2.5)
 		)
@@ -524,7 +524,7 @@
 	)
 	(tbtext "${REVTABLE_3_REV}"
 		(name "")
-		(pos 18.5 32.5 lbcorner)
+		(pos 17.5 32.5002 lbcorner)
 		(font
 			(size 2.5 2.5)
 		)
@@ -532,7 +532,7 @@
 	)
 	(tbtext "${REVTABLE_2_REV}"
 		(name "")
-		(pos 18.5 27.5 lbcorner)
+		(pos 17.5 27.5002 lbcorner)
 		(font
 			(size 2.5 2.5)
 		)
@@ -540,7 +540,7 @@
 	)
 	(tbtext "${REVTABLE_4_REV}"
 		(name "")
-		(pos 18.5 37.5 lbcorner)
+		(pos 17.5 37.5002 lbcorner)
 		(font
 			(size 2.5 2.5)
 		)
@@ -548,7 +548,7 @@
 	)
 	(tbtext "${REVTABLE_5_REV}"
 		(name "")
-		(pos 18.5 42.5 lbcorner)
+		(pos 17.5 42.5002 lbcorner)
 		(font
 			(size 2.5 2.5)
 		)
@@ -556,7 +556,7 @@
 	)
 	(tbtext "${REVTABLE_6_REV}"
 		(name "")
-		(pos 18.5 47.5 lbcorner)
+		(pos 17.5 47.5002 lbcorner)
 		(font
 			(size 2.5 2.5)
 		)
@@ -574,7 +574,7 @@
 		(name "")
 		(pos 35 27.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 2 2)
 		)
 		(justify center)
 	)
@@ -582,7 +582,7 @@
 		(name "")
 		(pos 35 32.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 2 2)
 		)
 		(justify center)
 	)
@@ -590,7 +590,7 @@
 		(name "")
 		(pos 35 37.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 2 2)
 		)
 		(justify center)
 	)
@@ -598,7 +598,7 @@
 		(name "")
 		(pos 35 42.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 2 2)
 		)
 		(justify center)
 	)
@@ -606,57 +606,57 @@
 		(name "")
 		(pos 35 47.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 2 2)
 		)
 		(justify center)
 	)
 	(tbtext "${REVTABLE_1_DESC}"
 		(name "")
-		(pos 47.5 22.5 lbcorner)
+		(pos 45.5 22.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 2 2)
 		)
 	)
 	(tbtext "${REVTABLE_2_DESC}"
 		(name "")
-		(pos 47.5 27.5 lbcorner)
+		(pos 45.5 27.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 2 2)
 		)
 	)
 	(tbtext "${REVTABLE_3_DESC}"
 		(name "")
-		(pos 47.5 32.5 lbcorner)
+		(pos 45.5 32.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 2 2)
 		)
 	)
 	(tbtext "${REVTABLE_4_DESC}"
 		(name "")
-		(pos 47.5 37.5 lbcorner)
+		(pos 45.5 37.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 2 2)
 		)
 	)
 	(tbtext "${REVTABLE_5_DESC}"
 		(name "")
-		(pos 47.5 42.5 lbcorner)
+		(pos 45.5 42.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 2 2)
 		)
 	)
 	(tbtext "${REVTABLE_6_DESC}"
 		(name "")
-		(pos 47.5 47.5 lbcorner)
+		(pos 45.5 47.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 2 2)
 		)
 	)
 	(tbtext "${REVTABLE_1_DRAWN}"
 		(name "")
 		(pos 122.5 22.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 1.5 2)
 		)
 		(justify center)
 	)
@@ -664,7 +664,7 @@
 		(name "")
 		(pos 122.5 27.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 1.5 2)
 		)
 		(justify center)
 	)
@@ -672,7 +672,7 @@
 		(name "")
 		(pos 122.5 32.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 1.5 2)
 		)
 		(justify center)
 	)
@@ -680,7 +680,7 @@
 		(name "")
 		(pos 122.5 37.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 1.5 2)
 		)
 		(justify center)
 	)
@@ -688,7 +688,7 @@
 		(name "")
 		(pos 122.5 42.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 1.5 2)
 		)
 		(justify center)
 	)
@@ -696,7 +696,7 @@
 		(name "")
 		(pos 122.5 47.5 lbcorner)
 		(font
-			(size 2.5 2.5)
+			(size 1.5 2)
 		)
 		(justify center)
 	)

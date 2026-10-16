@@ -25,3 +25,5 @@
 - Silkscreen
 - Rail routing
 - Stitching vias
+- Template fix
+- Comment
