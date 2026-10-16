@@ -1,0 +1,185 @@
+(footprint "STACKUP_ID_2L_SML"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -3.556 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "40c852be-ab99-4d08-96e4-ab56a4f8f9c8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "STACKUP_ID_2L_SML"
+		(at 0 2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "83508a72-7270-4b3a-ac03-4f9e28805a19")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3798b409-4861-4be8-9d57-3ea26850c03f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "565665d4-a416-42bf-9c79-32fbacb4f087")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_bom)
+	(fp_rect
+		(start -1.5 -1)
+		(end 0 1)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Cu")
+		(uuid "46553e96-da0f-405c-8068-8b2ed37c9eb1")
+	)
+	(fp_rect
+		(start 0 -1)
+		(end 1.5 1)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill no)
+		(layer "B.Cu")
+		(uuid "cf2ce506-f999-493f-be2f-59116120e87e")
+	)
+	(fp_text user "1"
+		(at -0.75 0 0)
+		(unlocked yes)
+		(layer "F.Cu")
+		(uuid "e066a68e-3224-4613-a3b3-28d0d8406bb2")
+		(effects
+			(font
+				(face "Altium Designer Stroke 700")
+				(size 1 1)
+				(thickness 0.3)
+				(bold yes)
+			)
+		)
+		(render_cache "1" 0
+			(polygon
+				(pts
+					(xy -0.609743 0.366029) (xy -0.591496 0.369651) (xy -0.575427 0.380744) (xy -0.564335 0.396764)
+					(xy -0.560711 0.415) (xy -0.564335 0.433235) (xy -0.575427 0.449255) (xy -0.591496 0.460348) (xy -0.609743 0.46397)
+					(xy -0.889767 0.46397) (xy -0.908014 0.460348) (xy -0.924083 0.449255) (xy -0.935127 0.43324) (xy -0.938738 0.415)
+					(xy -0.935127 0.396759) (xy -0.924083 0.380744) (xy -0.908014 0.369651) (xy -0.889767 0.366029)
+					(xy -0.798726 0.366029) (xy -0.798726 -0.306004) (xy -0.854719 -0.250012) (xy -0.87228 -0.239365)
+					(xy -0.889767 -0.236029) (xy -0.908018 -0.239638) (xy -0.924083 -0.250683) (xy -0.935129 -0.266748)
+					(xy -0.938738 -0.285) (xy -0.935404 -0.302434) (xy -0.924755 -0.319987) (xy -0.784743 -0.46) (xy -0.767189 -0.470649)
+					(xy -0.749755 -0.473982) (xy -0.731509 -0.47036) (xy -0.715439 -0.459267) (xy -0.704348 -0.443248)
+					(xy -0.700723 -0.425012) (xy -0.700723 0.366029)
+				)
+			)
+		)
+	)
+	(fp_text user "2"
+		(at 0.75 0 0)
+		(unlocked yes)
+		(layer "B.Cu")
+		(uuid "89376351-f72d-4c32-935f-730f53ddeacb")
+		(effects
+			(font
+				(face "Altium Designer Stroke 700")
+				(size 1 1)
+				(thickness 0.25)
+				(bold yes)
+			)
+			(justify mirror)
+		)
+		(render_cache "2" 0
+			(polygon
+				(pts
+					(xy 1.029962 0.46397) (xy 1.048209 0.460348) (xy 1.064278 0.449255) (xy 1.075322 0.43324) (xy 1.078933 0.415)
+					(xy 1.075599 0.397565) (xy 1.06495 0.380012) (xy 0.518945 -0.165992) (xy 0.518945 -0.263995) (xy 0.630931 -0.37598)
+					(xy 0.868945 -0.37598) (xy 0.994914 -0.250012) (xy 1.012475 -0.239365) (xy 1.029962 -0.236029)
+					(xy 1.048213 -0.239638) (xy 1.064278 -0.250683) (xy 1.075324 -0.266748) (xy 1.078933 -0.285) (xy 1.075599 -0.302434)
+					(xy 1.06495 -0.319987) (xy 0.924938 -0.46) (xy 0.907384 -0.470649) (xy 0.88995 -0.473982) (xy 0.609926 -0.473982)
+					(xy 0.592491 -0.470649) (xy 0.574938 -0.46) (xy 0.434926 -0.319987) (xy 0.424276 -0.302434) (xy 0.420943 -0.285)
+					(xy 0.420943 -0.144987) (xy 0.424276 -0.127553) (xy 0.434926 -0.11) (xy 0.910955 0.366029) (xy 0.469914 0.366029)
+					(xy 0.451678 0.369653) (xy 0.435658 0.380744) (xy 0.424567 0.396764) (xy 0.420943 0.415) (xy 0.424567 0.433235)
+					(xy 0.435658 0.449255) (xy 0.451678 0.460346) (xy 0.469914 0.46397)
+				)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "c428d144-8467-4294-b34b-c0e34ba8e59a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "F.Cu" "B.Cu")
+		(uuid "c48d85d9-b398-4a1d-8036-792795afda64")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints not_allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -1.75 -1.25) (xy -1.75 1.25) (xy 1.75 1.25) (xy 1.75 -1.25)
+			)
+		)
+	)
+	(embedded_fonts no)
+)

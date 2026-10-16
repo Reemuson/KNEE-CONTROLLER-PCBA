@@ -4669,8 +4669,8 @@
 		(uuid d05deb62-de11-48c0-b22c-8cf6f5e848be)
 	)
 	(rectangle
-		(start 101.6 34.29)
-		(end 119.38 72.39)
+		(start 78.74 34.29)
+		(end 96.52 72.39)
 		(stroke
 			(width 0.25)
 			(type dash)
@@ -4772,7 +4772,7 @@
 	)
 	(text "CONFIG JUMPERS"
 		(exclude_from_sim no)
-		(at 101.6 33.02 0)
+		(at 78.74 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5122,7 +5122,7 @@
 		(uuid "d9b66afe-6e39-422b-bade-a3d0978ec8f2")
 	)
 	(junction
-		(at 85.09 62.23)
+		(at 62.23 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "028d6442-6c71-4eb3-bb80-564d4f5b8933")
@@ -5158,7 +5158,13 @@
 		(uuid "2f9cf8a6-205b-48ac-a5a4-0e992b4103e4")
 	)
 	(junction
-		(at 85.09 67.31)
+		(at 270.51 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31b71e50-758e-4cad-af3b-12b84e525f04")
+	)
+	(junction
+		(at 62.23 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b144b06-d0c4-4a00-822a-a9f6d16a5cca")
@@ -5176,7 +5182,7 @@
 		(uuid "6207cbc1-ef31-4d2e-8c1c-9ee345cec9ab")
 	)
 	(junction
-		(at 85.09 64.77)
+		(at 62.23 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "636a5b42-818b-405f-8812-dfef111eba20")
@@ -5186,6 +5192,24 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6a674d65-7c05-4ddb-9880-7daeff98e931")
+	)
+	(junction
+		(at 106.68 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f8ef26a-460f-4722-8c9a-c12de8b36d54")
+	)
+	(junction
+		(at 99.06 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6fe2e2c0-eb2b-4182-976f-a419dce81a16")
+	)
+	(junction
+		(at 262.89 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7479255a-f26c-4d1e-81c7-2387dcd030be")
 	)
 	(junction
 		(at 71.12 228.6)
@@ -5230,6 +5254,12 @@
 		(uuid "93fd9809-5f64-4aec-bda5-cac25cd8e2a4")
 	)
 	(junction
+		(at 102.87 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e996bbb-80ac-40da-854d-c9fa3cca5d15")
+	)
+	(junction
 		(at 68.58 228.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5260,10 +5290,16 @@
 		(uuid "ace9ec61-8182-4143-902d-6abeaf9a3edd")
 	)
 	(junction
-		(at 91.44 48.26)
+		(at 68.58 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ae1560d4-6648-430c-9710-bcd4b7ee9743")
+	)
+	(junction
+		(at 267.97 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9effdb0-ff56-40d3-af47-a89abd49ab1d")
 	)
 	(junction
 		(at 133.35 40.64)
@@ -5272,7 +5308,13 @@
 		(uuid "bdaa9405-0a14-4b84-b08c-0f55abe4aaf6")
 	)
 	(junction
-		(at 91.44 45.72)
+		(at 265.43 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be9bea35-d8cc-4445-bfc9-68012dcdcd6f")
+	)
+	(junction
+		(at 68.58 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0d88d12-8f5d-4557-af70-5fbc525a5621")
@@ -5302,6 +5344,12 @@
 		(uuid "f0e631ec-c68b-4e9a-962e-b3fa0393cce4")
 	)
 	(junction
+		(at 110.49 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4f8e64b-12ab-4938-977b-bb8aa815d951")
+	)
+	(junction
 		(at 58.42 228.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5309,7 +5357,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 48.26) (xy 91.44 48.26)
+			(xy 81.28 48.26) (xy 68.58 48.26)
 		)
 		(stroke
 			(width 0)
@@ -5329,16 +5377,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 58.42) (xy 135.89 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "091ef1b4-6f77-4996-a66f-461585bf65de")
-	)
-	(wire
-		(pts
 			(xy 345.44 137.16) (xy 345.44 142.24)
 		)
 		(stroke
@@ -5349,7 +5387,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 62.23) (xy 104.14 62.23)
+			(xy 62.23 62.23) (xy 81.28 62.23)
 		)
 		(stroke
 			(width 0)
@@ -5449,7 +5487,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 36.83) (xy 261.62 36.83)
+			(xy 271.78 36.83) (xy 270.51 36.83)
 		)
 		(stroke
 			(width 0)
@@ -5469,13 +5507,23 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 45.72) (xy 135.89 45.72)
+			(xy 93.98 45.72) (xy 106.68 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1576a403-6518-4937-9c63-9381398d6896")
+	)
+	(wire
+		(pts
+			(xy 270.51 34.29) (xy 270.51 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1771eee7-9e07-4fe6-bc93-9196afb60624")
 	)
 	(wire
 		(pts
@@ -5509,6 +5557,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 36.83) (xy 261.62 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cd7eb64-7b01-4c4e-b746-f0a0add89dfe")
+	)
+	(wire
+		(pts
 			(xy 66.04 114.3) (xy 78.74 114.3)
 		)
 		(stroke
@@ -5529,7 +5587,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 53.34) (xy 97.79 53.34)
+			(xy 135.89 53.34) (xy 74.93 53.34)
 		)
 		(stroke
 			(width 0)
@@ -5639,17 +5697,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 40.64) (xy 133.35 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d0f2cf1-e5b2-4b92-b5a0-7a4daae4e3b4")
-	)
-	(wire
-		(pts
-			(xy 91.44 45.72) (xy 91.44 43.18)
+			(xy 68.58 45.72) (xy 68.58 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5689,7 +5737,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 67.31) (xy 85.09 69.85)
+			(xy 62.23 67.31) (xy 62.23 69.85)
 		)
 		(stroke
 			(width 0)
@@ -5729,7 +5777,17 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 43.18) (xy 135.89 43.18)
+			(xy 114.3 58.42) (xy 135.89 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35679194-ab72-44b8-b1f7-8573c1b5df50")
+	)
+	(wire
+		(pts
+			(xy 93.98 43.18) (xy 102.87 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5790,7 +5848,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 64.77) (xy 104.14 64.77)
+			(xy 62.23 64.77) (xy 81.28 64.77)
 		)
 		(stroke
 			(width 0)
@@ -5800,7 +5858,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 39.37) (xy 261.62 39.37)
+			(xy 271.78 39.37) (xy 267.97 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5820,7 +5878,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 45.72) (xy 104.14 45.72)
+			(xy 68.58 45.72) (xy 81.28 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5850,7 +5908,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 48.26) (xy 135.89 48.26)
+			(xy 93.98 48.26) (xy 110.49 48.26)
 		)
 		(stroke
 			(width 0)
@@ -5927,6 +5985,16 @@
 			(type default)
 		)
 		(uuid "528c7270-93bd-4f69-a25d-2d8b7817c720")
+	)
+	(wire
+		(pts
+			(xy 102.87 43.18) (xy 135.89 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52bd995f-33be-470f-beb6-ea6f867995c4")
 	)
 	(wire
 		(pts
@@ -6070,13 +6138,23 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 62.23) (xy 85.09 64.77)
+			(xy 62.23 62.23) (xy 62.23 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6043fe20-4b23-4b4f-911f-142c4ee34af3")
+	)
+	(wire
+		(pts
+			(xy 110.49 48.26) (xy 135.89 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63239e0a-0242-4c18-b4b1-1fac98c09ac7")
 	)
 	(wire
 		(pts
@@ -6110,7 +6188,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 45.72) (xy 91.44 48.26)
+			(xy 68.58 45.72) (xy 68.58 48.26)
 		)
 		(stroke
 			(width 0)
@@ -6127,6 +6205,16 @@
 			(type default)
 		)
 		(uuid "684ee16d-606a-4e2d-a141-4e42cd18f59c")
+	)
+	(wire
+		(pts
+			(xy 110.49 27.94) (xy 110.49 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "694b52b6-7eba-4741-8639-ad9e34b33df0")
 	)
 	(wire
 		(pts
@@ -6170,16 +6258,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 55.88) (xy 135.89 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ccb94b3-4104-4f3a-80e2-7077c5338610")
-	)
-	(wire
-		(pts
 			(xy 196.85 173.99) (xy 187.96 173.99)
 		)
 		(stroke
@@ -6190,7 +6268,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 50.8) (xy 104.14 50.8)
+			(xy 74.93 50.8) (xy 81.28 50.8)
 		)
 		(stroke
 			(width 0)
@@ -6260,6 +6338,16 @@
 	)
 	(wire
 		(pts
+			(xy 267.97 31.75) (xy 267.97 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ed560ae-41c6-4d76-b66a-1d1b13d8827f")
+	)
+	(wire
+		(pts
 			(xy 87.63 228.6) (xy 93.98 228.6)
 		)
 		(stroke
@@ -6267,6 +6355,16 @@
 			(type default)
 		)
 		(uuid "7f9e2da8-b48b-49a7-89c3-83434c3d3882")
+	)
+	(wire
+		(pts
+			(xy 121.92 55.88) (xy 135.89 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80c0ce9a-1be4-4540-93cd-1f472217829d")
 	)
 	(wire
 		(pts
@@ -6290,6 +6388,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 41.91) (xy 271.78 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83907d35-2196-48ef-9eb9-79254cf15e67")
+	)
+	(wire
+		(pts
 			(xy 71.12 228.6) (xy 74.93 228.6)
 		)
 		(stroke
@@ -6310,7 +6418,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 38.1) (xy 85.09 62.23)
+			(xy 62.23 38.1) (xy 62.23 62.23)
 		)
 		(stroke
 			(width 0)
@@ -6347,6 +6455,16 @@
 			(type default)
 		)
 		(uuid "8cf776ef-f65c-4d91-b7ca-9150ff869887")
+	)
+	(wire
+		(pts
+			(xy 267.97 39.37) (xy 261.62 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e292ae3-03ed-44d4-8142-f46552a2ab92")
 	)
 	(wire
 		(pts
@@ -6401,6 +6519,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 27.94) (xy 102.87 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a98b2bc-8a4b-4b29-be5b-edf6ba374434")
+	)
+	(wire
+		(pts
 			(xy 73.66 176.53) (xy 71.12 176.53)
 		)
 		(stroke
@@ -6431,6 +6559,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 40.64) (xy 133.35 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dac0010-f947-4e02-97c5-8904605b1edd")
+	)
+	(wire
+		(pts
 			(xy 158.75 55.88) (xy 165.1 55.88)
 		)
 		(stroke
@@ -6438,6 +6576,16 @@
 			(type default)
 		)
 		(uuid "9db51eb4-14db-45f9-a3d3-908a356bfb1a")
+	)
+	(wire
+		(pts
+			(xy 118.11 27.94) (xy 118.11 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e569cab-224d-4c7c-b1ef-a88d5ba817bd")
 	)
 	(wire
 		(pts
@@ -6471,6 +6619,16 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 44.45) (xy 271.78 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5e701da-5b4d-40ee-9c0b-6602105900bc")
+	)
+	(wire
+		(pts
 			(xy 62.23 228.6) (xy 68.58 228.6)
 		)
 		(stroke
@@ -6481,7 +6639,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 67.31) (xy 104.14 67.31)
+			(xy 62.23 67.31) (xy 81.28 67.31)
 		)
 		(stroke
 			(width 0)
@@ -6501,13 +6659,23 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 50.8) (xy 135.89 50.8)
+			(xy 93.98 50.8) (xy 99.06 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ada1b4c2-df92-4917-9fda-d9788ebbbcd0")
+	)
+	(wire
+		(pts
+			(xy 106.68 33.02) (xy 106.68 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae689de5-ece9-4fda-8056-a04cabd41605")
 	)
 	(wire
 		(pts
@@ -6531,7 +6699,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 43.18) (xy 104.14 43.18)
+			(xy 68.58 43.18) (xy 81.28 43.18)
 		)
 		(stroke
 			(width 0)
@@ -6561,7 +6729,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 53.34) (xy 97.79 50.8)
+			(xy 74.93 53.34) (xy 74.93 50.8)
 		)
 		(stroke
 			(width 0)
@@ -6602,7 +6770,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 41.91) (xy 262.89 41.91)
+			(xy 261.62 41.91) (xy 265.43 41.91)
 		)
 		(stroke
 			(width 0)
@@ -6619,6 +6787,26 @@
 			(type default)
 		)
 		(uuid "b6d0cebe-8dec-4231-b68f-81db3766f415")
+	)
+	(wire
+		(pts
+			(xy 262.89 26.67) (xy 262.89 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b82375c9-1b3d-4dfd-8ee6-b1e9e487f03b")
+	)
+	(wire
+		(pts
+			(xy 99.06 50.8) (xy 135.89 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9f4b186-5cf4-4bfc-b1a1-5ec271e96964")
 	)
 	(wire
 		(pts
@@ -6762,7 +6950,17 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 48.26) (xy 91.44 53.34)
+			(xy 106.68 45.72) (xy 135.89 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0389d73-d87b-4374-bcfd-91f54b52f697")
+	)
+	(wire
+		(pts
+			(xy 68.58 48.26) (xy 68.58 53.34)
 		)
 		(stroke
 			(width 0)
@@ -6923,7 +7121,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 69.85) (xy 104.14 69.85)
+			(xy 62.23 69.85) (xy 81.28 69.85)
 		)
 		(stroke
 			(width 0)
@@ -7003,13 +7201,23 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 27.94) (xy 85.09 30.48)
+			(xy 62.23 27.94) (xy 62.23 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ea8a1c6d-495a-4f7f-8c56-8c63283fb24c")
+	)
+	(wire
+		(pts
+			(xy 121.92 33.02) (xy 121.92 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea8e0481-9c31-4a66-b70c-23014abf18e7")
 	)
 	(wire
 		(pts
@@ -7020,6 +7228,16 @@
 			(type default)
 		)
 		(uuid "eaa099df-69e4-4239-9c21-e493cd56188f")
+	)
+	(wire
+		(pts
+			(xy 99.06 33.02) (xy 99.06 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb25bbc5-3e07-4a30-a993-f63c6a8c73dc")
 	)
 	(wire
 		(pts
@@ -7060,6 +7278,16 @@
 			(type default)
 		)
 		(uuid "f076d546-024d-4a37-a65d-32800b5aefd3")
+	)
+	(wire
+		(pts
+			(xy 265.43 29.21) (xy 265.43 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f09de332-1875-4ac4-a87c-c6e3c12a0bfd")
 	)
 	(wire
 		(pts
@@ -7113,13 +7341,23 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 64.77) (xy 85.09 67.31)
+			(xy 62.23 64.77) (xy 62.23 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f6aeb55c-3618-4aec-a58e-053acfc25d95")
+	)
+	(wire
+		(pts
+			(xy 114.3 33.02) (xy 114.3 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f720016e-bebd-477c-a085-cea30aa6bd9c")
 	)
 	(wire
 		(pts
@@ -7252,7 +7490,7 @@
 		(uuid "65510ad8-6488-41b7-8af6-97cbb5fa8610")
 	)
 	(label "CONF_PULLUP"
-		(at 85.09 62.23 0)
+		(at 62.23 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7447,7 +7685,7 @@
 	)
 	(hierarchical_label "ENC_A_MISO"
 		(shape output)
-		(at 262.89 41.91 0)
+		(at 271.78 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7458,7 +7696,7 @@
 	)
 	(hierarchical_label "ENC_AUX_SCK"
 		(shape input)
-		(at 262.89 44.45 0)
+		(at 271.78 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7590,7 +7828,7 @@
 	)
 	(hierarchical_label "ENC_Z_CS"
 		(shape input)
-		(at 262.89 36.83 0)
+		(at 271.78 36.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7634,7 +7872,7 @@
 	)
 	(hierarchical_label "ENC_B_MOSI"
 		(shape input)
-		(at 262.89 39.37 0)
+		(at 271.78 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8058,7 +8296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "RD-Symbols-Silkscreen:STACKUP_ID_2L"
+		(property "Footprint" "0_RD_Identification:STACKUP_ID_2L"
 			(at 165.1 218.44 0)
 			(effects
 				(font
@@ -8372,7 +8610,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "0_RD_Capacitor_SMD:C_0603_1608_DensityHigh"
 			(at 344.4748 142.24 0)
 			(effects
 				(font
@@ -8550,6 +8788,198 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 110.49 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "1096df7d-cf4d-406c-9354-42a173d15880")
+		(property "Reference" "TP34"
+			(at 110.49 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DRV_CS"
+			(at 107.95 23.3681 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_D0.4mm"
+			(at 115.57 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 110.49 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "581205e1-b707-4e19-b5fe-ee3c08b3083c")
+		)
+		(instances
+			(project "KNEE CONTROLLER PCBA"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
+					(reference "TP34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 68.58 224.79 0)
 		(unit 1)
@@ -8557,7 +8987,6 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "10cda48e-adc9-44ff-916e-5401391dcac9")
 		(property "Reference" "H2"
 			(at 67.3099 220.98 90)
@@ -8871,8 +9300,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17bbaada-1622-4b5c-8618-6485538f3aa0")
-		(property "Reference" "TP23"
-			(at 284.48 180.8479 0)
+		(property "Reference" "TP43"
+			(at 284.48 182.1179 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8887,9 +9316,10 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "RD-Testpoints:TestPoint_Pad_D0.4mm"
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_D0.4mm"
 			(at 287.02 185.42 0)
 			(effects
 				(font
@@ -9048,7 +9478,7 @@
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "TP23")
+					(reference "TP43")
 					(unit 1)
 				)
 			)
@@ -9062,7 +9492,6 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1ed94456-2293-48aa-872c-51f2180c6838")
 		(property "Reference" "H3"
 			(at 80.0099 220.98 90)
@@ -9368,7 +9797,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x04_Row_Letter_Last")
-		(at 111.76 45.72 0)
+		(at 88.9 45.72 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9377,7 +9806,7 @@
 		(dnp no)
 		(uuid "20cab6d8-8781-4958-9513-732db3a14c4f")
 		(property "Reference" "JP4"
-			(at 110.49 36.83 0)
+			(at 87.63 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9385,15 +9814,15 @@
 			)
 		)
 		(property "Value" "DRV_CFG_LO"
-			(at 110.49 39.37 0)
+			(at 87.63 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Jumpers:PinHeader_2x04_P2.54mm_Vertical"
-			(at 111.76 45.72 0)
+		(property "Footprint" "0_Jumper:PinHeader_2x04_P2.54mm_Vertical"
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9402,7 +9831,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C32713277.pdf"
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9411,7 +9840,7 @@
 			)
 		)
 		(property "Description" "CONN HEADER 8POS 2.54MM DUAL ROW TH"
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9420,7 +9849,7 @@
 			)
 		)
 		(property "Manufacturer" "Jaycar Electronics"
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9429,7 +9858,7 @@
 			)
 		)
 		(property "MPN" "HM3250"
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9438,7 +9867,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9447,7 +9876,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9456,7 +9885,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9465,7 +9894,7 @@
 			)
 		)
 		(property "P_max" ""
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9474,7 +9903,7 @@
 			)
 		)
 		(property "V_max" ""
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9483,7 +9912,7 @@
 			)
 		)
 		(property "SPN2" "C32713277"
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9492,7 +9921,7 @@
 			)
 		)
 		(property "Supplier2" "LCSC"
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9501,7 +9930,7 @@
 			)
 		)
 		(property "Supplier" "Jaycar Electronics"
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9510,7 +9939,7 @@
 			)
 		)
 		(property "MPN2" "HX PZ2.54-2x4P ZZ"
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9519,7 +9948,7 @@
 			)
 		)
 		(property "Manufacturer2" "hanxia"
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9528,7 +9957,7 @@
 			)
 		)
 		(property "SPN" "HM3250"
-			(at 111.76 45.72 0)
+			(at 88.9 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9596,7 +10025,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "0_RD_Resistor_SMD:R_0603_1608_DensityHigh"
 			(at 339.852 41.91 90)
 			(effects
 				(font
@@ -9786,6 +10215,392 @@
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
 					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 121.92 33.02 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "2468a553-8d6a-4325-917c-09fb24d9099c")
+		(property "Reference" "TP37"
+			(at 121.92 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "STEP_DIR"
+			(at 124.46 28.4481 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_D0.4mm"
+			(at 116.84 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 121.92 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "329605fc-ef40-45ad-b787-c3958f720f6b")
+		)
+		(instances
+			(project "KNEE CONTROLLER PCBA"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
+					(reference "TP37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 114.3 33.02 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "25425db3-0597-4a80-a878-ee9b0efe68f0")
+		(property "Reference" "TP35"
+			(at 114.3 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DRV_DIR"
+			(at 116.84 30.9879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_D0.4mm"
+			(at 109.22 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dedbb7af-516a-4d6c-997d-c55dbc226985")
+		)
+		(instances
+			(project "KNEE CONTROLLER PCBA"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
+					(reference "TP35")
 					(unit 1)
 				)
 			)
@@ -9997,7 +10812,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2927a4c6-8133-445a-b314-926ef44386de")
-		(property "Reference" "#PWR099"
+		(property "Reference" "#PWR0101"
 			(at 73.66 185.42 0)
 			(effects
 				(font
@@ -10047,7 +10862,7 @@
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "#PWR099")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -10346,7 +11161,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "0_RD_Resistor_SMD:R_0603_1608_DensityHigh"
 			(at 339.852 86.36 90)
 			(effects
 				(font
@@ -10542,6 +11357,199 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 118.11 27.94 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "35b281f2-4055-4449-ab81-bc5455be1296")
+		(property "Reference" "TP36"
+			(at 118.11 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DRV_EN_N"
+			(at 120.65 25.9079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_D0.4mm"
+			(at 113.03 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 118.11 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3dd8062c-9466-4d03-a94c-e29e8ec0f7d9")
+		)
+		(instances
+			(project "KNEE CONTROLLER PCBA"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
+					(reference "TP36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V0")
 		(at 287.02 43.18 0)
 		(mirror y)
@@ -10617,15 +11625,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e6458b1-f63c-4277-b37f-649bf2281545")
-		(property "Reference" "TP21"
-			(at 87.63 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
+		(property "Reference" "TP30"
 			(at 87.63 220.98 0)
 			(effects
 				(font
@@ -10633,7 +11633,16 @@
 				)
 			)
 		)
-		(property "Footprint" "RD-Testpoints:TestPoint_Pad_1.0x1.0mm"
+		(property "Value" "G"
+			(at 87.63 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_1.0x1.0mm"
 			(at 92.71 227.33 0)
 			(effects
 				(font
@@ -10714,13 +11723,139 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 87.63 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d1f77f2f-2466-4114-80a8-ed3756ae162f")
 		)
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "TP21")
+					(reference "TP30")
 					(unit 1)
 				)
 			)
@@ -10754,7 +11889,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "0_RD_Resistor_SMD:R_0603_1608_DensityHigh"
 			(at 164.338 167.64 90)
 			(effects
 				(font
@@ -11217,7 +12352,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 85.09 34.29 0)
+		(at 62.23 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11226,7 +12361,7 @@
 		(fields_autoplaced yes)
 		(uuid "4fe0016b-33ed-4cd7-a7ea-ee76b34bd34d")
 		(property "Reference" "R48"
-			(at 87.63 33.0199 0)
+			(at 64.77 33.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11235,7 +12370,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 87.63 35.5599 0)
+			(at 64.77 35.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11243,8 +12378,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 83.312 34.29 90)
+		(property "Footprint" "0_RD_Resistor_SMD:R_0603_1608_DensityHigh"
+			(at 60.452 34.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11253,7 +12388,7 @@
 			)
 		)
 		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L"
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11262,7 +12397,7 @@
 			)
 		)
 		(property "Description" "RES 1K OHM 1% 1/10W 0603"
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11271,7 +12406,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11280,7 +12415,7 @@
 			)
 		)
 		(property "MPN" "RT0603FRE071KL"
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11289,7 +12424,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11298,7 +12433,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11307,7 +12442,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11316,7 +12451,7 @@
 			)
 		)
 		(property "Power_Rating" "1/10W"
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11325,7 +12460,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11334,7 +12469,7 @@
 			)
 		)
 		(property "Voltage_Rating" "75V"
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11343,7 +12478,7 @@
 			)
 		)
 		(property "P_max" ""
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11352,7 +12487,7 @@
 			)
 		)
 		(property "V_max" ""
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11361,7 +12496,7 @@
 			)
 		)
 		(property "Supplier2" "LCSC"
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11370,7 +12505,7 @@
 			)
 		)
 		(property "SPN2" "C21190"
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11379,7 +12514,7 @@
 			)
 		)
 		(property "Supplier" "DigiKey"
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11388,7 +12523,7 @@
 			)
 		)
 		(property "MPN2" "0603WAF1001T5E"
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11397,7 +12532,7 @@
 			)
 		)
 		(property "Manufacturer2" "UNI-ROYAL"
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11406,7 +12541,7 @@
 			)
 		)
 		(property "SPN" "YAG2323CT-ND"
-			(at 85.09 34.29 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11687,6 +12822,198 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 106.68 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "54fc59b8-dde5-470b-934f-5bc0b14f7a4e")
+		(property "Reference" "TP33"
+			(at 106.68 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DRV_SCK"
+			(at 104.14 28.4481 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_D0.4mm"
+			(at 111.76 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 106.68 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1ea2228-a611-440e-ae52-634f1dec2c43")
+		)
+		(instances
+			(project "KNEE CONTROLLER PCBA"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
+					(reference "TP33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 341.63 130.81 0)
 		(unit 1)
@@ -11713,7 +13040,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "0_RD_Resistor_SMD:R_0603_1608_DensityHigh"
 			(at 339.852 130.81 90)
 			(effects
 				(font
@@ -12318,7 +13645,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+		(property "Footprint" "0_RD_Fiducial:Fiducial_1mm_Mask2mm"
 			(at 157.48 226.06 0)
 			(effects
 				(font
@@ -12391,6 +13718,132 @@
 			)
 		)
 		(property "V_max" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 157.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
 			(at 157.48 226.06 0)
 			(effects
 				(font
@@ -12737,7 +14190,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "0_RD_Resistor_SMD:R_0603_1608_DensityHigh"
 			(at 131.572 34.29 90)
 			(effects
 				(font
@@ -13190,6 +14643,201 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 270.51 34.29 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "696ffbd2-6ea2-4109-a891-2c2d617a113c")
+		(property "Reference" "TP42"
+			(at 273.05 30.9879 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ENC_Z_CS"
+			(at 273.05 29.7181 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_D0.4mm"
+			(at 265.43 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 265.43 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 270.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71da6942-85eb-4755-bb3c-65ebf28dbd6d")
+		)
+		(instances
+			(project "KNEE CONTROLLER PCBA"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
+					(reference "TP42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
 		(at 66.04 176.53 0)
 		(mirror x)
@@ -13379,7 +15027,7 @@
 	)
 	(symbol
 		(lib_id "Jumpers:Conn_01x04_Pin")
-		(at 109.22 64.77 0)
+		(at 86.36 64.77 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13388,7 +15036,7 @@
 		(dnp no)
 		(uuid "700b2b04-6dfa-4de6-8014-8fdc1320eb82")
 		(property "Reference" "JP3"
-			(at 108.585 57.15 0)
+			(at 85.725 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13396,15 +15044,15 @@
 			)
 		)
 		(property "Value" "DRV_CFG_HI"
-			(at 108.585 59.69 0)
+			(at 85.725 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Jumpers:PinHeader_1x04_P2.54mm_Vertical"
-			(at 109.22 64.77 0)
+		(property "Footprint" "0_Jumper:PinHeader_1x04_P2.54mm_Vertical"
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13413,7 +15061,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C32713270.pdf"
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13422,7 +15070,7 @@
 			)
 		)
 		(property "Description" "CONN HEADER 4POS 2.54MM SINGLE ROW TH"
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13431,7 +15079,7 @@
 			)
 		)
 		(property "Manufacturer" "Jaycar Electronics"
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13440,7 +15088,7 @@
 			)
 		)
 		(property "MPN" "HM3212"
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13449,7 +15097,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13458,7 +15106,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13467,7 +15115,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13476,7 +15124,7 @@
 			)
 		)
 		(property "P_max" ""
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13485,7 +15133,7 @@
 			)
 		)
 		(property "V_max" ""
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13494,7 +15142,7 @@
 			)
 		)
 		(property "SPN2" "C32713270"
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13503,7 +15151,7 @@
 			)
 		)
 		(property "Supplier2" "LCSC"
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13512,7 +15160,7 @@
 			)
 		)
 		(property "Supplier" "Jaycar Electronics"
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13521,7 +15169,7 @@
 			)
 		)
 		(property "MPN2" "HX PZ2.54-1x4P ZZ"
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13530,7 +15178,7 @@
 			)
 		)
 		(property "Manufacturer2" "hanxia"
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13539,7 +15187,7 @@
 			)
 		)
 		(property "SPN" "HM3212"
-			(at 109.22 64.77 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13663,7 +15311,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "0_RD_Capacitor_SMD:C_0805_2012_DensityHigh"
 			(at 195.8848 176.53 0)
 			(effects
 				(font
@@ -13885,7 +15533,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "0_RD_Resistor_SMD:R_0603_1608_DensityHigh"
 			(at 339.852 175.26 90)
 			(effects
 				(font
@@ -14431,7 +16079,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "0_RD_Capacitor_SMD:C_0603_1608_DensityHigh"
 			(at 152.0952 123.19 0)
 			(effects
 				(font
@@ -14787,7 +16435,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+		(property "Footprint" "0_RD_Fiducial:Fiducial_1mm_Mask2mm"
 			(at 175.26 226.06 0)
 			(effects
 				(font
@@ -14868,6 +16516,132 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 175.26 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
@@ -14886,15 +16660,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "853d7042-2d59-46ba-a6bf-656b51d436a6")
-		(property "Reference" "TP24"
-			(at 71.12 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
+		(property "Reference" "TP28"
 			(at 71.12 236.22 0)
 			(effects
 				(font
@@ -14902,7 +16668,16 @@
 				)
 			)
 		)
-		(property "Footprint" "RD-Testpoints:TestPoint_Pad_1.0x1.0mm"
+		(property "Value" "G"
+			(at 71.12 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_1.0x1.0mm"
 			(at 66.04 229.87 0)
 			(effects
 				(font
@@ -14983,13 +16758,334 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 71.12 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "47ed39d1-2806-42f6-b406-23a8dfd3dfc6")
 		)
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "TP24")
+					(reference "TP28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 262.89 26.67 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8782e345-7a16-4040-8473-109744e9f78d")
+		(property "Reference" "TP39"
+			(at 265.43 23.3679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ENC_AUX_SCK"
+			(at 265.43 22.0981 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_D0.4mm"
+			(at 257.81 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 257.81 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "189f8e41-f638-4013-abd7-f1ca3d787ad0")
+		)
+		(instances
+			(project "KNEE CONTROLLER PCBA"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
+					(reference "TP39")
 					(unit 1)
 				)
 			)
@@ -15024,7 +17120,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Molex_Addendum:Molex_Micro-Fit_3.0_43650-0415_1x04_P3.00mm_Vertical"
+		(property "Footprint" "0_Connector:Molex_Micro-Fit_3.0_43650-0415_1x04_P3.00mm_Vertical"
 			(at 132.08 121.92 0)
 			(effects
 				(font
@@ -15805,6 +17901,199 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 99.06 33.02 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "8fe8aa5d-105f-4175-a4dc-4cae13a84136")
+		(property "Reference" "TP31"
+			(at 99.06 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DRV_MISO"
+			(at 101.6 28.4481 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_D0.4mm"
+			(at 93.98 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 99.06 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ca5b05b-ee36-4af0-b2e9-55511e5795dd")
+		)
+		(instances
+			(project "KNEE CONTROLLER PCBA"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
+					(reference "TP31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+BATT")
 		(at 176.53 27.94 0)
 		(unit 1)
@@ -16030,7 +18319,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "0_RD_Capacitor_SMD:C_1206_3216_DensityHigh"
 			(at 162.8648 115.57 0)
 			(effects
 				(font
@@ -16221,6 +18510,201 @@
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
 					(reference "C39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 265.43 29.21 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ccfbe31-c2be-4a28-8390-4ef617e24b10")
+		(property "Reference" "TP40"
+			(at 267.97 25.9079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ENC_A_MISO"
+			(at 267.97 24.6381 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_D0.4mm"
+			(at 260.35 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 265.43 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f50f839a-713b-431c-a4be-a587155bd47a")
+		)
+		(instances
+			(project "KNEE CONTROLLER PCBA"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
+					(reference "TP40")
 					(unit 1)
 				)
 			)
@@ -16550,6 +19034,201 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 267.97 31.75 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac036830-e578-4653-9735-5b2b4e0b8a88")
+		(property "Reference" "TP41"
+			(at 270.51 28.4479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ENC_B_MOSI"
+			(at 270.51 27.1781 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_D0.4mm"
+			(at 262.89 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 262.89 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 267.97 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6bc8cc93-826c-4d40-ac67-6b86ad320b92")
+		)
+		(instances
+			(project "KNEE CONTROLLER PCBA"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
+					(reference "TP41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 176.53 124.46 0)
 		(unit 1)
@@ -16642,7 +19321,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "0_RD_Capacitor_SMD:C_0603_1608_DensityHigh"
 			(at 344.4748 186.69 0)
 			(effects
 				(font
@@ -16821,6 +19500,199 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
+		(at 102.87 27.94 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3633e55-05a2-4bf8-a247-a873e4bacf8b")
+		(property "Reference" "TP32"
+			(at 102.87 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DRV_MOSI"
+			(at 105.41 23.3681 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_D0.4mm"
+			(at 97.79 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 102.87 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "87564e2a-a04a-45da-9cf7-0b605e098e23")
+		)
+		(instances
+			(project "KNEE CONTROLLER PCBA"
+				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
+					(reference "TP32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
 		(at 62.23 227.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16828,15 +19700,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b42db4eb-0dc5-40a6-95f1-9e8f1fb719d4")
-		(property "Reference" "TP19"
-			(at 62.23 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
+		(property "Reference" "TP27"
 			(at 62.23 220.98 0)
 			(effects
 				(font
@@ -16844,7 +19708,16 @@
 				)
 			)
 		)
-		(property "Footprint" "RD-Testpoints:TestPoint_Pad_1.0x1.0mm"
+		(property "Value" "G"
+			(at 62.23 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_1.0x1.0mm"
 			(at 67.31 227.33 0)
 			(effects
 				(font
@@ -16925,13 +19798,139 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 62.23 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6d4146d4-43d3-4e88-9c90-e435c6165d43")
 		)
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "TP19")
+					(reference "TP27")
 					(unit 1)
 				)
 			)
@@ -17030,7 +20029,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "0_RD_Capacitor_SMD:C_0603_1608_DensityHigh"
 			(at 344.4748 53.34 0)
 			(effects
 				(font
@@ -17395,7 +20394,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 85.09 27.94 0)
+		(at 62.23 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17403,8 +20402,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0c7b04f-1f87-44b7-8df7-3393799ba753")
-		(property "Reference" "#PWR0100"
-			(at 85.09 31.75 0)
+		(property "Reference" "#PWR099"
+			(at 62.23 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17413,7 +20412,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 85.09 22.86 0)
+			(at 62.23 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17421,7 +20420,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 27.94 0)
+			(at 62.23 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17430,7 +20429,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 27.94 0)
+			(at 62.23 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17439,7 +20438,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 85.09 27.94 0)
+			(at 62.23 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17453,7 +20452,7 @@
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "#PWR0100")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
@@ -17487,7 +20486,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
+		(property "Footprint" "0_RD_Fiducial:Fiducial_1mm_Mask2mm"
 			(at 190.5 226.06 0)
 			(effects
 				(font
@@ -17560,6 +20559,132 @@
 			)
 		)
 		(property "V_max" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 190.5 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
 			(at 190.5 226.06 0)
 			(effects
 				(font
@@ -17669,7 +20794,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "0_RD_Resistor_SMD:R_0603_1608_DensityHigh"
 			(at 274.32 188.468 90)
 			(effects
 				(font
@@ -17937,7 +21062,6 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ce91a7f2-bbce-4af7-ad08-7a90d463883e")
 		(property "Reference" "H1"
 			(at 54.6099 220.98 90)
@@ -18466,7 +21590,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "0_RD_Capacitor_SMD:C_0603_1608_DensityHigh"
 			(at 344.4748 97.79 0)
 			(effects
 				(font
@@ -18653,8 +21777,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddf97fb9-f665-4d56-8a19-ab9d5a00d946")
-		(property "Reference" "TP22"
-			(at 200.66 168.1479 0)
+		(property "Reference" "TP38"
+			(at 200.66 169.4179 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18669,9 +21793,10 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "RD-Testpoints:TestPoint_Pad_D0.4mm"
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_D0.4mm"
 			(at 203.2 172.72 0)
 			(effects
 				(font
@@ -18830,7 +21955,7 @@
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "TP22")
+					(reference "TP38")
 					(unit 1)
 				)
 			)
@@ -18863,7 +21988,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "RD-Symbols-Silkscreen:BOARD_IDENTIFICATION"
+		(property "Footprint" "0_RD_Identification:BOARD_IDENTIFICATION"
 			(at 189.23 218.44 0)
 			(effects
 				(font
@@ -19064,7 +22189,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "0_RD_Capacitor_SMD:C_0603_1608_DensityHigh"
 			(at 279.7048 198.12 0)
 			(effects
 				(font
@@ -19261,7 +22386,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 91.44 53.34 0)
+		(at 68.58 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19269,8 +22394,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1df50eb-579b-4850-9ba5-8adc3564c233")
-		(property "Reference" "#PWR0101"
-			(at 91.44 59.69 0)
+		(property "Reference" "#PWR0100"
+			(at 68.58 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19279,7 +22404,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 91.44 58.42 0)
+			(at 68.58 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19287,7 +22412,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 53.34 0)
+			(at 68.58 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19296,7 +22421,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 53.34 0)
+			(at 68.58 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19305,7 +22430,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 91.44 53.34 0)
+			(at 68.58 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19319,7 +22444,7 @@
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "#PWR0101")
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
@@ -19334,15 +22459,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f2a4fb60-f814-4521-b52f-a7e32617dcc6")
-		(property "Reference" "TP20"
-			(at 74.93 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
+		(property "Reference" "TP29"
 			(at 74.93 220.98 0)
 			(effects
 				(font
@@ -19350,7 +22467,16 @@
 				)
 			)
 		)
-		(property "Footprint" "RD-Testpoints:TestPoint_Pad_1.0x1.0mm"
+		(property "Value" "G"
+			(at 74.93 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "0_RD_Testpoint:TestPoint_Pad_1.0x1.0mm"
 			(at 80.01 227.33 0)
 			(effects
 				(font
@@ -19431,13 +22557,139 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I_peak" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Lifetime" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
+			(at 74.93 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c31bff52-6c6d-43d0-87ec-b237b4a075d2")
 		)
 		(instances
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c/e66a8b69-ba63-4755-9383-57edf473a15c/22a7fca5-4a7c-4eca-aea0-2dc5b26cc8ed"
-					(reference "TP20")
+					(reference "TP29")
 					(unit 1)
 				)
 			)
@@ -19469,7 +22721,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "0_RD_Resistor_SMD:R_0603_1608_DensityHigh"
 			(at 184.15 175.768 90)
 			(effects
 				(font
@@ -19689,7 +22941,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "0_Module:TMC5160T PRO"
 			(at 147.32 52.07 0)
 			(effects
 				(font
@@ -19834,6 +23086,60 @@
 			)
 		)
 		(property "Supplier" "DREMC"
+			(at 147.32 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SPN2" ""
+			(at 147.32 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage_Rating" ""
+			(at 147.32 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power_Rating" ""
+			(at 147.32 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier2" ""
+			(at 147.32 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer2" ""
+			(at 147.32 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN2" ""
 			(at 147.32 52.07 0)
 			(effects
 				(font

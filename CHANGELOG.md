@@ -21,3 +21,7 @@
 - Fab layer
 - Testpoint changes
 - Pour adjustments
+- Layout shifting
+- Silkscreen
+- Rail routing
+- Stitching vias
