@@ -22,7 +22,7 @@ outputs:
   prepare_release_workflow: prepare-release.yaml
   release_workflow: release.yaml
   release_include_source_archive: false
-  combined_review_pdf: false
+  combined_review_pdf: true
 assets:
   logo: assets/logos/logo-wordmark-colour.png
   product_image: ''
@@ -42,34 +42,10 @@ manufacturing:
   flammability_rating: ''
   tg_rating: ''
   halogen_free: ''
-  fabrication_notes: 'FAB NOTES
-
-    1
-
-    2
-
-    3'
-  assembly_notes: 'ASSEMBLY NOTES
-
-    1
-
-    2
-
-    3'
-  testpoint_policy: 'TESTPOINT NOTES
-
-    1
-
-    2
-
-    3'
-  impedance_notes: 'IMPEDANCE NOTES
-
-    1
-
-    2
-
-    3'
+  fabrication_notes: ''
+  assembly_notes: ''
+  testpoint_policy: ''
+  impedance_notes: ''
   impedance_table: []
 release:
   version: ''

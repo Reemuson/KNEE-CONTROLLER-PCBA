@@ -5,7 +5,8 @@
 	(uuid "f9e05184-c88b-4a88-ae9c-ab2bdb32be7c")
 	(paper "A3")
 	(title_block
-		(date "2025-01-12")
+		(title "COVER PAGE")
+		(date "2026-10-12")
 		(rev "${DRAWING_REVISION}")
 		(company "${COMPANY}")
 	)
@@ -1441,7 +1442,7 @@
 	(text_box "kibot_image_png_3d_viewer_angled_bottom"
 		(exclude_from_sim no)
 		(at 123.19 166.37 0)
-		(size 69.85 78.74)
+		(size 44.45 53.34)
 		(margins 1.905 1.905 1.905 1.905)
 		(stroke
 			(width 0)
@@ -1484,7 +1485,7 @@
 	(text_box "kibot_image_png_3d_viewer_angled_top"
 		(exclude_from_sim no)
 		(at 22.86 166.37 0)
-		(size 69.85 78.74)
+		(size 46.99 53.34)
 		(margins 1.905 1.905 1.905 1.905)
 		(stroke
 			(width 0)
@@ -1612,7 +1613,7 @@
 		(uuid "dee96870-b977-4804-a805-318fe8afe5f2")
 	)
 	(sheet
-		(at 340.36 313.69)
+		(at 299.72 326.39)
 		(size 35.56 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1625,9 +1626,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "5fb05893-0da3-4f58-a52b-cb6d6f4cb80b")
-		(property "Sheetname" "POWER SEQUENCE"
-			(at 340.36 312.6609 0)
+		(uuid "e66a8b69-ba63-4755-9383-57edf473a15c")
+		(property "Sheetname" "SYSTEM OVERVIEW"
+			(at 299.72 325.3609 0)
 			(effects
 				(font
 					(face "Tinos")
@@ -1638,98 +1639,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "power-sequence.kicad_sch"
-			(at 341.63 314.96 0)
-			(effects
-				(font
-					(face "Arimo")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "KNEE CONTROLLER PCBA"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 340.36 302.26)
-		(size 35.56 5.08)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "6e125bd6-2f99-4e5d-b3ea-4899f4540739")
-		(property "Sheetname" "REVISION HISTORY"
-			(at 340.36 300.99 0)
-			(effects
-				(font
-					(face "Tinos")
-					(size 1.905 1.905)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "revision-history.kicad_sch"
-			(at 340.995 303.53 0)
-			(effects
-				(font
-					(face "Arimo")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "KNEE CONTROLLER PCBA"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 299.72 302.26)
-		(size 35.56 5.08)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "82da9dbf-ba38-4d08-ba35-a220fa2963b1")
-		(property "Sheetname" "BLOCK DIAGRAM"
-			(at 299.72 301.2309 0)
-			(effects
-				(font
-					(face "Tinos")
-					(size 1.905 1.905)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "block-diagram.kicad_sch"
-			(at 300.99 303.53 0)
+		(property "Sheetfile" "system-overview.kicad_sch"
+			(at 300.99 327.66 0)
 			(effects
 				(font
 					(face "Arimo")
@@ -1742,51 +1653,6 @@
 			(project "KNEE CONTROLLER PCBA"
 				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
 					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 299.72 313.69)
-		(size 35.56 5.08)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "c5103ceb-5325-4a84-a025-9638a412984e")
-		(property "Sheetname" "PROJECT"
-			(at 299.72 312.6609 0)
-			(effects
-				(font
-					(face "Tinos")
-					(size 1.905 1.905)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "project.kicad_sch"
-			(at 300.99 314.96 0)
-			(effects
-				(font
-					(face "Arimo")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "KNEE CONTROLLER PCBA"
-				(path "/f9e05184-c88b-4a88-ae9c-ab2bdb32be7c"
-					(page "3")
 				)
 			)
 		)

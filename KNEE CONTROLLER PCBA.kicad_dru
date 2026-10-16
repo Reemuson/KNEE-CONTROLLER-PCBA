@@ -17,10 +17,6 @@
 	(layer outer)
 	(condition "A.Type == 'Track'"))
 
-(rule "JLCPCB General Copper Clearance"
-	(constraint clearance (min 0.15mm))
-	(layer outer))
-
 # ----------------------------------- Drill / hole size ----------------------------------
 
 # JLCPCB can manufacture smaller drills, but 0.30 mm is a comfortable
@@ -104,19 +100,6 @@
 	(constraint hole_to_hole (min 0.30mm))
 	(condition "A.Net == B.Net"))
 
-# ----------------------------------- Specific copper spacing -----------------------------
-
-# JLCPCB permits tighter pad-to-track clearances, but 0.15 mm matches the
-# selected general copper rule.
-
-(rule "JLCPCB Pad to Track Clearance"
-	(constraint clearance (min 0.15mm))
-	(condition "A.Type == 'Pad' && B.Type == 'Track'"))
-
-(rule "JLCPCB Pad to Pad Clearance"
-	(constraint clearance (min 0.15mm))
-	(condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Net != B.Net"))
-
 # ----------------------------------- Board edge -----------------------------------------
 
 # JLCPCB routed-board minimum copper-to-edge is 0.20 mm.
@@ -152,3 +135,20 @@
 (rule "Fiducial Courtyard Exclusion"
 	(constraint courtyard_clearance (min -1mm))
 	(condition "A.Reference == 'FM*'"))
+
+# ----------------------------------- Misc exclusions -------------------------------
+
+# Power-stage routed copper clearance.
+# Does not impose 0.60 mm between component pads.
+
+(rule "Power Stage Zone Clearance"
+    (constraint clearance (min 0.40mm))
+    (condition "A.Type == 'Zone' && (A.hasNetclass('+VIN') || A.hasNetclass('+VM') || A.hasNetclass('MOTOR_A') || A.hasNetclass('MOTOR_B'))"))
+
+
+# INA supply pin escape clearance.
+# Applies within the U1 footprint courtyard.
+
+(rule "U1 INA Escape Clearance"
+    (constraint clearance (min 0.20mm))
+    (condition "A.intersectsCourtyard('U1')"))

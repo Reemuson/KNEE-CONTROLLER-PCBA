@@ -286,8 +286,10 @@ jobs:
             cp -a assets/renders "$snapshot_dir/assets/renders"
           fi
 
-          git checkout HEAD -- README.md assets/renders 2>/dev/null || true
-          git checkout HEAD -- boardwright_resources/kibot/yaml/kibot_main.yaml 2>/dev/null || true
+          # KiBot may rewrite source files while generating outputs. Restore the
+          # complete tracked checkout before switching to the target branch so
+          # generated edits cannot block the branch switch.
+          git restore --source=HEAD --staged --worktree .
           git clean -f boardwright_resources/kibot/yaml/kibot_document_*.generated.yaml 2>/dev/null || true
           git clean -fd -- HTML KiRI Manufacturing Reports Schematic Testing assets/renders 2>/dev/null || true
           rm -rf HTML KiRI Manufacturing Reports Schematic Testing assets/renders

@@ -4,7 +4,7 @@ boardwright:
   third_party_notice_file: THIRD_PARTY_NOTICES.md
 downstream_project_defaults:
   hardware_design_license: CERN-OHL-W-2.0
-  copyright_holder: ''
+  copyright_holder: RYAN HICKS
   notice_file: NOTICE.md
   third_party_notice_file: THIRD_PARTY_NOTICES.md
   allow_project_owner_override: true
