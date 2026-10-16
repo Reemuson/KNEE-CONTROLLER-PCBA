@@ -4190,10 +4190,10 @@
 		)
 		(uuid "0ad2bd28-2ef3-44ed-b092-9210a86f6b5f")
 	)
-	(text_box "DESIGN NOTE:\nFH1 = MINI BLADE FUSE HOLDER\nUSE 58 VDC-RATED FUSE\nFUSE CURRENT RATING TBD"
+	(text_box "DESIGN NOTE:\nFH1 = MINI BLADE FUSE HOLDER\nUSE 58 VDC-RATED FUSE\nFUSE CURRENT RATING 5A"
 		(exclude_from_sim no)
 		(at 85.09 39.37 0)
-		(size 27.94 13.97)
+		(size 27.94 12.7)
 		(margins 1.3525 1.3525 1.3525 1.3525)
 		(stroke
 			(width 0.8)
