@@ -1,6 +1,10 @@
 document_revisions:
   schematic:
-    rows: []
+    rows:
+    - revision: A
+      date: '2026-10-16'
+      description: INITIAL RELEASE
+      drawn_by: R. HICKS
   assembly:
     rows: []
   fabrication:

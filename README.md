@@ -25,8 +25,8 @@
 | Document type | SCHEMATIC |
 | Drawing revision | A |
 | Board revision | A |
-| Release version | null |
-| Variant | PRELIMINARY |
+| Release version | 1.0.0 |
+| Variant | RELEASED |
 | Dimensions | 60.0 x 120.0 mm |
 
 ---
@@ -40,7 +40,7 @@ The source branch contains the KiCad project and the Boardwright configuration.
 Use these links to get outputs or inspect a workflow:
 
 - [Latest release](https://github.com/Reemuson/KNEE-CONTROLLER-PCBA.git/releases/latest)
-- [Release package](https://github.com/Reemuson/KNEE-CONTROLLER-PCBA.git/releases/latest/download/boardwright-null-release.zip)
+- [Release package](https://github.com/Reemuson/KNEE-CONTROLLER-PCBA.git/releases/latest/download/boardwright-1.0.0-release.zip)
 - [Preview workflow](https://github.com/Reemuson/KNEE-CONTROLLER-PCBA.git/actions/workflows/dev-preview.yaml)
 - [Accepted outputs workflow](https://github.com/Reemuson/KNEE-CONTROLLER-PCBA.git/actions/workflows/main-outputs.yaml)
 - [Prepare release workflow](https://github.com/Reemuson/KNEE-CONTROLLER-PCBA.git/actions/workflows/prepare-release.yaml)
